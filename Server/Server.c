@@ -13,13 +13,14 @@
 #include <pthread.h>
 #include <time.h>
 #include <errno.h>
+#include <signal.h>
+#include <sys/sem.h>
 
 #define PORT 10521
 #define BUFFER_SIZE 4096
-#define CLIENT_AMOUNT 10
+#define CLIENT_AMOUNT 25
 
-    
-struct sockaddr_in si_me;
+typedef enum {CLIENTS=0,IPS=1,REQUESTS=2,TRANSFERRED=3} resource;
 
 struct client{
 	char ip[25];
@@ -28,6 +29,9 @@ struct client{
 	unsigned char buf[BUFFER_SIZE];
 	int slen;
 	int threadNumber;
+	int fd;
+	int occupied;
+	pthread_t thread;
 };
 
 struct server{
@@ -35,14 +39,67 @@ struct server{
 	long transferredBytes;
 	long requestCount;
 	long threadCount;
+	int clientCount;
 };
 
-int s, i , recv_len;
-//unsigned char buf[BUFFER_SIZE];
-pthread_t clients[CLIENT_AMOUNT];
-int clientCount = 0;
-int threadResult = 0;
-struct server serverInfo;
+int s;
+static int threadResult = 0;
+static struct server serverInfo;
+static struct client clients[CLIENT_AMOUNT];
+static char clientIps[25][CLIENT_AMOUNT*4];
+static struct sockaddr_in si_me;
+
+static int semaphore_v(resource res){
+	struct sembuf sem_b;
+	sem_b.sem_num = 0; 
+	sem_b.sem_op = 1; 
+	sem_b.sem_flg = SEM_UNDO;
+	int item = (int) res;
+	if (semop(item, &sem_b, 1) == -1) { 
+		fprintf(stderr, "semaphore_v failed\n"); 
+		return(0); 
+	} 
+	return(1);
+}
+
+static int semaphore_b(resource res){
+	struct sembuf sem_b;
+	sem_b.sem_num = 0; 
+	sem_b.sem_op = -1;
+	sem_b.sem_flg = SEM_UNDO; 
+	int item = (int) res;
+	if (semop(item, &sem_b, 1) == -1) { 
+		fprintf(stderr, "semaphore_p failed\n"); 
+		return(0); 
+	} 
+	return(1);
+}
+
+static void del_semvalue(void) // This removes the semaphore from the system TODO
+{ 
+	union semun sem_union;
+	if (semctl(sem_idBola, 0, IPC_RMID, sem_union) == -1) 
+		fprintf(stderr, "Failed to delete semaphore\n");
+	if (semctl(sem_idCanchaA, 0, IPC_RMID, sem_union) == -1) 
+		fprintf(stderr, "Failed to delete semaphore\n");
+	if (semctl(sem_idCanchaB, 0, IPC_RMID, sem_union) == -1) 
+		fprintf(stderr, "Failed to delete semaphore\n");
+
+}
+
+static int set_semvalue(void) // This initializes the semaphore TODO
+{ 
+	union semun sem_union;
+	int value = 1;
+	sem_union.val = 1; 
+	if (semctl(sem_idBola, 0, SETVAL, sem_union) == -1) 
+		value = 0;
+	if (semctl(sem_idCanchaA, 0, SETVAL, sem_union) == -1) 
+		value = 0;
+	if (semctl(sem_idCanchaB, 0, SETVAL, sem_union) == -1) 
+		value = 0;
+	return(value);
+}
 
 void serverLog(char* type, char* message){
 	time_t t = time(NULL);
@@ -56,6 +113,45 @@ void serverLog(char* type, char* message){
 	printf("%d:%d:%d - %s: %s\n", startTime.tm_hour, startTime.tm_min, startTime.tm_sec, type, message);
 	fprintf(f, "%d:%d:%d - %s: %s", startTime.tm_hour,startTime.tm_min, startTime.tm_sec, type, message);
 	fclose(f);
+}
+
+void registerClient(char* ip){
+	int i = 0;
+	while(i < CLIENT_AMOUNT*4){
+		if(clientIps[i] = '\0'){
+			strcpy(strcpyclientIps[i], ip);
+			break;
+		}
+		if(strcmp(ip, clientIps[i]) == 0){
+			return
+		}
+	}
+
+	serverInfo.clientCount++; //TODO Semaphore
+}
+
+int findAvailableClient(){
+	int i = 0;
+	while(i < CLIENT_AMOUNT){
+		if(!clients[i].occupied)
+			return i;
+		i++;
+	}
+	return -1;
+}
+
+
+void serverClose(){
+	int i = 0;
+	while(i < CLIENT_AMOUNT){
+		if(!clients[i].occupied){
+			threadResult = pthread_join(clients[i].thread,NULL);
+			if(threadResult != 0){
+				serverLog("ERROR",strerror(errno));("Thread join");
+			}
+		}
+		i++;
+	}
 }
 
 // function to clear buffer 
@@ -91,7 +187,7 @@ void *terminalHandler(void *arg){
 			printf("Amount of bytes transferred:%ld\n",serverInfo.transferredBytes);
 			break;
 		case '3':
-			printf("Client count:%d\n", clientCount);
+			printf("Client count:%d\n", serverInfo.clientCount);
 			break;
 		case '4':
 			printf("Request amount:%ld\n",serverInfo.requestCount);
@@ -102,7 +198,7 @@ void *terminalHandler(void *arg){
 		case '6':
 			flag = 0;
 			printf("Closing server...\n");
-			serverLog("STATUS:","server shutting down");
+			serverLog("STATUS","server shutting down");
 			break;
 		default:
 			printf("Invalid option selected\n");
@@ -116,37 +212,55 @@ void *clientHandler(void *arg){
 	struct client info =  *(struct client *)arg;
 	time_t t = time(NULL);
  	struct tm time = *localtime(&t);
-	char message[256];
+	char message[256]; //Used for logging purposes
+	info.startTime = time;//Time when the thread was created
+
 	sprintf(message,"Thread #%d created! Time: %d-%d-%d %d:%d:%d\n",info.threadNumber, time.tm_year + 1900, time.tm_mon + 1,time.tm_mday, time.tm_hour, time.tm_min, time.tm_sec);
 	serverLog("THREAD",message);
+
+	//Read from client 
+	read(info.fd,&info.buf,BUFFER_SIZE);
+
 	//Saving client information
 	sprintf(info.ip, "%s:%d", inet_ntoa(info.si_other.sin_addr), ntohs(info.si_other.sin_port));
-	info.startTime = time;
-
+	registerClient(info.ip);
 	//print details of the client/peer and the data received
-	sprintf(message,"Received packet from %s\n", info.ip);
-	serverLog("THREAD",message);
-	FILE* f = fopen("resources/small.mp4","rb");
-	if(f == NULL){
-		serverLog("ERROR",strerror(errno));
-		exit(1);
-	}
-	size_t bytesRead = 0;
-		// read file in chunks
-	while ((bytesRead = fread(info.buf, 1, sizeof(info.buf), f)) > 0)
+	sprintf(message,"Received packet from %s with data %s\n", info.ip, info.buf);
+	serverLog("REQUEST",message);
+	switch (info.buf)
 	{
-		sendto(s, info.buf, bytesRead, 0, (struct sockaddr*)&info.si_other, info.slen); 
-		unsigned int size = bytesRead;
-		//printf("%x\n", size);
-		clearBuf(info.buf); 
+	case "index":
+		//Generate index
+		break;
+	
+	default:
+		sprintf(message, "resources/%s",info.buf);
+		FILE* f = fopen(message,"rb");
+		if(f == NULL){
+			serverLog("ERROR",strerror(errno));
+			exit(1);
+		}
+		size_t bytesRead = 0;
+		// read file in chunks
+		while ((bytesRead = fread(info.buf, 1, sizeof(info.buf), f)) > 0)
+		{
+			serverInfo.transferredBytes += bytesRead; //TODO Semaphore
+			write(info.fd,&info.buf,BUFFER_SIZE); 
+			unsigned int size = bytesRead;
+			//printf("%x\n", size);
+		}
+		break;
 	}
+
+	close(info.fd);
+	info.occupied = 0;
 	pthread_exit(0);
 }
 
 int main(int argc, char* argv[]){
 	char request[256];
-	//create a UDP socket
-	if ((s=socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP)) == -1)
+	//create a TCP socket
+	if ((s=socket(AF_INET, SOCK_STREAM, 0)) == -1)
 	{
 		serverLog("ERROR",strerror(errno));
 	}
@@ -163,36 +277,34 @@ int main(int argc, char* argv[]){
 	{
 		serverLog("ERROR",strerror(errno));
 	}
-	threadResult = pthread_create(&(clients[clientCount]), NULL, terminalHandler,NULL);
+	//Server terminal thread
+	threadResult = pthread_create(), NULL, terminalHandler,NULL);
 	//keep listening for data
+	listen(s, CLIENT_AMOUNT);
 	while(1)
 	{
-		printf("Waiting for data...\n");
-		//try to receive some data, this is a blocking call
-		struct client info;
+		serverLog("STATUS","Server waiting for data...\n");
+
+		struct client info = {.occupied = 0, .slen = 0};
 		info.slen = sizeof(info.si_other);
 		memset((char *) &info.si_other, 0, sizeof(info.si_other));
-		clearBuf(info.buf);
-		if ((recv_len = recvfrom(s, info.buf, BUFFER_SIZE, 0, (struct sockaddr *) &info.si_other, &info.slen)) == -1)
-		{
-			serverLog("ERROR",strerror(errno));
+		
+		int clientNumber = findAvailableClient();
+		
+		if(clientNumber < 0){
+			serverLog("STATUS","Server is currently too busy to handle additional requests...\n");
 		}
-		sprintf(request,"Data: %s\n" , info.buf); //Video name or id
-		serverLog("REQUEST",request);
-		info.threadNumber = ++clientCount;
-		threadResult = pthread_create(&(clients[clientCount]), NULL, clientHandler,(void*)&info);
-
-		if(threadResult != 0){
-			serverLog("ERROR",strerror(errno));
-			exit(1);
-		}
-	}
-
-
-	while(clientCount > 0){
-		threadResult = pthread_join(clients[--clientCount],NULL);
-		if(threadResult != 0){
-			serverLog("ERROR",strerror(errno));("Thread join");
+		else{
+			//Opening connection
+			info.fd = accept(s,(struct sockaddr *)&info.si_other, &info.slen);
+			serverInfo.threadCount++;
+			info.threadNumber = clientNumber;
+			clients[clientNumber] = info;
+			threadResult = pthread_create(&(clients[clientNumber].thread), NULL, clientHandler,(void*)&clients[clientNumber]);
+			if(threadResult != 0){
+				serverLog("ERROR",strerror(errno));
+				exit(1);
+			}
 		}
 	}
 	return 0;

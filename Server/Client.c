@@ -8,12 +8,11 @@
 #include <sys/socket.h> 
 #include <sys/types.h> 
 #include <unistd.h> 
-  
+#include <sys/time.h>
 #define IP_PROTOCOL 0 
 #define IP_ADDRESS "127.0.0.1" // localhost 
-#define PORT_NO 10734 
-#define NET_BUF_SIZE 32 
-#define cipherKey 'S' 
+#define PORT_NO 10521
+#define NET_BUF_SIZE 4096
 #define sendrecvflag 0 
   
 // function to clear buffer 
@@ -23,25 +22,18 @@ void clearBuf(char* b)
     for (i = 0; i < NET_BUF_SIZE; i++) 
         b[i] = '\0'; 
 } 
-  
-// function for decryption 
-char Cipher(char ch) 
-{ 
-    return cipherKey; 
-} 
-  
+
 // function to receive file 
 int recvFile(char* buf, int s) 
 { 
     int i; 
-    char ch; 
+    unsigned char value; 
     for (i = 0; i < s; i++) { 
-        ch = buf[i]; 
-        ch = Cipher(ch); 
-        if (ch == EOF) 
+        value = buf[i]; 
+        if (value == 0) 
             return 1; 
         else
-            printf("%c", ch); 
+            printf("%c", value); 
     } 
     return 0; 
 } 
@@ -55,40 +47,51 @@ int main()
     addr_con.sin_family = AF_INET; 
     addr_con.sin_port = htons(PORT_NO); 
     addr_con.sin_addr.s_addr = inet_addr(IP_ADDRESS); 
-    char net_buf[NET_BUF_SIZE]; 
+    unsigned char net_buf[NET_BUF_SIZE]; 
     FILE* fp; 
   
     // socket() 
-    sockfd = socket(AF_INET, SOCK_DGRAM, 
+    sockfd = socket(AF_INET, SOCK_STREAM, 
                     IP_PROTOCOL); 
   
     if (sockfd < 0) 
         printf("\nfile descriptor not received!!\n"); 
     else
         printf("\nfile descriptor %d received\n", sockfd); 
-  
+
+/*     struct timeval timeout;
+    timeout.tv_sec = 0;
+    timeout.tv_usec = 100000;
+    setsockopt(sockfd, SOL_SOCKET, SO_RCVTIMEO,(char*)&timeout,sizeof(timeout));
+ */
     while (1) { 
-        printf("\nPlease enter file name to receive:\n"); 
+        clearBuf(net_buf);
+        if((connect(sockfd, (struct sockaddr *) &addr_con, addrlen)) == -1){
+            perror("Can't connect to server: ")
+            exit(1);
+        }
+
+        printf("\nPlease enter file name to receive:\n");   
         scanf("%s", net_buf); 
-        sendto(sockfd, net_buf, NET_BUF_SIZE, 
-               sendrecvflag, (struct sockaddr*)&addr_con, 
-               addrlen); 
-  
+        write(sockfd, net_buf, NET_BUF_SIZE); 
         printf("\n---------Data Received---------\n"); 
   
         while (1) { 
             // receive 
             clearBuf(net_buf); 
-            nBytes = recvfrom(sockfd, net_buf, NET_BUF_SIZE, 
-                              sendrecvflag, (struct sockaddr*)&addr_con, 
-                              &addrlen); 
+            nBytes = read(sockfd, net_buf, NET_BUF_SIZE); 
   
             // process 
-            if (recvFile(net_buf, NET_BUF_SIZE)) { 
+            unsigned int size = nBytes;
+			printf("%s",net_buf);
+            if (nBytes < NET_BUF_SIZE) {
+                printf("Received last package\n");
                 break; 
             } 
         } 
-        printf("\n-------------------------------\n"); 
-    } 
+        printf("\n-------------------------------\n");
+        close(sockfd); 
+    }
+     
     return 0; 
 } 
