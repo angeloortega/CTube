@@ -20,7 +20,7 @@
 #define BUFFER_SIZE 4096
 #define CLIENT_AMOUNT 25
 
-typedef enum {CLIENTS=0,IPS=1,REQUESTS=2,TRANSFERRED=3} resource;
+typedef enum {CLIENTS=0,IPS=1,LOG=2,REQUESTS=3,TRANSFERRED=4} resource;
 
 struct client{
 	char ip[25];
@@ -48,6 +48,7 @@ static struct server serverInfo;
 static struct client clients[CLIENT_AMOUNT];
 static char clientIps[25][CLIENT_AMOUNT*4];
 static struct sockaddr_in si_me;
+static int semaphores[5];
 
 static int semaphore_v(resource res){
 	struct sembuf sem_b;
@@ -62,7 +63,7 @@ static int semaphore_v(resource res){
 	return(1);
 }
 
-static int semaphore_b(resource res){
+static int semaphore_p(resource res){
 	struct sembuf sem_b;
 	sem_b.sem_num = 0; 
 	sem_b.sem_op = -1;
@@ -75,33 +76,35 @@ static int semaphore_b(resource res){
 	return(1);
 }
 
-static void del_semvalue(void) // This removes the semaphore from the system TODO
+static void del_semvalue(void) // This removes the semaphore from the system
 { 
 	union semun sem_union;
-	if (semctl(sem_idBola, 0, IPC_RMID, sem_union) == -1) 
-		fprintf(stderr, "Failed to delete semaphore\n");
-	if (semctl(sem_idCanchaA, 0, IPC_RMID, sem_union) == -1) 
-		fprintf(stderr, "Failed to delete semaphore\n");
-	if (semctl(sem_idCanchaB, 0, IPC_RMID, sem_union) == -1) 
-		fprintf(stderr, "Failed to delete semaphore\n");
+
+	for(resource i = CLIENTS; i <= TRANSFERRED ; i = resource(i+1)){
+		if (semctl(semaphores[(int) i ], 0, IPC_RMID, sem_union) == -1) 
+			fprintf(stderr, "Failed to delete semaphore\n");
+	}
+	return(value);
 
 }
 
-static int set_semvalue(void) // This initializes the semaphore TODO
+static int set_semvalue(void) // This initializes the semaphore
 { 
 	union semun sem_union;
 	int value = 1;
 	sem_union.val = 1; 
-	if (semctl(sem_idBola, 0, SETVAL, sem_union) == -1) 
-		value = 0;
-	if (semctl(sem_idCanchaA, 0, SETVAL, sem_union) == -1) 
-		value = 0;
-	if (semctl(sem_idCanchaB, 0, SETVAL, sem_union) == -1) 
-		value = 0;
+
+	for(resource i = CLIENTS; i <= TRANSFERRED ; i = resource(i+1)){
+		semaphores[(int) i] = semget((key_t)(rand()%9999+1000)), 1, 0666 | IPC_CREAT);
+		if (semctl(semaphores[(int) i ], 0, SETVAL, sem_union) == -1) 
+			value = 0;
+	}
 	return(value);
 }
 
 void serverLog(char* type, char* message){
+	while(!semaphore_p(LOG))
+				sleep(1);
 	time_t t = time(NULL);
  	struct tm startTime = *localtime(&t);
 	char fileName[256];
@@ -113,21 +116,30 @@ void serverLog(char* type, char* message){
 	printf("%d:%d:%d - %s: %s\n", startTime.tm_hour, startTime.tm_min, startTime.tm_sec, type, message);
 	fprintf(f, "%d:%d:%d - %s: %s", startTime.tm_hour,startTime.tm_min, startTime.tm_sec, type, message);
 	fclose(f);
+	if (semaphore_v(LOG)==-1)
+		exit(EXIT_FAILURE);
 }
 
 void registerClient(char* ip){
 	int i = 0;
+	while(!semaphore_p(IPS))
+				sleep(1);
 	while(i < CLIENT_AMOUNT*4){
 		if(clientIps[i] = '\0'){
-			strcpy(strcpyclientIps[i], ip);
+			strcpy(clientIps[i], ip);
 			break;
 		}
 		if(strcmp(ip, clientIps[i]) == 0){
 			return
 		}
 	}
-
-	serverInfo.clientCount++; //TODO Semaphore
+	if (semaphore_v(IPS)==-1)
+		exit(EXIT_FAILURE);
+	if (semaphore_p(CLIENTS)){
+		serverInfo.clientCount++;
+		if (semaphore_v(CLIENTS)==-1)
+			exit(EXIT_FAILURE);
+	}					
 }
 
 int findAvailableClient(){
@@ -227,6 +239,12 @@ void *clientHandler(void *arg){
 	//print details of the client/peer and the data received
 	sprintf(message,"Received packet from %s with data %s\n", info.ip, info.buf);
 	serverLog("REQUEST",message);
+	if (semaphore_p(REQUESTS)){
+		server.requestCount++;
+		if (semaphore_v(REQUESTS)==-1)
+			exit(EXIT_FAILURE);
+	}				
+	
 	switch (info.buf)
 	{
 	case "index":
@@ -244,7 +262,11 @@ void *clientHandler(void *arg){
 		// read file in chunks
 		while ((bytesRead = fread(info.buf, 1, sizeof(info.buf), f)) > 0)
 		{
-			serverInfo.transferredBytes += bytesRead; //TODO Semaphore
+			if (semaphore_p(TRANSFERRED)){
+				serverInfo.transferredBytes += bytesRead;
+				if (semaphore_v(TRANSFERRED)==-1)
+					exit(EXIT_FAILURE);
+			}			
 			write(info.fd,&info.buf,BUFFER_SIZE); 
 			unsigned int size = bytesRead;
 			//printf("%x\n", size);
@@ -279,6 +301,12 @@ int main(int argc, char* argv[]){
 	}
 	//Server terminal thread
 	threadResult = pthread_create(), NULL, terminalHandler,NULL);
+
+	if (!set_semvalue()) { 
+			serverLog("ERROR", "Failed to initialize semaphores\n"); 
+			exit(EXIT_FAILURE); 
+		}
+	serverLog("STATUS","Semaphores have been initiallized...\n");
 	//keep listening for data
 	listen(s, CLIENT_AMOUNT);
 	while(1)
