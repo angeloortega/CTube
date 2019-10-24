@@ -15,12 +15,22 @@
 #include <errno.h>
 #include <signal.h>
 #include <sys/sem.h>
+#include <sys/shm.h>
+#include <syslog.h>
+#include <sys/types.h>
+#include <sys/ipc.h>
 
 #define PORT 10521
 #define BUFFER_SIZE 4096
 #define CLIENT_AMOUNT 25
 
 typedef enum {CLIENTS=0,IPS=1,LOG=2,REQUESTS=3,TRANSFERRED=4} resource;
+
+union semun {
+    int val;
+    struct semid_ds *buf;
+    unsigned short  *array;
+};
 
 struct client{
 	char ip[25];
@@ -40,6 +50,8 @@ struct server{
 	long requestCount;
 	long threadCount;
 	int clientCount;
+	pthread_t thread;
+
 };
 
 int s;
@@ -56,8 +68,8 @@ static int semaphore_v(resource res){
 	sem_b.sem_op = 1; 
 	sem_b.sem_flg = SEM_UNDO;
 	int item = (int) res;
-	if (semop(item, &sem_b, 1) == -1) { 
-		fprintf(stderr, "semaphore_v failed\n"); 
+	if (semop(semaphores[item], &sem_b, 1) == -1) { 
+		perror("semaphore_v failed\n"); 
 		return(0); 
 	} 
 	return(1);
@@ -69,8 +81,8 @@ static int semaphore_p(resource res){
 	sem_b.sem_op = -1;
 	sem_b.sem_flg = SEM_UNDO; 
 	int item = (int) res;
-	if (semop(item, &sem_b, 1) == -1) { 
-		fprintf(stderr, "semaphore_p failed\n"); 
+	if (semop(semaphores[item], &sem_b, 1) == -1) { 
+		perror("semaphore_p failed\n"); 
 		return(0); 
 	} 
 	return(1);
@@ -80,12 +92,10 @@ static void del_semvalue(void) // This removes the semaphore from the system
 { 
 	union semun sem_union;
 
-	for(resource i = CLIENTS; i <= TRANSFERRED ; i = resource(i+1)){
-		if (semctl(semaphores[(int) i ], 0, IPC_RMID, sem_union) == -1) 
-			fprintf(stderr, "Failed to delete semaphore\n");
+	for(int i = 0; i < 5 ; i++){
+		if (semctl(semaphores[i], 0, IPC_RMID, sem_union) == -1) 
+			perror("Failed to delete semaphore\n");
 	}
-	return(value);
-
 }
 
 static int set_semvalue(void) // This initializes the semaphore
@@ -93,45 +103,64 @@ static int set_semvalue(void) // This initializes the semaphore
 	union semun sem_union;
 	int value = 1;
 	sem_union.val = 1; 
-
-	for(resource i = CLIENTS; i <= TRANSFERRED ; i = resource(i+1)){
-		semaphores[(int) i] = semget((key_t)(rand()%9999+1000)), 1, 0666 | IPC_CREAT);
-		if (semctl(semaphores[(int) i ], 0, SETVAL, sem_union) == -1) 
+	int random = 0;
+	for(int i = 0; i < 5 ; i++){
+		random = rand()%8999+1000;
+		semaphores[(int) i] = semget((key_t) random,1, 0666 | IPC_CREAT);
+		if (semctl(semaphores[i], 0, SETVAL, sem_union) == -1)
 			value = 0;
 	}
 	return(value);
 }
 
 void serverLog(char* type, char* message){
-	while(!semaphore_p(LOG))
-				sleep(1);
+	int flag;
+	do{
+		flag = semaphore_p(LOG);
+		if(!flag){
+			sleep(1);
+		}
+	}
+	while(!flag);
 	time_t t = time(NULL);
  	struct tm startTime = *localtime(&t);
 	char fileName[256];
 	sprintf(fileName,"logs/%d-%d-%d.txt", startTime.tm_year + 1900, startTime.tm_mon + 1,startTime.tm_mday);
 	FILE* f = fopen(fileName,"a");
 	if(f == NULL){
-		perror("Logging error: ");
+		f = fopen(fileName,"w");
+		if(f == NULL){
+			perror("Logging error: ");
+		}
 	}
-	printf("%d:%d:%d - %s: %s\n", startTime.tm_hour, startTime.tm_min, startTime.tm_sec, type, message);
-	fprintf(f, "%d:%d:%d - %s: %s", startTime.tm_hour,startTime.tm_min, startTime.tm_sec, type, message);
-	fclose(f);
+	else{
+		printf("%d:%d:%d - %s: %s\n", startTime.tm_hour, startTime.tm_min, startTime.tm_sec, type, message);
+		fprintf(f, "%d:%d:%d - %s: %s", startTime.tm_hour,startTime.tm_min, startTime.tm_sec, type, message);
+		fclose(f);
+
+	}
 	if (semaphore_v(LOG)==-1)
 		exit(EXIT_FAILURE);
 }
 
 void registerClient(char* ip){
 	int i = 0;
-	while(!semaphore_p(IPS))
-				sleep(1);
+	int flag = 0;
+	do{
+		flag = semaphore_p(IPS);
+		sleep(1);
+	}
+	while(!flag);
+
 	while(i < CLIENT_AMOUNT*4){
-		if(clientIps[i] = '\0'){
+		if(clientIps[i][0] == '\0'){
 			strcpy(clientIps[i], ip);
 			break;
 		}
 		if(strcmp(ip, clientIps[i]) == 0){
-			return
+			return;
 		}
+		i++;
 	}
 	if (semaphore_v(IPS)==-1)
 		exit(EXIT_FAILURE);
@@ -156,7 +185,8 @@ int findAvailableClient(){
 void serverClose(){
 	int i = 0;
 	while(i < CLIENT_AMOUNT){
-		if(!clients[i].occupied){
+		if(clients[i].occupied){
+			close(clients[i].fd);
 			threadResult = pthread_join(clients[i].thread,NULL);
 			if(threadResult != 0){
 				serverLog("ERROR",strerror(errno));("Thread join");
@@ -179,6 +209,7 @@ void *terminalHandler(void *arg){
 	time_t t = time(NULL);
  	serverInfo.startTime = *localtime(&t);
 	while(flag){
+		sleep(3);
 		printf("------------------options------------------\n");
 		printf("1)------------------------Server Start Time\n");
 		printf("2)--------------Amount of transferred bytes\n");
@@ -188,8 +219,7 @@ void *terminalHandler(void *arg){
 		printf("6)-------------------------------------Exit\n");
 		printf("-------------------------------------------\n");
 		printf("Please select an option: ");
-		option = getchar();
-		printf("\n");
+		scanf(" %c",&option);
 		switch (option)
 		{
 		case '1':
@@ -213,73 +243,98 @@ void *terminalHandler(void *arg){
 			serverLog("STATUS","server shutting down");
 			break;
 		default:
-			printf("Invalid option selected\n");
+			printf("Invalid option selected: %c\n",option);
 			break;
 		}
+		printf("\n\n\n");
 	}
 	exit(0);
 }
 
 void *clientHandler(void *arg){
+	long total = 0;
 	struct client info =  *(struct client *)arg;
+	info.occupied = 1;
 	time_t t = time(NULL);
- 	struct tm time = *localtime(&t);
+ 	struct tm timeS = *localtime(&t);
 	char message[256]; //Used for logging purposes
-	info.startTime = time;//Time when the thread was created
-
-	sprintf(message,"Thread #%d created! Time: %d-%d-%d %d:%d:%d\n",info.threadNumber, time.tm_year + 1900, time.tm_mon + 1,time.tm_mday, time.tm_hour, time.tm_min, time.tm_sec);
-	serverLog("THREAD",message);
-
-	//Read from client 
-	read(info.fd,&info.buf,BUFFER_SIZE);
-
-	//Saving client information
+	int flag = 1;
+	info.startTime = timeS;//Time when the thread was created
 	sprintf(info.ip, "%s:%d", inet_ntoa(info.si_other.sin_addr), ntohs(info.si_other.sin_port));
 	registerClient(info.ip);
-	//print details of the client/peer and the data received
-	sprintf(message,"Received packet from %s with data %s\n", info.ip, info.buf);
-	serverLog("REQUEST",message);
-	if (semaphore_p(REQUESTS)){
-		server.requestCount++;
-		if (semaphore_v(REQUESTS)==-1)
-			exit(EXIT_FAILURE);
-	}				
-	
-	switch (info.buf)
-	{
-	case "index":
-		//Generate index
-		break;
-	
-	default:
-		sprintf(message, "resources/%s",info.buf);
-		FILE* f = fopen(message,"rb");
-		if(f == NULL){
-			serverLog("ERROR",strerror(errno));
-			exit(1);
-		}
-		size_t bytesRead = 0;
-		// read file in chunks
-		while ((bytesRead = fread(info.buf, 1, sizeof(info.buf), f)) > 0)
-		{
-			if (semaphore_p(TRANSFERRED)){
-				serverInfo.transferredBytes += bytesRead;
-				if (semaphore_v(TRANSFERRED)==-1)
-					exit(EXIT_FAILURE);
-			}			
-			write(info.fd,&info.buf,BUFFER_SIZE); 
-			unsigned int size = bytesRead;
-			//printf("%x\n", size);
-		}
-		break;
-	}
+	sprintf(message,"Thread with IP %s created! Time: %d-%d-%d %d:%d:%d\n",info.ip, timeS.tm_year + 1900, timeS.tm_mon + 1,timeS.tm_mday, timeS.tm_hour, timeS.tm_min, timeS.tm_sec);
+	serverLog("THREAD",message);
+	while(flag){
+		//Read from client 
+		read(info.fd,&info.buf,BUFFER_SIZE);
 
+		//Saving client information
+		//print details of the client/peer and the data received
+		sprintf(message,"Received packet from %s with data %s\n", info.ip, info.buf);
+		serverLog("REQUEST",message);
+		if (semaphore_p(REQUESTS)){
+			serverInfo.requestCount++;
+			if (semaphore_v(REQUESTS)==-1)
+				exit(EXIT_FAILURE);
+		}				
+		if(strcmp(info.buf, "\0") == 0){
+			//Generate index
+			break;
+		}
+		if(strcmp(info.buf, "index") == 0){
+			//Generate index
+
+		}
+		else{
+			if(strcmp(info.buf, "exit") == 0){
+				flag = 0;
+			}
+			else{
+				sprintf(message, "resources/%s",info.buf);
+				printf("attempting to open %s\n",message);
+				FILE* f = fopen(message,"rb");
+				if(f == NULL){
+					serverLog("ERROR",strerror(errno));
+					strcpy(message,"Invalid File!");
+					write(info.fd,&message,strlen(message)); 
+					memset(&info.buf, 0, BUFFER_SIZE);
+				}
+				else{
+					size_t bytesRead = 0;
+					// read file in chunks
+					total = 0;
+					while ((bytesRead = fread(info.buf, 1, sizeof(info.buf), f)) > 0)
+					{
+						total += bytesRead;
+						write(info.fd,&info.buf,bytesRead); 
+						unsigned int size = bytesRead;
+						
+						memset(&info.buf, 0, BUFFER_SIZE);
+					}
+					fclose(f);
+					printf("Read %ld bytes!\n",total);
+					if (semaphore_p(TRANSFERRED)){
+							serverInfo.transferredBytes += total;
+							if (semaphore_v(TRANSFERRED)==-1)
+								exit(EXIT_FAILURE);
+					}
+				}			
+			}
+		}
+
+	}
+	t = time(NULL);
+	timeS = *localtime(&t);
+	info.startTime = timeS;//Time when the thread was created
+	sprintf(message,"Thread with IP %s stopped! Time: %d-%d-%d %d:%d:%d\n",info.ip, timeS.tm_year + 1900, timeS.tm_mon + 1,timeS.tm_mday, timeS.tm_hour, timeS.tm_min, timeS.tm_sec);
+	serverLog("THREAD",message);
 	close(info.fd);
 	info.occupied = 0;
 	pthread_exit(0);
 }
 
 int main(int argc, char* argv[]){
+	srand(time(NULL));
 	char request[256];
 	//create a TCP socket
 	if ((s=socket(AF_INET, SOCK_STREAM, 0)) == -1)
@@ -299,16 +354,18 @@ int main(int argc, char* argv[]){
 	{
 		serverLog("ERROR",strerror(errno));
 	}
-	//Server terminal thread
-	threadResult = pthread_create(), NULL, terminalHandler,NULL);
 
 	if (!set_semvalue()) { 
 			serverLog("ERROR", "Failed to initialize semaphores\n"); 
 			exit(EXIT_FAILURE); 
 		}
+	//Server terminal thread
+	threadResult = pthread_create(&serverInfo.thread, NULL, terminalHandler,NULL);
+
 	serverLog("STATUS","Semaphores have been initiallized...\n");
 	//keep listening for data
-	listen(s, CLIENT_AMOUNT);
+	listen(s,CLIENT_AMOUNT);
+	signal(SIGCHLD,SIG_IGN);
 	while(1)
 	{
 		serverLog("STATUS","Server waiting for data...\n");

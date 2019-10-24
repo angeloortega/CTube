@@ -41,6 +41,7 @@ int recvFile(char* buf, int s)
 // driver code 
 int main() 
 { 
+    long total = 0;
     int sockfd, nBytes; 
     struct sockaddr_in addr_con; 
     int addrlen = sizeof(addr_con); 
@@ -49,49 +50,42 @@ int main()
     addr_con.sin_addr.s_addr = inet_addr(IP_ADDRESS); 
     unsigned char net_buf[NET_BUF_SIZE]; 
     FILE* fp; 
-  
-    // socket() 
-    sockfd = socket(AF_INET, SOCK_STREAM, 
-                    IP_PROTOCOL); 
-  
+    sockfd = socket(AF_INET, SOCK_STREAM, IP_PROTOCOL); 
+    int flag = 1;
     if (sockfd < 0) 
         printf("\nfile descriptor not received!!\n"); 
     else
         printf("\nfile descriptor %d received\n", sockfd); 
+    if((connect(sockfd, (struct sockaddr *) &addr_con, addrlen)) == -1){
+        perror("Can't connect to server: ");
+        exit(1);
+    }
 
-/*     struct timeval timeout;
-    timeout.tv_sec = 0;
-    timeout.tv_usec = 100000;
-    setsockopt(sockfd, SOL_SOCKET, SO_RCVTIMEO,(char*)&timeout,sizeof(timeout));
- */
-    while (1) { 
+    while (flag) { 
+        // socket() 
         clearBuf(net_buf);
-        if((connect(sockfd, (struct sockaddr *) &addr_con, addrlen)) == -1){
-            perror("Can't connect to server: ")
-            exit(1);
-        }
 
-        printf("\nPlease enter file name to receive:\n");   
-        scanf("%s", net_buf); 
+        printf("\nPlease enter file name to receive or 'exit':\n");   
+        scanf("%s", net_buf);
+        if(strcmp(net_buf,"exit")==0){
+            flag = 0; }
         write(sockfd, net_buf, NET_BUF_SIZE); 
         printf("\n---------Data Received---------\n"); 
-  
-        while (1) { 
+        total = 0;
+        while (flag) { 
             // receive 
             clearBuf(net_buf); 
             nBytes = read(sockfd, net_buf, NET_BUF_SIZE); 
-  
+            total += nBytes;
             // process 
             unsigned int size = nBytes;
-			printf("%s",net_buf);
             if (nBytes < NET_BUF_SIZE) {
-                printf("Received last package\n");
                 break; 
             } 
         } 
+        printf("Read %ld bytes!\n",total);
         printf("\n-------------------------------\n");
-        close(sockfd); 
     }
-     
+    close(sockfd);
     return 0; 
 } 
