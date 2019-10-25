@@ -75,3 +75,33 @@
 2:15:40 - REQUEST: Received packet from 127.0.0.1:60178 with data truenopai.mp4
 2:16:29 - REQUEST: Received packet from 127.0.0.1:60178 with data 
 2:16:29 - THREAD: Thread with IP 127.0.0.1:60178 stopped! Time: 2019-10-24 2:16:29
+2:32:50 - STATUS: Semaphores have been initiallized...
+2:32:50 - STATUS: Server waiting for data...
+2:33:13 - STATUS: Server waiting for data...
+2:33:14 - THREAD: Thread with IP 127.0.0.1:60946 created! Time: 2019-10-24 2:33:13
+2:33:17 - REQUEST: Received packet from 127.0.0.1:60946 with data small.mp4
+2:33:18 - REQUEST: Received packet from 127.0.0.1:60946 with data 
+2:33:18 - THREAD: Thread with IP 127.0.0.1:60946 stopped! Time: 2019-10-24 2:33:18
+13:32:28 - STATUS: Semaphores have been initiallized...
+13:32:28 - STATUS: Server waiting for data...
+13:32:40 - STATUS: Server waiting for data...
+13:32:41 - THREAD: Thread with IP 127.0.0.1:59068 created! Time: 2019-10-24 13:32:40
+13:32:48 - REQUEST: Received packet from 127.0.0.1:59068 with data small.mp4
+13:33:2 - REQUEST: Received packet from 127.0.0.1:59068 with data small.mp4
+13:33:7 - REQUEST: Received packet from 127.0.0.1:59068 with data small.mp4
+13:33:14 - REQUEST: Received packet from 127.0.0.1:59068 with data exit
+13:33:14 - THREAD: Thread with IP 127.0.0.1:59068 stopped! Time: 2019-10-24 13:33:14
+13:33:53 - STATUS: Server waiting for data...
+13:33:54 - THREAD: Thread with IP 127.0.0.1:59078 created! Time: 2019-10-24 13:33:53
+13:35:5 - REQUEST: Received packet from 127.0.0.1:59078 with data hello.txt
+13:35:9 - REQUEST: Received packet from 127.0.0.1:59078 with data small.mp4
+13:35:26 - REQUEST: Received packet from 127.0.0.1:59078 with data small.mp4
+13:35:28 - REQUEST: Received packet from 127.0.0.1:59078 with data exit
+13:35:28 - THREAD: Thread with IP 127.0.0.1:59078 stopped! Time: 2019-10-24 13:35:28
+13:54:20 - STATUS: Semaphores have been initiallized...
+13:54:20 - STATUS: Server waiting for data...
+13:54:50 - STATUS: Server waiting for data...
+13:54:51 - THREAD: Thread with IP 127.0.0.1:59108 created! Time: 2019-10-24 13:54:50
+13:54:58 - REQUEST: Received packet from 127.0.0.1:59108 with data small.mp4
+13:55:7 - REQUEST: Received packet from 127.0.0.1:59108 with data exit
+13:55:7 - THREAD: Thread with IP 127.0.0.1:59108 stopped! Time: 2019-10-24 13:55:7

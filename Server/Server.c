@@ -19,10 +19,14 @@
 #include <syslog.h>
 #include <sys/types.h>
 #include <sys/ipc.h>
+#include <assert.h>
+
 
 #define PORT 10521
 #define BUFFER_SIZE 4096
 #define CLIENT_AMOUNT 25
+#define CHUNK_SIZE 4029//BUFFER_SIZE - http content
+#define DIFFERENCE 67
 
 typedef enum {CLIENTS=0,IPS=1,LOG=2,REQUESTS=3,TRANSFERRED=4} resource;
 
@@ -181,6 +185,79 @@ int findAvailableClient(){
 	return -1;
 }
 
+char** strSplit(char* input, const char a_delim)
+{
+    char* a_str = malloc(strlen(input));
+    strcpy(a_str,input);
+    char** result    = 0;
+    size_t count     = 0;
+    char* tmp        = a_str;
+    char* last_comma = 0;
+    char delim[2];
+    delim[0] = a_delim;
+    delim[1] = 0;
+
+    /* Count how many elements will be extracted. */
+    while (*tmp)
+    {
+        if (a_delim == *tmp)
+        {
+            count++;
+            last_comma = tmp;
+        }
+        tmp++;
+    }
+
+    /* Add space for trailing token. */
+    count += last_comma < (a_str + strlen(a_str) - 1);
+
+    /* Add space for terminating null string so caller
+       knows where the list of returned strings ends. */
+    count++;
+
+    result = malloc(sizeof(char*) * count);
+
+    if (result)
+    {
+        size_t idx  = 0;
+        char* token = strtok(a_str, delim);
+
+        while (token)
+        {
+            assert(idx < count);
+            *(result + idx++) = strdup(token);
+            token = strtok(0, delim);
+        }
+        assert(idx == count - 1);
+        *(result + idx) = 0;
+    }
+
+    return result;
+}
+
+void parseRequest(char* result[],char *request){
+	//Only GET requests are supported
+	//EX GET /page/info.html HTTP/1.1
+    char messageType[128];
+	char message[128];
+	char** parts;
+	char* subbuff;
+	size_t len = 0;
+	size_t read = 0;
+	parts = strSplit(request, '/');
+	if(parts){
+        strcpy(messageType, *(parts + 1));
+		strcpy(message, *(parts + 2));
+		int len = strlen(message) - 4; //Doesn't take " HTTP" in consideration
+		subbuff = malloc(sizeof(char*) *len);
+		memcpy(subbuff, &message[0], len-1);
+		subbuff[len-1] = '\0';
+	}
+    result[0] = malloc(sizeof(char*) *128);
+    result[1] = malloc(sizeof(char*) *128);
+    strcpy(result[0], messageType);
+    strcpy(result[1], subbuff);
+} 
 
 void serverClose(){
 	int i = 0;
@@ -252,6 +329,45 @@ void *terminalHandler(void *arg){
 }
 
 void *clientHandler(void *arg){
+	char message[BUFFER_SIZE];
+	char *request[2];
+
+	struct client info =  *(struct client *)arg;
+
+		//Read from client 
+		read(info.fd,&info.buf,BUFFER_SIZE);
+		parseRequest(request, info.buf);
+		sprintf(message, "resources/%s/%s",request[0],request[1]); //Example: resources/video/small.mp4
+		printf("attempting to open %s\n",message);
+		FILE* f = fopen(message,"rb");
+		if(f == NULL){
+			serverLog("ERROR",strerror(errno));
+			strcpy(message,"Invalid File!");
+			write(info.fd,&message,strlen(message)); 
+			memset(&info.buf, 0, BUFFER_SIZE);
+		}
+		else{
+			if(strcmp(request[0],"video")){
+				size_t bytesRead = 0;
+				// read file in chunks
+				while ((bytesRead = fread(message, 1, (size_t) CHUNK_SIZE, f)) > 0)
+				{
+					sprintf(info.buf,"HTTP/1.1 200 OK\nContent-Type: text/plain\nContent-Length: %d\n\n%s",(int)bytesRead,message);
+					write(info.fd,&info.buf, bytesRead + DIFFERENCE); 
+					unsigned int size = bytesRead;
+					memset(&message, 0, BUFFER_SIZE);
+					memset(&info.buf, 0, BUFFER_SIZE);
+				}
+				fclose(f);
+			}
+		}		
+	serverLog("THREAD",message);
+	close(info.fd);
+	info.occupied = 0;
+	pthread_exit(0);
+}
+
+void *clientHandlerA(void *arg){
 	long total = 0;
 	struct client info =  *(struct client *)arg;
 	info.occupied = 1;
@@ -278,12 +394,8 @@ void *clientHandler(void *arg){
 				exit(EXIT_FAILURE);
 		}				
 		if(strcmp(info.buf, "\0") == 0){
-			//Generate index
+			//Empty request
 			break;
-		}
-		if(strcmp(info.buf, "index") == 0){
-			//Generate index
-
 		}
 		else{
 			if(strcmp(info.buf, "exit") == 0){
