@@ -71,8 +71,14 @@ int main()
         scanf("%s", fileName);
         if(strcmp(fileName,"exit")==0){
             flag = 0; 
+            sprintf(fileName,"%s/exit",fileName);
         }
-        sprintf(net_buf, "GET /%s/0 HTTP/1.1", fileName);
+        if(strstr(fileName,"video")!= NULL){
+            sprintf(net_buf, "GET /%s/0 HTTP/1.1", fileName);
+        }
+        else{
+            sprintf(net_buf, "GET /%s HTTP/1.1", fileName);
+        }
         write(sockfd, net_buf, NET_BUF_SIZE); 
         printf("\n---------Data Received---------\n"); 
         total = 0;
@@ -84,10 +90,13 @@ int main()
             // process 
             unsigned int size = nBytes;
             if (nBytes < NET_BUF_SIZE) {
+                printf("Last bytes :%d",nBytes);
                 break; 
             } 
-            sprintf(net_buf, "GET /%s/%ld HTTP/1.1", fileName,++chunkNumber);
-            write(sockfd, net_buf, NET_BUF_SIZE); 
+            if(strstr(fileName,"video")!= NULL){
+                sprintf(net_buf, "GET /%s/%ld HTTP/1.1", fileName,++chunkNumber);
+                write(sockfd, net_buf, NET_BUF_SIZE); 
+            }
         } 
         printf("Read %ld bytes!\n",total);
         printf("\n-------------------------------\n");
