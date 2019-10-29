@@ -49,6 +49,8 @@ int main()
     addr_con.sin_port = htons(PORT_NO); 
     addr_con.sin_addr.s_addr = inet_addr(IP_ADDRESS); 
     unsigned char net_buf[NET_BUF_SIZE]; 
+    char fileName[128];
+    long chunkNumber = 0;
     FILE* fp; 
     sockfd = socket(AF_INET, SOCK_STREAM, IP_PROTOCOL); 
     int flag = 1;
@@ -60,15 +62,17 @@ int main()
         perror("Can't connect to server: ");
         exit(1);
     }
-
     while (flag) { 
         // socket() 
+        chunkNumber = 0;
         clearBuf(net_buf);
 
         printf("\nPlease enter file name to receive or 'exit':\n");   
-        scanf("%s", net_buf);
-        if(strcmp(net_buf,"exit")==0){
-            flag = 0; }
+        scanf("%s", fileName);
+        if(strcmp(fileName,"exit")==0){
+            flag = 0; 
+        }
+        sprintf(net_buf, "GET /%s/0 HTTP/1.1", fileName);
         write(sockfd, net_buf, NET_BUF_SIZE); 
         printf("\n---------Data Received---------\n"); 
         total = 0;
@@ -82,6 +86,8 @@ int main()
             if (nBytes < NET_BUF_SIZE) {
                 break; 
             } 
+            sprintf(net_buf, "GET /%s/%ld HTTP/1.1", fileName,++chunkNumber);
+            write(sockfd, net_buf, NET_BUF_SIZE); 
         } 
         printf("Read %ld bytes!\n",total);
         printf("\n-------------------------------\n");

@@ -12,7 +12,7 @@
             "program": "${fileDirname}/${fileBasenameNoExtension}",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}/Server",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",

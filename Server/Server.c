@@ -237,9 +237,12 @@ char** strSplit(char* input, const char a_delim)
 
 void parseRequest(char* result[],char *request){
 	//Only GET requests are supported
-	//EX GET /page/info.html HTTP/1.1
+	//EX GET /video/small.mp4/0 HTTP/1.1
+	// GET /page/index.html
+	// GET /image/image.png
     char messageType[128];
 	char message[128];
+	char chunkNumber[128];
 	char** parts;
 	char* subbuff;
 	size_t len = 0;
@@ -248,15 +251,31 @@ void parseRequest(char* result[],char *request){
 	if(parts){
         strcpy(messageType, *(parts + 1));
 		strcpy(message, *(parts + 2));
-		int len = strlen(message) - 4; //Doesn't take " HTTP" in consideration
-		subbuff = malloc(sizeof(char*) *len);
-		memcpy(subbuff, &message[0], len-1);
-		subbuff[len-1] = '\0';
+		strcpy(chunkNumber, *(parts + 3)); 
+		if(strcmp(messageType, "video") == 0){
+			int len = strlen(chunkNumber) - 4; //Doesn't take " HTTP" in consideration
+			subbuff = malloc(sizeof(char*) *len);
+			memcpy(subbuff, &chunkNumber[0], len-1); 
+			subbuff[len-1] = '\0'; //Ends te truncated string
+			result[2] = malloc(sizeof(char*) *128);
+   		 	strcpy(result[2], subbuff);
+    		result[1] = malloc(sizeof(char*) *128);
+			strcpy(result[1],message);
+		}
+		else{
+			int len = strlen(message) - 4; //Doesn't take " HTTP" in consideration
+			subbuff = malloc(sizeof(char*) *len);
+			memcpy(subbuff, &message[0], len-1);
+			subbuff[len-1] = '\0';
+    		result[1] = malloc(sizeof(char*) *128);
+		    strcpy(result[1], subbuff);
+		}
 	}
     result[0] = malloc(sizeof(char*) *128);
-    result[1] = malloc(sizeof(char*) *128);
+	
     strcpy(result[0], messageType);
-    strcpy(result[1], subbuff);
+
+	
 } 
 
 void serverClose(){
@@ -293,7 +312,8 @@ void *terminalHandler(void *arg){
 		printf("3)----------------------Unique client count\n");
 		printf("4)---------------------------Request amount\n");
 		printf("5)--------------------------Threads created\n");
-		printf("6)-------------------------------------Exit\n");
+		printf("6)-------------------------Regenerate index\n");
+		printf("7)-------------------------------------Exit\n");
 		printf("-------------------------------------------\n");
 		printf("Please select an option: ");
 		scanf(" %c",&option);
@@ -315,6 +335,10 @@ void *terminalHandler(void *arg){
 			printf("Threads created:%ld\n",serverInfo.threadCount);
 			break;	
 		case '6':
+			//TODO Regenerate index
+			serverLog("STATUS","Index regenerated\n");
+			break;
+		case '7':
 			flag = 0;
 			printf("Closing server...\n");
 			serverLog("STATUS","server shutting down");
@@ -330,114 +354,112 @@ void *terminalHandler(void *arg){
 
 void *clientHandler(void *arg){
 	char message[BUFFER_SIZE];
-	char *request[2];
-
+	char *request[3];
 	struct client info =  *(struct client *)arg;
-
-		//Read from client 
-		read(info.fd,&info.buf,BUFFER_SIZE);
-		parseRequest(request, info.buf);
-		sprintf(message, "resources/%s/%s",request[0],request[1]); //Example: resources/video/small.mp4
-		printf("attempting to open %s\n",message);
-		FILE* f = fopen(message,"rb");
-		if(f == NULL){
-			serverLog("ERROR",strerror(errno));
-			strcpy(message,"Invalid File!");
-			write(info.fd,&message,strlen(message)); 
-			memset(&info.buf, 0, BUFFER_SIZE);
-		}
-		else{
-			if(strcmp(request[0],"video")){
-				size_t bytesRead = 0;
-				// read file in chunks
-				while ((bytesRead = fread(message, 1, (size_t) CHUNK_SIZE, f)) > 0)
-				{
-					sprintf(info.buf,"HTTP/1.1 200 OK\nContent-Type: text/plain\nContent-Length: %d\n\n%s",(int)bytesRead,message);
-					write(info.fd,&info.buf, bytesRead + DIFFERENCE); 
-					unsigned int size = bytesRead;
-					memset(&message, 0, BUFFER_SIZE);
-					memset(&info.buf, 0, BUFFER_SIZE);
-				}
-				fclose(f);
-			}
-		}		
-	serverLog("THREAD",message);
-	close(info.fd);
-	info.occupied = 0;
-	pthread_exit(0);
-}
-
-void *clientHandlerA(void *arg){
+	long fileSize = 0;
+	int message_length,chunkNumber, digitLength;
 	long total = 0;
-	struct client info =  *(struct client *)arg;
 	info.occupied = 1;
 	time_t t = time(NULL);
  	struct tm timeS = *localtime(&t);
-	char message[256]; //Used for logging purposes
-	int flag = 1;
 	info.startTime = timeS;//Time when the thread was created
 	sprintf(info.ip, "%s:%d", inet_ntoa(info.si_other.sin_addr), ntohs(info.si_other.sin_port));
 	registerClient(info.ip);
 	sprintf(message,"Thread with IP %s created! Time: %d-%d-%d %d:%d:%d\n",info.ip, timeS.tm_year + 1900, timeS.tm_mon + 1,timeS.tm_mday, timeS.tm_hour, timeS.tm_min, timeS.tm_sec);
 	serverLog("THREAD",message);
-	while(flag){
-		//Read from client 
-		read(info.fd,&info.buf,BUFFER_SIZE);
+	//Read from client 
+	read(info.fd,&info.buf,BUFFER_SIZE);
+	parseRequest(request, info.buf);
+	sprintf(message, "resources/%s/%s\n",request[0],request[1]); //Example: resources/video/small.mp4
+	serverLog("REQUEST",message);
+	total = 0;
+	if (semaphore_p(REQUESTS)){
+		serverInfo.requestCount++;
+		if (semaphore_v(REQUESTS)==-1)
+			exit(EXIT_FAILURE);
+	}		
+	FILE* f = fopen(message,"rb");
+	if(f == NULL){
+		serverLog("ERROR",strerror(errno));
+		strcpy(message,"Invalid File!");
+		write(info.fd,&message,strlen(message)); 
+		memset(&info.buf, 0, BUFFER_SIZE);
+	}
+	else{
+		if(strcmp(request[0],"video") == 0){
+			size_t bytesRead = 0;
+			char * fileReaded = malloc(sizeof(char*) * 128);
+			strcpy(fileReaded,request[1]);
+			//Getting the file size
 
-		//Saving client information
-		//print details of the client/peer and the data received
-		sprintf(message,"Received packet from %s with data %s\n", info.ip, info.buf);
-		serverLog("REQUEST",message);
-		if (semaphore_p(REQUESTS)){
-			serverInfo.requestCount++;
-			if (semaphore_v(REQUESTS)==-1)
-				exit(EXIT_FAILURE);
-		}				
-		if(strcmp(info.buf, "\0") == 0){
-			//Empty request
-			break;
+			fseek (f , 0 , SEEK_END);
+			fileSize = ftell(f);
+			rewind (f);
+			do
+			{
+				digitLength = strlen(request[2]);
+				chunkNumber = 0;
+				for(int i=0; i<digitLength; i++){
+					chunkNumber = chunkNumber * 10 + (request[2][i] - '0' );
+				}
+				
+				if(fileSize < CHUNK_SIZE*chunkNumber)
+					break; //Exceeded EOF
+				fseek(f,CHUNK_SIZE*chunkNumber,SEEK_SET);
+				bytesRead = fread(message, 1, (size_t) CHUNK_SIZE, f);
+				
+				sprintf(info.buf,"HTTP/1.1 200 OK\nContent-Type: text/plain\nContent-Length: %d\n\n",(int)bytesRead);
+				message_length = strlen(info.buf) - 1;
+				memcpy(&info.buf[message_length], &message[0], (size_t) bytesRead);
+				write(info.fd,&info.buf, bytesRead + DIFFERENCE);
+				total += bytesRead;
+				memset(&message, 0, BUFFER_SIZE);
+				memset(&info.buf, 0, BUFFER_SIZE);
+				read(info.fd,&info.buf,BUFFER_SIZE);
+				if (semaphore_p(REQUESTS)){
+					serverInfo.requestCount++;
+					if (semaphore_v(REQUESTS)==-1)
+						exit(EXIT_FAILURE);
+				}	
+				parseRequest(request, info.buf);
+			} while (bytesRead > 0 && (strcmp(fileReaded, request[1]) == 0)); //Still reading the same file
+
+			fclose(f);
 		}
 		else{
-			if(strcmp(info.buf, "exit") == 0){
-				flag = 0;
-			}
-			else{
-				sprintf(message, "resources/%s",info.buf);
-				printf("attempting to open %s\n",message);
-				FILE* f = fopen(message,"rb");
-				if(f == NULL){
-					serverLog("ERROR",strerror(errno));
-					strcpy(message,"Invalid File!");
-					write(info.fd,&message,strlen(message)); 
+			if(strcmp(request[0],"image") == 0 || strcmp(request[0],"index") == 0){
+				size_t bytesRead = 0;
+				char * fileReaded = malloc(sizeof(char*) * 128);
+				strcpy(fileReaded,request[1]);
+				while ((bytesRead = fread(message, 1, (size_t) CHUNK_SIZE, f)) > 0)
+				{
+					total += bytesRead;
+					sprintf(info.buf,"HTTP/1.1 200 OK\nContent-Type: text/plain\nContent-Length: %d\n\n%s",(int)bytesRead);
+					message_length = strlen(info.buf) - 1;
+					memcpy(&info.buf[message_length], &message[0], (size_t) bytesRead);
+					write(info.fd,&info.buf, bytesRead + DIFFERENCE); 
+					memset(&message, 0, BUFFER_SIZE);
 					memset(&info.buf, 0, BUFFER_SIZE);
 				}
-				else{
-					size_t bytesRead = 0;
-					// read file in chunks
-					total = 0;
-					while ((bytesRead = fread(info.buf, 1, sizeof(info.buf), f)) > 0)
-					{
-						total += bytesRead;
-						write(info.fd,&info.buf,bytesRead); 
-						unsigned int size = bytesRead;
-						
-						memset(&info.buf, 0, BUFFER_SIZE);
-					}
-					fclose(f);
-					printf("Read %ld bytes!\n",total);
-					if (semaphore_p(TRANSFERRED)){
-							serverInfo.transferredBytes += total;
-							if (semaphore_v(TRANSFERRED)==-1)
-								exit(EXIT_FAILURE);
-					}
-				}			
+				fclose(f);
+				
+			}
+			else{
+				sprintf(info.buf,"HTTP/1.1 404 OK\nContent-Type: text/plain\nContent-Length: 19\n\nInvalid GET request");
+				write(info.fd,&info.buf, strlen(info.buf) + DIFFERENCE); 
+				memset(&message, 0, BUFFER_SIZE);
+				memset(&info.buf, 0, BUFFER_SIZE);
 			}
 		}
-
+	}		
+	if (semaphore_p(TRANSFERRED)){
+			serverInfo.transferredBytes += total;
+			if (semaphore_v(TRANSFERRED)==-1)
+				exit(EXIT_FAILURE);
 	}
 	t = time(NULL);
 	timeS = *localtime(&t);
-	info.startTime = timeS;//Time when the thread was created
+	info.startTime = timeS;//Time when the thread was destroyed
 	sprintf(message,"Thread with IP %s stopped! Time: %d-%d-%d %d:%d:%d\n",info.ip, timeS.tm_year + 1900, timeS.tm_mon + 1,timeS.tm_mday, timeS.tm_hour, timeS.tm_min, timeS.tm_sec);
 	serverLog("THREAD",message);
 	close(info.fd);
