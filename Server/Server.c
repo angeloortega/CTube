@@ -20,6 +20,7 @@
 #include <sys/types.h>
 #include <sys/ipc.h>
 #include <assert.h>
+#include <dirent.h>
 
 
 #define PORT 8080
@@ -215,6 +216,64 @@ char** strSplit(char* input, const char a_delim)
     return result;
 }
 
+void regenerate(){
+	char content[BUFFER_SIZE] = "[";
+	char intermediate[4096];
+	char fileName[128] = "resources/json/videos.json";
+	char filePath[128];
+	char categories [3][25] = {"FMS Argentina", "FMS Espanha", "FMS Internacional"};
+	char imageName[25];
+	long fileSize;
+	int i = 0;
+	remove(fileName);
+	FILE* f = fopen(fileName,"a");
+	FILE* f2;
+	DIR *d;
+	char date[10];
+	time_t t = time(NULL);
+ 	struct tm timeS = *localtime(&t);
+	sprintf(date,"%d-%d-%d",timeS.tm_mday, timeS.tm_mon + 1, timeS.tm_year + 1900);
+	
+    struct dirent *dir;
+    d = opendir("resources/video");
+    if (d)
+    {
+        while ((dir = readdir(d)) != NULL)
+        {
+			if(!((dir->d_name)[0] == '.')){
+				sprintf(filePath,"resources/video/%s", dir->d_name);
+				f2 = fopen(filePath,"rb");
+				fseek (f2 , 0 , SEEK_END);
+				fileSize = ftell(f2); 
+				strcpy(imageName,dir->d_name);
+				fclose(f2);
+				int nameSize = strlen(imageName);
+				imageName[nameSize-1] = 'g';
+				imageName[nameSize-2] = 'p';
+				imageName[nameSize-3] = 'j';
+				if(!i)
+					sprintf(intermediate,"\n{ \"url\": \"%s\",\n\"title\": \"%s\",\"description\" : \"%s\",\n\"size\" : %ld,\n\"creationDate\" : \"%s\",\n\"category\" : \"%s\",\n\"poster\" : \"%s\"\n}",dir->d_name,dir->d_name,dir->d_name,fileSize,date,categories[i%3],imageName);
+				else
+					sprintf(intermediate,",\n{ \"url\": \"%s\",\n\"title\": \"%s\",\"description\" : \"%s\",\n\"size\" : %ld,\n\"creationDate\" : \"%s\",\n\"category\" : \"%s\",\n\"poster\" : \"%s\"\n}",dir->d_name,dir->d_name,dir->d_name,fileSize,date,categories[i%3],imageName);
+				i++;
+				strcat(content,intermediate);
+			}
+        }
+        closedir(d);
+    }
+	strcat(content,"\n]");
+	if(f == NULL){
+		f = fopen(fileName,"w");
+		if(f == NULL){
+			perror("Video genereation error: ");
+		}
+	}
+	else{
+		fprintf(f, "%s",  content);
+		fclose(f);
+	}
+}
+
 void parseRequest(char* result[],char *request){
 	//Only GET requests are supported
 	//EX GET /video/small.mp4/0 HTTP/1.1
@@ -358,10 +417,12 @@ void *terminalHandler(void *arg){
 			break;	
 		case '6':
 			//TODO Regenerate index
+			regenerate();
 			serverLog("STATUS","Index regenerated");
 			break;
 		case '7':
 			flag = 0;
+			close(s);
 			printf("Closing server...\n");
 			serverLog("STATUS","server shutting down");
 			del_semvalue();
