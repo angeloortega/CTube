@@ -40,8 +40,8 @@ struct client{
 	char ip[25];
 	struct tm startTime;
 	struct sockaddr_in si_other;
-	unsigned char buf[BUFFER_SIZE];
-	int slen;
+	/*unsigned*/ char buf[BUFFER_SIZE];
+	socklen_t slen;
 	int threadNumber;
 	int fd;
 	int occupied;
@@ -62,7 +62,6 @@ int s;
 static int threadResult = 0;
 static struct server serverInfo;
 static struct client clients[CLIENT_AMOUNT];
-static char clientIps[25][CLIENT_AMOUNT*4];
 static struct sockaddr_in si_me;
 static int semaphores[5];
 
@@ -127,9 +126,9 @@ void serverLog(char* type, char* message){
 	}
 	while(!flag);
 	time_t t = time(NULL);
- 	struct tm startTime = *localtime(&t);
+ 	struct tm *startTime = localtime(&t);
 	char fileName[256];
-	sprintf(fileName,"logs/%d-%d-%d.txt", startTime.tm_year + 1900, startTime.tm_mon + 1,startTime.tm_mday);
+	sprintf(fileName,"logs/%d-%d-%d.txt", (*startTime).tm_year + 1900,  (*startTime).tm_mon + 1, (*startTime).tm_mday);
 	FILE* f = fopen(fileName,"a");
 	if(f == NULL){
 		f = fopen(fileName,"w");
@@ -138,8 +137,8 @@ void serverLog(char* type, char* message){
 		}
 	}
 	else{
-		printf("%d:%d:%d - %s: %s\n", startTime.tm_hour, startTime.tm_min, startTime.tm_sec, type, message);
-		fprintf(f, "%d:%d:%d - %s: %s", startTime.tm_hour,startTime.tm_min, startTime.tm_sec, type, message);
+		printf("%d:%d:%d - %s: %s\n",  (*startTime).tm_hour,  (*startTime).tm_min,  (*startTime).tm_sec, type, message);
+		fprintf(f, "%d:%d:%d - %s: %s",  (*startTime).tm_hour, (*startTime).tm_min,  (*startTime).tm_sec, type, message);
 		fclose(f);
 
 	}
@@ -147,27 +146,7 @@ void serverLog(char* type, char* message){
 		exit(EXIT_FAILURE);
 }
 
-void registerClient(char* ip){
-	int i = 0;
-	int flag = 0;
-	do{
-		flag = semaphore_p(IPS);
-		sleep(1);
-	}
-	while(!flag);
-
-	while(i < CLIENT_AMOUNT*4){
-		if(clientIps[i][0] == '\0'){
-			strcpy(clientIps[i], ip);
-			break;
-		}
-		if(strcmp(ip, clientIps[i]) == 0){
-			return;
-		}
-		i++;
-	}
-	if (semaphore_v(IPS)==-1)
-		exit(EXIT_FAILURE);
+void registerClient(){
 	if (semaphore_p(CLIENTS)){
 		serverInfo.clientCount++;
 		if (semaphore_v(CLIENTS)==-1)
@@ -187,7 +166,7 @@ int findAvailableClient(){
 
 char** strSplit(char* input, const char a_delim)
 {
-    char* a_str = malloc(strlen(input));
+    char* a_str = (char *)malloc(strlen(input)+1);
     strcpy(a_str,input);
     char** result    = 0;
     size_t count     = 0;
@@ -243,42 +222,35 @@ void parseRequest(char* result[],char *request){
 	// GET /image/image.png
     char messageType[128];
 	char message[128];
-	char chunkNumber[128];
 	char** parts;
 	char* subbuff;
-	size_t len = 0;
-	size_t read = 0;
-	parts = strSplit(request, '/');
+	char * pch;
+	char * request1 = (char *)malloc(strlen(request)+1);
+	strcpy(request1, request);
+	pch = strstr (request1,"\r\n");
+	strncpy (pch,"\0\0",2);
+	parts = strSplit(request1, '/');
 	if(parts){
         strcpy(messageType, *(parts + 1));
 		strcpy(message, *(parts + 2));
-		/*
-		if(strcmp(messageType, "video") == 0){
-			int len = strlen(chunkNumber) - 4; //Doesn't take " HTTP" in consideration
-			subbuff = malloc(sizeof(char*) *len);
-			memcpy(subbuff, &chunkNumber[0], len-1); 
-			subbuff[len-1] = '\0'; //Ends te truncated string
-			result[2] = malloc(sizeof(char*) *128);
-   		 	strcpy(result[2], subbuff);
-    		result[1] = malloc(sizeof(char*) *128);
-			strcpy(result[1],message);
-		}
-		else{
-			*/
 		int len = strlen(message) - 4; //Doesn't take " HTTP" in consideration
-		subbuff = malloc(sizeof(char*) *len);
-		memcpy(subbuff, &message[0], len-1);
-		subbuff[len-1] = '\0';
-		result[1] = malloc(sizeof(char*) *128);
-		strcpy(result[1], subbuff);
+		if(len > 0){
+			subbuff = malloc(sizeof(char*) *len);
+			memcpy(subbuff, &message[0], len-1);
+			subbuff[len-1] = '\0';
+			result[1] = malloc(sizeof(char*) *128);
+			strcpy(result[1], subbuff);
+			free(subbuff);
+		}
 		//}
 	}
 	
     result[0] = malloc(sizeof(char*) *128);
 	
     strcpy(result[0], messageType);
-
-	free(subbuff);
+	free(parts);
+	free(request1);
+	
 } 
 
 void parseRange(long result[],char *request){
@@ -292,7 +264,6 @@ void parseRange(long result[],char *request){
 	long end = 0l;
 	int flag = 0;
 	char** parts;
-	char* subbuff;
 	char *location;
 	location = strstr(request,"Range:");
 	if(location){
@@ -323,6 +294,7 @@ void parseRange(long result[],char *request){
 	else{
 		end = -1;
 	}
+	free(parts);
 	result[0] = beginning;
 	result[1] = end;
 } 
@@ -335,7 +307,7 @@ void serverClose(){
 			close(clients[i].fd);
 			threadResult = pthread_join(clients[i].thread,NULL);
 			if(threadResult != 0){
-				serverLog("ERROR",strerror(errno));("Thread join");
+				serverLog("ERROR",strerror(errno));
 			}
 		}
 		i++;
@@ -392,6 +364,7 @@ void *terminalHandler(void *arg){
 			flag = 0;
 			printf("Closing server...\n");
 			serverLog("STATUS","server shutting down");
+			del_semvalue();
 			break;
 		default:
 			printf("Invalid option selected: %c\n",option);
@@ -409,112 +382,145 @@ void *clientHandler(void *arg){
 	long range[2];
 	struct client info =  *(struct client *)arg;
 	long fileSize = 0;
-	int message_length,chunkNumber, digitLength;
-	int flag = 1;
+	int message_length;
 	long total = 0;
 	info.occupied = 1;
 	time_t t = time(NULL);
  	struct tm timeS = *localtime(&t);
 	info.startTime = timeS;//Time when the thread was created
 	sprintf(info.ip, "%s:%d", inet_ntoa(info.si_other.sin_addr), ntohs(info.si_other.sin_port));
-	registerClient(info.ip);
+	registerClient();
 	sprintf(message,"Thread with IP %s created! Time: %d-%d-%d %d:%d:%d\n",info.ip, timeS.tm_year + 1900, timeS.tm_mon + 1,timeS.tm_mday, timeS.tm_hour, timeS.tm_min, timeS.tm_sec);
 	serverLog("THREAD",message);
 	//Read from client 
 	read(info.fd,&info.buf,BUFFER_SIZE);
-	parseRequest(request, info.buf);
-	sprintf(message, "resources/%s/%s",request[0],request[1]); //Example: resources/video/small.mp4
-	serverLog("REQUEST",info.buf);
-	total = 0;
-	if (semaphore_p(REQUESTS)){
-		serverInfo.requestCount++;
-		if (semaphore_v(REQUESTS)==-1)
-			exit(EXIT_FAILURE);
-	}
-	FILE* f = fopen(message,"rb");
-	if(f == NULL){
-		serverLog("ERROR",strerror(errno));
-		sprintf(info.buf,"HTTP/1.1 404 ERROR\nContent-Type: text/plain\nContent-Length: 19\n\nInvalid GET request");
-		write(info.fd,&info.buf, strlen(info.buf) + DIFFERENCE); 
-		memset(&message, 0, BUFFER_SIZE);
-		memset(&info.buf, 0, BUFFER_SIZE);
+	printf("Request:\n %s", info.buf);
+	if(info.buf[0] == '\0' || strstr(info.buf, "style")){
+		//write(info.fd,'\0',1);
 	}
 	else{
-		if(strcmp(request[0],"video") == 0){
-			size_t bytesRead = 0;
-			strcpy(fileReaded,request[1]);
-			fseek (f , 0 , SEEK_END);
-			fileSize = ftell(f); 
-			rewind (f);
-			//Getting the file sizesss
-			//Send range support and first chunk
-			parseRange(range, info.buf);
-			fseek(f,range[0],SEEK_SET);
-			
-			bytesRead = fread(message, 1, (size_t) CHUNK_SIZE, f);
-			if(range[1] > fileSize){
-				range[1] = fileSize-1;
-			}
-			if(range[1] < 0 && range[0] == 0){
-				sprintf(info.buf,"HTTP/1.1 200 OK\r\nContent-Type: video/mp4\r\nContent-Length: %d\r\nAccept-Ranges: bytes\r\n\r\n",(int)fileSize);
-			}
-			else{
-				if(range[1] < 0)
-				{
-					range[1] = (bytesRead + range[0])-1;
-				}
-				sprintf(info.buf,"HTTP/1.1 206 Partial Content\r\nContent-Type: video/mp4\r\nContent-Length: %d\r\nAccept-Ranges: bytes\r\nContent-Range: bytes %ld-%ld/%ld\r\n\r\n",(int)(range[1] - range[0] + 1),range[0],range[1],fileSize);
-				
-			}
-			printf(" %s", info.buf);
-
-			message_length = strlen(info.buf);
-			memcpy(&info.buf[message_length], &message[0], (size_t) bytesRead);
-			total += bytesRead;
-			write(info.fd,&info.buf, bytesRead + message_length);
+		parseRequest(request, info.buf);
+		sprintf(message, "resources/%s/%s",request[0],request[1]); //Example: resources/video/small.mp4
+		serverLog("REQUEST",info.buf);
+		total = 0;
+		if (semaphore_p(REQUESTS)){
+			serverInfo.requestCount++;
+			if (semaphore_v(REQUESTS)==-1)
+				exit(EXIT_FAILURE);
+		}
+		FILE* f = fopen(message,"rb");
+		if(f == NULL){
+			serverLog("ERROR",strerror(errno));
+			sprintf(info.buf,"HTTP/1.1 404 ERROR\nContent-Type: text/plain\nContent-Length: 19\n\nInvalid GET request");
+			write(info.fd,&info.buf, strlen(info.buf) + DIFFERENCE); 
 			memset(&message, 0, BUFFER_SIZE);
 			memset(&info.buf, 0, BUFFER_SIZE);
-
-			fclose(f);
 		}
 		else{
-			if(strcmp(request[0],"image") == 0 || strcmp(request[0],"index") == 0){
+			if(strcmp(request[0],"video") == 0){
 				size_t bytesRead = 0;
-				
 				strcpy(fileReaded,request[1]);
-				while ((bytesRead = fread(message, 1, (size_t) CHUNK_SIZE, f)) > 0)
-				{
-					total += bytesRead;
-					sprintf(info.buf,"HTTP/1.1 200 OK\nContent-Type: text/plain\nContent-Length: %d\n\n",(int)bytesRead);
-					message_length = strlen(info.buf) - 1;
-					memcpy(&info.buf[message_length], &message[0], (size_t) bytesRead);
-					write(info.fd,&info.buf, bytesRead + DIFFERENCE); 
-					memset(&message, 0, BUFFER_SIZE);
-					memset(&info.buf, 0, BUFFER_SIZE);
-				}
-				fclose(f);
+				fseek (f , 0 , SEEK_END);
+				fileSize = ftell(f); 
+				rewind (f);
+				//Getting the file sizesss
+				//Send range support and first chunk
+				printf("info :%s",info.buf);
+				parseRange(range, info.buf);
+				fseek(f,range[0],SEEK_SET);
 				
-			}
-			else{
+				bytesRead = fread(message, 1, (size_t) CHUNK_SIZE, f);
+				if(range[1] > fileSize){
+					range[1] = fileSize-1;
+				}
+				if(range[1] < 0 && range[0] == 0){
+					sprintf(info.buf,"HTTP/1.1 200 OK\r\nContent-Type: video/mp4\r\nContent-Length: %d\r\nAccept-Ranges: bytes\r\n\r\n",(int)fileSize);
+				}
+				else{
+					if(range[1] < 0)
+					{
+						range[1] = (bytesRead + range[0])-1;
+					}
+					sprintf(info.buf,"HTTP/1.1 206 Partial Content\r\nContent-Type: video/mp4\r\nContent-Length: %d\r\nAccept-Ranges: bytes\r\nContent-Range: bytes %ld-%ld/%ld\r\n\r\n",(int)(range[1] - range[0] + 1),range[0],range[1],fileSize);
+					
+				}
 
-				//Index
-				//Read JSON
-				//Compare
-				//Cambio o no
-
-
-				sprintf(info.buf,"HTTP/1.1 404 ERROR\nContent-Type: text/plain\nContent-Length: 19\n\nInvalid GET request");
-				write(info.fd,&info.buf, strlen(info.buf) + DIFFERENCE); 
+				message_length = strlen(info.buf);
+				memcpy(&info.buf[message_length], &message[0], (size_t) bytesRead);
+				total += bytesRead;
+				write(info.fd,&info.buf, bytesRead + message_length);
 				memset(&message, 0, BUFFER_SIZE);
 				memset(&info.buf, 0, BUFFER_SIZE);
-				
+
+				fclose(f);
 			}
+			else{
+				if(strcmp(request[0],"image") == 0){
+					size_t bytesRead = 0;
+					bytesRead = fread(message, 1, (size_t) CHUNK_SIZE, f);
+					fileSize = bytesRead;
+					sprintf(info.buf,"HTTP/1.1 200 OK\r\nContent-Type: image/jpg\r\nContent-Length: %d\r\nAccept-Ranges: bytes\r\n\r\n",(int)fileSize);
+					message_length = strlen(info.buf);
+					memcpy(&info.buf[message_length], &message[0], (size_t) bytesRead);
+					total += bytesRead;
+					write(info.fd,&info.buf, bytesRead + message_length);
+					memset(&message, 0, BUFFER_SIZE);
+					memset(&info.buf, 0, BUFFER_SIZE);
+					fclose(f);
+					
+				}
+				else{
+
+					//Index
+					//Read JSON
+					//Compare
+					//Cambio o no
+
+					if(strcmp(request[0],"page") == 0){
+						size_t bytesRead = 0;
+						bytesRead = fread(message, 1, (size_t) CHUNK_SIZE, f);
+						fileSize = bytesRead;
+						sprintf(info.buf,"HTTP/1.1 200 OK\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: text/html\r\nContent-Length: %d\r\n\r\n",(int)fileSize);
+						message_length = strlen(info.buf);
+						memcpy(&info.buf[message_length], &message[0], (size_t) bytesRead);
+						total += bytesRead;
+						write(info.fd,&info.buf, bytesRead + message_length);
+						memset(&message, 0, BUFFER_SIZE);
+						memset(&info.buf, 0, BUFFER_SIZE);
+						fclose(f);
+					
+					}
+					else{
+						if(strcmp(request[0],"json") == 0){
+						size_t bytesRead = 0;
+						bytesRead = fread(message, 1, (size_t) CHUNK_SIZE, f);
+						fileSize = bytesRead;
+						sprintf(info.buf,"HTTP/1.1 200 OK\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: text/plain\r\nContent-Length: %d\r\n\r\n",(int)fileSize);
+						message_length = strlen(info.buf);
+						memcpy(&info.buf[message_length], &message[0], (size_t) bytesRead);
+						total += bytesRead;
+						write(info.fd,&info.buf, bytesRead + message_length);
+						memset(&message, 0, BUFFER_SIZE);
+						memset(&info.buf, 0, BUFFER_SIZE);
+						fclose(f);
+					
+						}
+						else{
+							sprintf(info.buf,"HTTP/1.1 404 ERROR\nContent-Type: text/plain\nContent-Length: 19\n\nInvalid GET request");
+							write(info.fd,&info.buf, strlen(info.buf) + DIFFERENCE); 
+							memset(&message, 0, BUFFER_SIZE);
+							memset(&info.buf, 0, BUFFER_SIZE);
+						}
+					}
+					
+				}
+			}
+		}		
+		if (semaphore_p(TRANSFERRED)){
+				serverInfo.transferredBytes += total;
+				if (semaphore_v(TRANSFERRED)==-1)
+					exit(EXIT_FAILURE);
 		}
-	}		
-	if (semaphore_p(TRANSFERRED)){
-			serverInfo.transferredBytes += total;
-			if (semaphore_v(TRANSFERRED)==-1)
-				exit(EXIT_FAILURE);
 	}
 	sprintf(message, "Sent: %ld bytes",total);
 	serverLog("REQUEST",message);
@@ -525,13 +531,14 @@ void *clientHandler(void *arg){
 	serverLog("THREAD",message);
 	close(info.fd);
 	free(fileReaded);
+	free(request[0]);
+	free(request[1]);
 	info.occupied = 0;
 	pthread_exit(0);
 }
 
 int main(int argc, char* argv[]){
 	srand(time(NULL));
-	char request[256];
 	//create a TCP socket
 	if ((s=socket(AF_INET, SOCK_STREAM, 0)) == -1)
 	{
@@ -562,6 +569,7 @@ int main(int argc, char* argv[]){
 	//keep listening for data
 	listen(s,CLIENT_AMOUNT);
 	signal(SIGCHLD,SIG_IGN);
+	int clientNumber = 0;
 	while(1)
 	{
 		serverLog("STATUS","Server waiting for data...");
@@ -570,8 +578,8 @@ int main(int argc, char* argv[]){
 		info.slen = sizeof(info.si_other);
 		memset((char *) &info.si_other, 0, sizeof(info.si_other));
 		
-		int clientNumber = findAvailableClient();
-		
+		clientNumber++;
+		clientNumber = clientNumber % CLIENT_AMOUNT;
 		if(clientNumber < 0){
 			serverLog("STATUS","Server is currently too busy to handle additional requests...");
 		}

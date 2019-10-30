@@ -11,10 +11,11 @@
 #include <sys/time.h>
 #define IP_PROTOCOL 0 
 #define IP_ADDRESS "127.0.0.1" // localhost 
-#define PORT_NO 10521
-#define NET_BUF_SIZE 4096
+#define PORT_NO 8080
+#define NET_BUF_SIZE 524288
 #define sendrecvflag 0 
-  
+#define CHUNK_SIZE 524092   
+
 // function to clear buffer 
 void clearBuf(char* b) 
 { 
@@ -50,55 +51,48 @@ int main()
     addr_con.sin_addr.s_addr = inet_addr(IP_ADDRESS); 
     unsigned char net_buf[NET_BUF_SIZE]; 
     char fileName[128];
-    long chunkNumber = 0;
+    int chunkNumber = 0;
     FILE* fp; 
-    sockfd = socket(AF_INET, SOCK_STREAM, IP_PROTOCOL); 
+    
     int flag = 1;
-    if (sockfd < 0) 
-        printf("\nfile descriptor not received!!\n"); 
-    else
-        printf("\nfile descriptor %d received\n", sockfd); 
-    if((connect(sockfd, (struct sockaddr *) &addr_con, addrlen)) == -1){
-        perror("Can't connect to server: ");
-        exit(1);
-    }
+    chunkNumber = 0;
+    total = 0; 
+
+    printf("\nPlease enter file name to receive or 'exit':\n");   
+    scanf("%s", fileName);
     while (flag) { 
+        sockfd = socket(AF_INET, SOCK_STREAM, IP_PROTOCOL);
+        if (sockfd < 0) 
+            printf("\nfile descriptor not received!!\n"); 
+        else
+            printf("\nfile descriptor %d received\n", sockfd); 
+        if((connect(sockfd, (struct sockaddr *) &addr_con, addrlen)) == -1){
+            perror("Can't connect to server: ");
+            exit(1);
+        }    
         // socket() 
-        chunkNumber = 0;
         clearBuf(net_buf);
 
-        printf("\nPlease enter file name to receive or 'exit':\n");   
-        scanf("%s", fileName);
-        if(strcmp(fileName,"exit")==0){
-            flag = 0; 
-            sprintf(fileName,"%s/exit",fileName);
-        }
+       
         if(strstr(fileName,"video")!= NULL){
-            sprintf(net_buf, "GET /%s/0 HTTP/1.1", fileName);
+            sprintf(net_buf, "GET /%s HTTP/1.1\r\nRange: bytes=%d-%d\r\n", fileName, chunkNumber*CHUNK_SIZE, chunkNumber*CHUNK_SIZE + CHUNK_SIZE);
         }
         else{
             sprintf(net_buf, "GET /%s HTTP/1.1", fileName);
         }
         write(sockfd, net_buf, NET_BUF_SIZE); 
         printf("\n---------Data Received---------\n"); 
-        total = 0;
-        while (flag) { 
-            // receive 
-            clearBuf(net_buf); 
-            nBytes = read(sockfd, net_buf, NET_BUF_SIZE); 
-            total += nBytes;
-            // process 
-            unsigned int size = nBytes;
-            if (nBytes < NET_BUF_SIZE) {
-                break; 
-            } 
-            if(strstr(fileName,"video")!= NULL){
-                sprintf(net_buf, "GET /%s/%ld HTTP/1.1", fileName,++chunkNumber);
-                write(sockfd, net_buf, NET_BUF_SIZE); 
-            }
-        } 
+        nBytes = read(sockfd, net_buf, NET_BUF_SIZE); 
+        total += nBytes;
+        // process 
+        unsigned int size = nBytes;
         printf("Read %ld bytes!\n",total);
         printf("\n-------------------------------\n");
+        close(sockfd);
+        chunkNumber++;
+        if (nBytes <= 200) {
+            break; 
+        } 
     }
     close(sockfd);
     return 0; 
