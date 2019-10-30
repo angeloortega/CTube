@@ -90,7 +90,6 @@ int main()
             // process 
             unsigned int size = nBytes;
             if (nBytes < NET_BUF_SIZE) {
-                printf("Last bytes :%d",nBytes);
                 break; 
             } 
             if(strstr(fileName,"video")!= NULL){
