@@ -7715,4 +7715,2840 @@ Accept-Language: es-419,es;q=0.9,en;q=0.8,it;q=0.7
 Range: bytes=56293279-
 
 1:21:45 - REQUEST: Sent: 524093 bytes1:21:45 - THREAD: Thread with IP 192.168.100.46:61216 stopped! Time: 2019-10-31 1:21:45
-1:21:51 - STATUS: server shutting down
+1:21:51 - STATUS: server shutting down10:41:43 - STATUS: Semaphores have been initiallized...10:41:43 - STATUS: Server waiting for data...10:41:54 - STATUS: server shutting down10:43:45 - STATUS: Semaphores have been initiallized...10:43:45 - STATUS: Server waiting for data...10:46:53 - STATUS: Server waiting for data...10:46:53 - STATUS: Server waiting for data...10:46:53 - THREAD: Thread with IP 192.168.100.48:54360 created! Time: 2019-10-31 10:46:53
+10:46:53 - REQUEST: GET /page/index.html HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+10:46:53 - REQUEST: Sent: 14241 bytes10:46:53 - THREAD: Thread with IP 192.168.100.48:54360 stopped! Time: 2019-10-31 10:46:53
+10:46:53 - THREAD: Thread with IP 192.168.100.48:54362 created! Time: 2019-10-31 10:46:53
+10:46:53 - REQUEST: GET /image/logo.png HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+10:46:53 - REQUEST: Sent: 48384 bytes10:46:53 - THREAD: Thread with IP 192.168.100.48:54362 stopped! Time: 2019-10-31 10:46:53
+10:46:54 - STATUS: Server waiting for data...10:46:54 - THREAD: Thread with IP 192.168.100.48:54364 created! Time: 2019-10-31 10:46:54
+10:46:54 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+10:46:54 - REQUEST: Sent: 777 bytes10:46:54 - THREAD: Thread with IP 192.168.100.48:54364 stopped! Time: 2019-10-31 10:46:54
+10:46:54 - STATUS: Server waiting for data...10:46:54 - THREAD: Thread with IP 192.168.100.48:54366 created! Time: 2019-10-31 10:46:54
+10:46:54 - STATUS: Server waiting for data...10:46:54 - REQUEST: GET /image/wos-aczino.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+10:46:54 - REQUEST: Sent: 163959 bytes10:46:54 - STATUS: Server waiting for data...10:46:54 - THREAD: Thread with IP 192.168.100.48:54366 stopped! Time: 2019-10-31 10:46:54
+10:46:54 - THREAD: Thread with IP 192.168.100.48:54368 created! Time: 2019-10-31 10:46:54
+10:46:54 - REQUEST: GET /image/god-level.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+10:46:54 - REQUEST: Sent: 124306 bytes10:46:54 - THREAD: Thread with IP 192.168.100.48:54368 stopped! Time: 2019-10-31 10:46:54
+10:46:54 - THREAD: Thread with IP 192.168.100.48:54370 created! Time: 2019-10-31 10:46:54
+10:46:54 - REQUEST: GET /image/trueno-wolf.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+10:46:54 - REQUEST: Sent: 23779 bytes10:46:54 - THREAD: Thread with IP 192.168.100.48:54370 stopped! Time: 2019-10-31 10:46:54
+10:46:54 - STATUS: Server waiting for data...10:46:54 - THREAD: Thread with IP 192.168.100.48:54372 created! Time: 2019-10-31 10:46:54
+10:46:54 - STATUS: Server waiting for data...10:46:54 - REQUEST: GET /image/horus.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+10:46:54 - REQUEST: Sent: 9343 bytes10:46:54 - THREAD: Thread with IP 192.168.100.48:54372 stopped! Time: 2019-10-31 10:46:54
+10:46:54 - THREAD: Thread with IP 192.168.100.48:54374 created! Time: 2019-10-31 10:46:54
+10:46:54 - REQUEST: GET /favicon.ico HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+10:46:54 - ERROR: No such file or directory10:46:54 - REQUEST: Sent: 0 bytes10:46:54 - THREAD: Thread with IP 192.168.100.48:54374 stopped! Time: 2019-10-31 10:46:54
+10:46:59 - STATUS: Server waiting for data...10:46:59 - THREAD: Thread with IP 192.168.100.48:54376 created! Time: 2019-10-31 10:46:59
+10:46:59 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=0-
+
+10:46:59 - REQUEST: Sent: 524093 bytes10:46:59 - THREAD: Thread with IP 192.168.100.48:54376 stopped! Time: 2019-10-31 10:46:59
+10:46:59 - STATUS: Server waiting for data...10:46:59 - THREAD: Thread with IP 192.168.100.48:54378 created! Time: 2019-10-31 10:46:59
+10:46:59 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=153747456-
+
+10:46:59 - REQUEST: Sent: 524093 bytes10:46:59 - THREAD: Thread with IP 192.168.100.48:54378 stopped! Time: 2019-10-31 10:46:59
+10:46:59 - STATUS: Server waiting for data...10:46:59 - THREAD: Thread with IP 192.168.100.48:54380 created! Time: 2019-10-31 10:46:59
+10:46:59 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=154271549-
+
+10:46:59 - REQUEST: Sent: 420287 bytes10:46:59 - THREAD: Thread with IP 192.168.100.48:54380 stopped! Time: 2019-10-31 10:46:59
+10:46:59 - STATUS: Server waiting for data...10:46:59 - THREAD: Thread with IP 192.168.100.48:54382 created! Time: 2019-10-31 10:46:59
+10:46:59 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=65536-
+
+10:46:59 - REQUEST: Sent: 524093 bytes10:46:59 - THREAD: Thread with IP 192.168.100.48:54382 stopped! Time: 2019-10-31 10:46:59
+10:47:0 - STATUS: Server waiting for data...10:47:0 - THREAD: Thread with IP 192.168.100.48:54384 created! Time: 2019-10-31 10:47:0
+10:47:0 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=131072-
+
+10:47:0 - REQUEST: Sent: 524093 bytes10:47:0 - THREAD: Thread with IP 192.168.100.48:54384 stopped! Time: 2019-10-31 10:47:0
+10:47:0 - STATUS: Server waiting for data...10:47:0 - THREAD: Thread with IP 192.168.100.48:54386 created! Time: 2019-10-31 10:47:0
+10:47:0 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=262144-
+
+10:47:0 - REQUEST: Sent: 524093 bytes10:47:0 - THREAD: Thread with IP 192.168.100.48:54386 stopped! Time: 2019-10-31 10:47:0
+10:47:6 - STATUS: Server waiting for data...10:47:6 - THREAD: Thread with IP 192.168.100.48:54390 created! Time: 2019-10-31 10:47:6
+10:47:6 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=458752-
+
+10:47:6 - REQUEST: Sent: 524093 bytes10:47:6 - THREAD: Thread with IP 192.168.100.48:54390 stopped! Time: 2019-10-31 10:47:6
+10:47:6 - STATUS: Server waiting for data...10:47:6 - THREAD: Thread with IP 192.168.100.48:54392 created! Time: 2019-10-31 10:47:6
+10:47:6 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=982845-
+
+10:47:6 - REQUEST: Sent: 524093 bytes10:47:6 - THREAD: Thread with IP 192.168.100.48:54392 stopped! Time: 2019-10-31 10:47:6
+10:47:6 - STATUS: Server waiting for data...10:47:6 - THREAD: Thread with IP 192.168.100.48:54394 created! Time: 2019-10-31 10:47:6
+10:47:6 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=1506938-
+
+10:47:6 - REQUEST: Sent: 524093 bytes10:47:6 - THREAD: Thread with IP 192.168.100.48:54394 stopped! Time: 2019-10-31 10:47:6
+10:47:6 - STATUS: Server waiting for data...10:47:6 - THREAD: Thread with IP 192.168.100.48:54396 created! Time: 2019-10-31 10:47:6
+10:47:6 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=2031031-
+
+10:47:6 - REQUEST: Sent: 524093 bytes10:47:6 - THREAD: Thread with IP 192.168.100.48:54396 stopped! Time: 2019-10-31 10:47:6
+10:47:6 - STATUS: Server waiting for data...10:47:6 - THREAD: Thread with IP 192.168.100.48:54398 created! Time: 2019-10-31 10:47:6
+10:47:6 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=2555124-
+
+10:47:6 - REQUEST: Sent: 524093 bytes10:47:6 - THREAD: Thread with IP 192.168.100.48:54398 stopped! Time: 2019-10-31 10:47:6
+10:47:6 - STATUS: Server waiting for data...10:47:6 - THREAD: Thread with IP 192.168.100.48:54400 created! Time: 2019-10-31 10:47:6
+10:47:6 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=3079217-
+
+10:47:6 - REQUEST: Sent: 524093 bytes10:47:6 - THREAD: Thread with IP 192.168.100.48:54400 stopped! Time: 2019-10-31 10:47:6
+10:47:6 - STATUS: Server waiting for data...10:47:6 - THREAD: Thread with IP 192.168.100.48:54402 created! Time: 2019-10-31 10:47:6
+10:47:6 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=3603310-
+
+10:47:6 - REQUEST: Sent: 524093 bytes10:47:6 - THREAD: Thread with IP 192.168.100.48:54402 stopped! Time: 2019-10-31 10:47:6
+10:47:17 - STATUS: Server waiting for data...10:47:17 - THREAD: Thread with IP 192.168.100.48:54404 created! Time: 2019-10-31 10:47:17
+10:47:17 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=4127403-
+
+10:47:17 - REQUEST: Sent: 524093 bytes10:47:17 - THREAD: Thread with IP 192.168.100.48:54404 stopped! Time: 2019-10-31 10:47:17
+10:47:17 - STATUS: Server waiting for data...10:47:17 - THREAD: Thread with IP 192.168.100.48:54406 created! Time: 2019-10-31 10:47:17
+10:47:17 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=4651496-
+
+10:47:17 - REQUEST: Sent: 524093 bytes10:47:17 - THREAD: Thread with IP 192.168.100.48:54406 stopped! Time: 2019-10-31 10:47:17
+10:47:24 - STATUS: Server waiting for data...10:47:24 - THREAD: Thread with IP 192.168.100.48:54408 created! Time: 2019-10-31 10:47:24
+10:47:24 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=11304960-
+
+10:47:24 - REQUEST: Sent: 524093 bytes10:47:24 - THREAD: Thread with IP 192.168.100.48:54408 stopped! Time: 2019-10-31 10:47:24
+10:47:25 - STATUS: Server waiting for data...10:47:25 - THREAD: Thread with IP 192.168.100.48:54410 created! Time: 2019-10-31 10:47:25
+10:47:25 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=11829053-
+
+10:47:25 - REQUEST: Sent: 524093 bytes10:47:25 - THREAD: Thread with IP 192.168.100.48:54410 stopped! Time: 2019-10-31 10:47:25
+10:47:27 - STATUS: Server waiting for data...10:47:27 - THREAD: Thread with IP 192.168.100.48:54412 created! Time: 2019-10-31 10:47:27
+10:47:27 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=12353146-
+
+10:47:27 - REQUEST: Sent: 524093 bytes10:47:27 - THREAD: Thread with IP 192.168.100.48:54412 stopped! Time: 2019-10-31 10:47:27
+10:47:29 - STATUS: Server waiting for data...10:47:29 - THREAD: Thread with IP 192.168.100.48:54414 created! Time: 2019-10-31 10:47:29
+10:47:29 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=18776064-
+
+10:47:29 - REQUEST: Sent: 524093 bytes10:47:29 - THREAD: Thread with IP 192.168.100.48:54414 stopped! Time: 2019-10-31 10:47:29
+10:47:29 - STATUS: Server waiting for data...10:47:29 - THREAD: Thread with IP 192.168.100.48:54416 created! Time: 2019-10-31 10:47:29
+10:47:29 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=19300157-
+
+10:47:29 - REQUEST: Sent: 524093 bytes10:47:29 - THREAD: Thread with IP 192.168.100.48:54416 stopped! Time: 2019-10-31 10:47:29
+10:47:33 - STATUS: Server waiting for data...10:47:33 - THREAD: Thread with IP 192.168.100.48:54420 created! Time: 2019-10-31 10:47:33
+10:47:33 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=19824250-
+
+10:47:33 - REQUEST: Sent: 524093 bytes10:47:33 - THREAD: Thread with IP 192.168.100.48:54420 stopped! Time: 2019-10-31 10:47:33
+10:47:39 - STATUS: Server waiting for data...10:47:39 - THREAD: Thread with IP 192.168.100.48:54422 created! Time: 2019-10-31 10:47:39
+10:47:39 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=20348343-
+
+10:47:39 - REQUEST: Sent: 524093 bytes10:47:39 - THREAD: Thread with IP 192.168.100.48:54422 stopped! Time: 2019-10-31 10:47:39
+10:47:42 - STATUS: Server waiting for data...10:47:42 - THREAD: Thread with IP 192.168.100.48:54424 created! Time: 2019-10-31 10:47:42
+10:47:42 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=20872436-
+
+10:47:42 - REQUEST: Sent: 524093 bytes10:47:42 - THREAD: Thread with IP 192.168.100.48:54424 stopped! Time: 2019-10-31 10:47:42
+10:47:44 - STATUS: Server waiting for data...10:47:44 - THREAD: Thread with IP 192.168.100.48:54426 created! Time: 2019-10-31 10:47:44
+10:47:44 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=21396529-
+
+10:47:44 - REQUEST: Sent: 524093 bytes10:47:44 - THREAD: Thread with IP 192.168.100.48:54426 stopped! Time: 2019-10-31 10:47:44
+10:47:45 - STATUS: Server waiting for data...10:47:45 - THREAD: Thread with IP 192.168.100.48:54428 created! Time: 2019-10-31 10:47:45
+10:47:45 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=36339712-
+
+10:47:45 - REQUEST: Sent: 524093 bytes10:47:45 - THREAD: Thread with IP 192.168.100.48:54428 stopped! Time: 2019-10-31 10:47:45
+10:47:45 - STATUS: Server waiting for data...10:47:45 - THREAD: Thread with IP 192.168.100.48:54430 created! Time: 2019-10-31 10:47:45
+10:47:45 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=36863805-
+
+10:47:45 - REQUEST: Sent: 524093 bytes10:47:45 - THREAD: Thread with IP 192.168.100.48:54430 stopped! Time: 2019-10-31 10:47:45
+10:47:47 - STATUS: Server waiting for data...10:47:47 - THREAD: Thread with IP 192.168.100.48:54432 created! Time: 2019-10-31 10:47:47
+10:47:47 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=41648128-
+
+10:47:47 - REQUEST: Sent: 524093 bytes10:47:47 - THREAD: Thread with IP 192.168.100.48:54432 stopped! Time: 2019-10-31 10:47:47
+10:47:47 - STATUS: Server waiting for data...10:47:47 - THREAD: Thread with IP 192.168.100.48:54434 created! Time: 2019-10-31 10:47:47
+10:47:47 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=42172221-
+
+10:47:47 - REQUEST: Sent: 524093 bytes10:47:47 - THREAD: Thread with IP 192.168.100.48:54434 stopped! Time: 2019-10-31 10:47:47
+10:47:48 - STATUS: Server waiting for data...10:47:48 - THREAD: Thread with IP 192.168.100.48:54436 created! Time: 2019-10-31 10:47:48
+10:47:48 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=42696704-
+
+10:47:48 - REQUEST: Sent: 524093 bytes10:47:48 - THREAD: Thread with IP 192.168.100.48:54436 stopped! Time: 2019-10-31 10:47:48
+10:47:49 - STATUS: Server waiting for data...10:47:49 - THREAD: Thread with IP 192.168.100.48:54438 created! Time: 2019-10-31 10:47:49
+10:47:49 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=43220797-
+
+10:47:49 - REQUEST: Sent: 524093 bytes10:47:49 - THREAD: Thread with IP 192.168.100.48:54438 stopped! Time: 2019-10-31 10:47:49
+10:47:49 - STATUS: Server waiting for data...10:47:49 - THREAD: Thread with IP 192.168.100.48:54440 created! Time: 2019-10-31 10:47:49
+10:47:49 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=43483136-
+
+10:47:49 - REQUEST: Sent: 524093 bytes10:47:49 - THREAD: Thread with IP 192.168.100.48:54440 stopped! Time: 2019-10-31 10:47:49
+10:47:49 - STATUS: Server waiting for data...10:47:49 - THREAD: Thread with IP 192.168.100.48:54442 created! Time: 2019-10-31 10:47:49
+10:47:49 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=44007229-
+
+10:47:49 - REQUEST: Sent: 524093 bytes10:47:49 - THREAD: Thread with IP 192.168.100.48:54442 stopped! Time: 2019-10-31 10:47:49
+10:47:50 - STATUS: Server waiting for data...10:47:50 - THREAD: Thread with IP 192.168.100.48:54444 created! Time: 2019-10-31 10:47:50
+10:47:50 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=44728320-
+
+10:47:50 - REQUEST: Sent: 524093 bytes10:47:50 - THREAD: Thread with IP 192.168.100.48:54444 stopped! Time: 2019-10-31 10:47:50
+10:47:51 - STATUS: Server waiting for data...10:47:51 - THREAD: Thread with IP 192.168.100.48:54446 created! Time: 2019-10-31 10:47:51
+10:47:51 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=45252413-
+
+10:47:51 - REQUEST: Sent: 524093 bytes10:47:51 - THREAD: Thread with IP 192.168.100.48:54446 stopped! Time: 2019-10-31 10:47:51
+10:47:51 - STATUS: Server waiting for data...10:47:51 - THREAD: Thread with IP 192.168.100.48:54448 created! Time: 2019-10-31 10:47:51
+10:47:51 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=46170112-
+
+10:47:51 - REQUEST: Sent: 524093 bytes10:47:51 - THREAD: Thread with IP 192.168.100.48:54448 stopped! Time: 2019-10-31 10:47:51
+10:47:51 - STATUS: Server waiting for data...10:47:51 - THREAD: Thread with IP 192.168.100.48:54450 created! Time: 2019-10-31 10:47:51
+10:47:51 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=46694205-
+
+10:47:51 - REQUEST: Sent: 524093 bytes10:47:51 - THREAD: Thread with IP 192.168.100.48:54450 stopped! Time: 2019-10-31 10:47:51
+10:47:52 - STATUS: Server waiting for data...10:47:52 - THREAD: Thread with IP 192.168.100.48:54452 created! Time: 2019-10-31 10:47:52
+10:47:52 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=47087616-
+
+10:47:52 - REQUEST: Sent: 524093 bytes10:47:52 - THREAD: Thread with IP 192.168.100.48:54452 stopped! Time: 2019-10-31 10:47:52
+10:47:52 - STATUS: Server waiting for data...10:47:52 - THREAD: Thread with IP 192.168.100.48:54454 created! Time: 2019-10-31 10:47:52
+10:47:52 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=47611709-
+
+10:47:52 - REQUEST: Sent: 524093 bytes10:47:52 - THREAD: Thread with IP 192.168.100.48:54454 stopped! Time: 2019-10-31 10:47:52
+10:47:57 - STATUS: Server waiting for data...10:47:57 - THREAD: Thread with IP 192.168.100.48:54456 created! Time: 2019-10-31 10:47:57
+10:47:57 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=48135802-
+
+10:47:57 - REQUEST: Sent: 524093 bytes10:47:57 - THREAD: Thread with IP 192.168.100.48:54456 stopped! Time: 2019-10-31 10:47:57
+10:48:1 - STATUS: Server waiting for data...10:48:1 - THREAD: Thread with IP 192.168.100.48:54458 created! Time: 2019-10-31 10:48:1
+10:48:1 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=48659895-
+
+10:48:1 - REQUEST: Sent: 524093 bytes10:48:1 - THREAD: Thread with IP 192.168.100.48:54458 stopped! Time: 2019-10-31 10:48:1
+10:48:5 - STATUS: Server waiting for data...10:48:5 - THREAD: Thread with IP 192.168.100.48:54462 created! Time: 2019-10-31 10:48:5
+10:48:5 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=49183988-
+
+10:48:5 - REQUEST: Sent: 524093 bytes10:48:5 - THREAD: Thread with IP 192.168.100.48:54462 stopped! Time: 2019-10-31 10:48:5
+10:48:11 - STATUS: Server waiting for data...10:48:11 - THREAD: Thread with IP 192.168.100.48:54464 created! Time: 2019-10-31 10:48:11
+10:48:11 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=49708081-
+
+10:48:11 - REQUEST: Sent: 524093 bytes10:48:11 - THREAD: Thread with IP 192.168.100.48:54464 stopped! Time: 2019-10-31 10:48:11
+10:48:15 - STATUS: Server waiting for data...10:48:15 - THREAD: Thread with IP 192.168.100.48:54466 created! Time: 2019-10-31 10:48:15
+10:48:15 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=50232174-
+
+10:48:15 - REQUEST: Sent: 524093 bytes10:48:15 - THREAD: Thread with IP 192.168.100.48:54466 stopped! Time: 2019-10-31 10:48:15
+10:48:17 - STATUS: Server waiting for data...10:48:17 - THREAD: Thread with IP 192.168.100.48:54468 created! Time: 2019-10-31 10:48:17
+10:48:17 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=50756267-
+
+10:48:17 - REQUEST: Sent: 524093 bytes10:48:17 - THREAD: Thread with IP 192.168.100.48:54468 stopped! Time: 2019-10-31 10:48:17
+10:48:21 - STATUS: Server waiting for data...10:48:21 - THREAD: Thread with IP 192.168.100.48:54470 created! Time: 2019-10-31 10:48:21
+10:48:21 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=51280360-
+
+10:48:21 - REQUEST: Sent: 524093 bytes10:48:21 - THREAD: Thread with IP 192.168.100.48:54470 stopped! Time: 2019-10-31 10:48:21
+10:48:25 - STATUS: Server waiting for data...10:48:25 - THREAD: Thread with IP 192.168.100.48:54472 created! Time: 2019-10-31 10:48:25
+10:48:25 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=51804453-
+
+10:48:25 - REQUEST: Sent: 524093 bytes10:48:25 - THREAD: Thread with IP 192.168.100.48:54472 stopped! Time: 2019-10-31 10:48:25
+10:48:30 - STATUS: Server waiting for data...10:48:30 - THREAD: Thread with IP 192.168.100.48:54474 created! Time: 2019-10-31 10:48:30
+10:48:30 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=52328546-
+
+10:48:30 - REQUEST: Sent: 524093 bytes10:48:30 - THREAD: Thread with IP 192.168.100.48:54474 stopped! Time: 2019-10-31 10:48:30
+10:48:33 - STATUS: Server waiting for data...10:48:33 - THREAD: Thread with IP 192.168.100.48:54478 created! Time: 2019-10-31 10:48:33
+10:48:33 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=52852639-
+
+10:48:33 - REQUEST: Sent: 524093 bytes10:48:33 - THREAD: Thread with IP 192.168.100.48:54478 stopped! Time: 2019-10-31 10:48:33
+10:48:37 - STATUS: Server waiting for data...10:48:37 - THREAD: Thread with IP 192.168.100.48:54480 created! Time: 2019-10-31 10:48:37
+10:48:37 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=53376732-
+
+10:48:37 - REQUEST: Sent: 524093 bytes10:48:37 - THREAD: Thread with IP 192.168.100.48:54480 stopped! Time: 2019-10-31 10:48:37
+10:48:40 - STATUS: Server waiting for data...10:48:40 - THREAD: Thread with IP 192.168.100.48:54482 created! Time: 2019-10-31 10:48:40
+10:48:40 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=53900825-
+
+10:48:40 - REQUEST: Sent: 524093 bytes10:48:40 - THREAD: Thread with IP 192.168.100.48:54482 stopped! Time: 2019-10-31 10:48:40
+10:48:45 - STATUS: Server waiting for data...10:48:45 - THREAD: Thread with IP 192.168.100.48:54484 created! Time: 2019-10-31 10:48:45
+10:48:45 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=54424918-
+
+10:48:45 - REQUEST: Sent: 524093 bytes10:48:45 - THREAD: Thread with IP 192.168.100.48:54484 stopped! Time: 2019-10-31 10:48:45
+10:48:49 - STATUS: Server waiting for data...10:48:49 - THREAD: Thread with IP 192.168.100.48:54486 created! Time: 2019-10-31 10:48:49
+10:48:49 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=54949011-
+
+10:48:49 - REQUEST: Sent: 524093 bytes10:48:49 - THREAD: Thread with IP 192.168.100.48:54486 stopped! Time: 2019-10-31 10:48:49
+10:48:52 - STATUS: Server waiting for data...10:48:52 - THREAD: Thread with IP 192.168.100.48:54488 created! Time: 2019-10-31 10:48:52
+10:48:52 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=55473104-
+
+10:48:52 - REQUEST: Sent: 524093 bytes10:48:52 - THREAD: Thread with IP 192.168.100.48:54488 stopped! Time: 2019-10-31 10:48:52
+10:48:57 - STATUS: Server waiting for data...10:48:57 - THREAD: Thread with IP 192.168.100.48:54490 created! Time: 2019-10-31 10:48:57
+10:48:57 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=55997197-
+
+10:48:57 - REQUEST: Sent: 524093 bytes10:48:57 - THREAD: Thread with IP 192.168.100.48:54490 stopped! Time: 2019-10-31 10:48:57
+10:49:0 - STATUS: Server waiting for data...10:49:0 - THREAD: Thread with IP 192.168.100.48:54492 created! Time: 2019-10-31 10:49:0
+10:49:0 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=56521290-
+
+10:49:0 - REQUEST: Sent: 524093 bytes10:49:0 - THREAD: Thread with IP 192.168.100.48:54492 stopped! Time: 2019-10-31 10:49:0
+10:49:3 - STATUS: Server waiting for data...10:49:3 - THREAD: Thread with IP 192.168.100.48:54496 created! Time: 2019-10-31 10:49:3
+10:49:3 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=57045383-
+
+10:49:3 - REQUEST: Sent: 524093 bytes10:49:3 - THREAD: Thread with IP 192.168.100.48:54496 stopped! Time: 2019-10-31 10:49:3
+10:49:6 - STATUS: Server waiting for data...10:49:6 - THREAD: Thread with IP 192.168.100.48:54498 created! Time: 2019-10-31 10:49:6
+10:49:6 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=57569476-
+
+10:49:6 - REQUEST: Sent: 524093 bytes10:49:6 - THREAD: Thread with IP 192.168.100.48:54498 stopped! Time: 2019-10-31 10:49:6
+10:49:9 - STATUS: Server waiting for data...10:49:9 - THREAD: Thread with IP 192.168.100.48:54500 created! Time: 2019-10-31 10:49:9
+10:49:9 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=58093569-
+
+10:49:9 - REQUEST: Sent: 524093 bytes10:49:9 - THREAD: Thread with IP 192.168.100.48:54500 stopped! Time: 2019-10-31 10:49:9
+10:49:13 - STATUS: Server waiting for data...10:49:13 - THREAD: Thread with IP 192.168.100.48:54502 created! Time: 2019-10-31 10:49:13
+10:49:13 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=58617662-
+
+10:49:13 - REQUEST: Sent: 524093 bytes10:49:13 - THREAD: Thread with IP 192.168.100.48:54502 stopped! Time: 2019-10-31 10:49:13
+10:49:18 - STATUS: Server waiting for data...10:49:18 - THREAD: Thread with IP 192.168.100.48:54504 created! Time: 2019-10-31 10:49:18
+10:49:18 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=59141755-
+
+10:49:18 - REQUEST: Sent: 524093 bytes10:49:18 - THREAD: Thread with IP 192.168.100.48:54504 stopped! Time: 2019-10-31 10:49:18
+10:49:23 - STATUS: Server waiting for data...10:49:23 - THREAD: Thread with IP 192.168.100.48:54506 created! Time: 2019-10-31 10:49:23
+10:49:23 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=59665848-
+
+10:49:23 - REQUEST: Sent: 524093 bytes10:49:23 - THREAD: Thread with IP 192.168.100.48:54506 stopped! Time: 2019-10-31 10:49:23
+10:49:26 - STATUS: Server waiting for data...10:49:26 - THREAD: Thread with IP 192.168.100.48:54508 created! Time: 2019-10-31 10:49:26
+10:49:26 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=60189941-
+
+10:49:26 - REQUEST: Sent: 524093 bytes10:49:26 - THREAD: Thread with IP 192.168.100.48:54508 stopped! Time: 2019-10-31 10:49:26
+10:49:29 - STATUS: Server waiting for data...10:49:29 - THREAD: Thread with IP 192.168.100.48:54510 created! Time: 2019-10-31 10:49:29
+10:49:29 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=60714034-
+
+10:49:29 - REQUEST: Sent: 524093 bytes10:49:29 - THREAD: Thread with IP 192.168.100.48:54510 stopped! Time: 2019-10-31 10:49:29
+10:49:32 - STATUS: Server waiting for data...10:49:32 - THREAD: Thread with IP 192.168.100.48:54512 created! Time: 2019-10-31 10:49:32
+10:49:32 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=61238127-
+
+10:49:32 - REQUEST: Sent: 524093 bytes10:49:32 - THREAD: Thread with IP 192.168.100.48:54512 stopped! Time: 2019-10-31 10:49:32
+10:49:36 - STATUS: Server waiting for data...10:49:36 - THREAD: Thread with IP 192.168.100.48:54516 created! Time: 2019-10-31 10:49:36
+10:49:36 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=61762220-
+
+10:49:36 - REQUEST: Sent: 524093 bytes10:49:36 - THREAD: Thread with IP 192.168.100.48:54516 stopped! Time: 2019-10-31 10:49:36
+10:49:39 - STATUS: Server waiting for data...10:49:39 - THREAD: Thread with IP 192.168.100.48:54518 created! Time: 2019-10-31 10:49:39
+10:49:39 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=62286313-
+
+10:49:39 - REQUEST: Sent: 524093 bytes10:49:39 - THREAD: Thread with IP 192.168.100.48:54518 stopped! Time: 2019-10-31 10:49:39
+10:49:42 - STATUS: Server waiting for data...10:49:42 - THREAD: Thread with IP 192.168.100.48:54520 created! Time: 2019-10-31 10:49:42
+10:49:42 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=62810406-
+
+10:49:42 - REQUEST: Sent: 524093 bytes10:49:42 - THREAD: Thread with IP 192.168.100.48:54520 stopped! Time: 2019-10-31 10:49:42
+10:49:47 - STATUS: Server waiting for data...10:49:47 - THREAD: Thread with IP 192.168.100.48:54522 created! Time: 2019-10-31 10:49:47
+10:49:47 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=63334499-
+
+10:49:47 - REQUEST: Sent: 524093 bytes10:49:47 - THREAD: Thread with IP 192.168.100.48:54522 stopped! Time: 2019-10-31 10:49:47
+10:49:48 - STATUS: Server waiting for data...10:49:48 - THREAD: Thread with IP 192.168.100.48:54524 created! Time: 2019-10-31 10:49:48
+10:49:48 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+10:49:48 - REQUEST: Sent: 777 bytes10:49:48 - THREAD: Thread with IP 192.168.100.48:54524 stopped! Time: 2019-10-31 10:49:48
+11:33:39 - STATUS: Server waiting for data...11:33:39 - THREAD: Thread with IP 192.168.100.48:54822 created! Time: 2019-10-31 11:33:39
+11:33:39 - REQUEST: GET /page/index.html HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:33:39 - REQUEST: Sent: 13975 bytes11:33:39 - THREAD: Thread with IP 192.168.100.48:54822 stopped! Time: 2019-10-31 11:33:39
+11:33:39 - STATUS: Server waiting for data...11:33:39 - THREAD: Thread with IP 192.168.100.48:54824 created! Time: 2019-10-31 11:33:39
+11:33:39 - STATUS: Server waiting for data...11:33:39 - THREAD: Thread with IP 192.168.100.48:54826 created! Time: 2019-10-31 11:33:39
+11:33:39 - REQUEST: GET /image/logo.png HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:33:39 - REQUEST: Sent: 48384 bytes11:33:39 - THREAD: Thread with IP 192.168.100.48:54824 stopped! Time: 2019-10-31 11:33:39
+11:33:39 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:33:39 - REQUEST: Sent: 777 bytes11:33:39 - THREAD: Thread with IP 192.168.100.48:54826 stopped! Time: 2019-10-31 11:33:39
+11:33:39 - STATUS: Server waiting for data...11:33:39 - THREAD: Thread with IP 192.168.100.48:54828 created! Time: 2019-10-31 11:33:39
+11:33:39 - REQUEST: GET /image/wos-aczino.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:33:39 - REQUEST: Sent: 163959 bytes11:33:39 - THREAD: Thread with IP 192.168.100.48:54828 stopped! Time: 2019-10-31 11:33:39
+11:33:39 - STATUS: Server waiting for data...11:33:39 - THREAD: Thread with IP 192.168.100.48:54830 created! Time: 2019-10-31 11:33:39
+11:33:39 - REQUEST: GET /image/god-level.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:33:39 - REQUEST: Sent: 124306 bytes11:33:39 - THREAD: Thread with IP 192.168.100.48:54830 stopped! Time: 2019-10-31 11:33:39
+11:33:39 - STATUS: Server waiting for data...11:33:39 - STATUS: Server waiting for data...11:33:39 - THREAD: Thread with IP 192.168.100.48:54834 created! Time: 2019-10-31 11:33:39
+11:33:39 - THREAD: Thread with IP 192.168.100.48:54832 created! Time: 2019-10-31 11:33:39
+11:33:39 - REQUEST: GET /image/trueno-wolf.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:33:39 - REQUEST: Sent: 23779 bytes11:33:39 - THREAD: Thread with IP 192.168.100.48:54832 stopped! Time: 2019-10-31 11:33:39
+11:33:39 - REQUEST: GET /image/horus.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:33:39 - REQUEST: Sent: 9343 bytes11:33:39 - THREAD: Thread with IP 192.168.100.48:54834 stopped! Time: 2019-10-31 11:33:39
+11:33:43 - STATUS: Server waiting for data...11:33:43 - THREAD: Thread with IP 192.168.100.48:54840 created! Time: 2019-10-31 11:33:43
+11:33:43 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=0-
+
+11:33:43 - REQUEST: Sent: 524093 bytes11:33:43 - THREAD: Thread with IP 192.168.100.48:54840 stopped! Time: 2019-10-31 11:33:43
+11:33:43 - STATUS: Server waiting for data...11:33:43 - THREAD: Thread with IP 192.168.100.48:54842 created! Time: 2019-10-31 11:33:43
+11:33:43 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=153747456-
+
+11:33:43 - REQUEST: Sent: 524093 bytes11:33:43 - THREAD: Thread with IP 192.168.100.48:54842 stopped! Time: 2019-10-31 11:33:43
+11:33:43 - STATUS: Server waiting for data...11:33:43 - THREAD: Thread with IP 192.168.100.48:54844 created! Time: 2019-10-31 11:33:43
+11:33:43 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=154271549-
+
+11:33:43 - REQUEST: Sent: 420287 bytes11:33:43 - THREAD: Thread with IP 192.168.100.48:54844 stopped! Time: 2019-10-31 11:33:43
+11:33:43 - STATUS: Server waiting for data...11:33:43 - THREAD: Thread with IP 192.168.100.48:54846 created! Time: 2019-10-31 11:33:43
+11:33:43 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=65536-
+
+11:33:43 - REQUEST: Sent: 524093 bytes11:33:43 - THREAD: Thread with IP 192.168.100.48:54846 stopped! Time: 2019-10-31 11:33:43
+11:33:43 - STATUS: Server waiting for data...11:33:43 - THREAD: Thread with IP 192.168.100.48:54848 created! Time: 2019-10-31 11:33:43
+11:33:43 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=262144-
+
+11:33:43 - REQUEST: Sent: 524093 bytes11:33:43 - THREAD: Thread with IP 192.168.100.48:54848 stopped! Time: 2019-10-31 11:33:43
+11:33:43 - STATUS: Server waiting for data...11:33:43 - THREAD: Thread with IP 192.168.100.48:54850 created! Time: 2019-10-31 11:33:43
+11:33:43 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=393216-
+
+11:33:43 - REQUEST: Sent: 524093 bytes11:33:43 - THREAD: Thread with IP 192.168.100.48:54850 stopped! Time: 2019-10-31 11:33:43
+11:33:48 - STATUS: Server waiting for data...11:33:48 - THREAD: Thread with IP 192.168.100.48:54854 created! Time: 2019-10-31 11:33:48
+11:33:48 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:33:48 - REQUEST: Sent: 777 bytes11:33:48 - THREAD: Thread with IP 192.168.100.48:54854 stopped! Time: 2019-10-31 11:33:48
+11:35:16 - STATUS: Server waiting for data...11:35:16 - THREAD: Thread with IP 192.168.100.48:54870 created! Time: 2019-10-31 11:35:16
+11:35:16 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=0-
+
+11:35:16 - REQUEST: Sent: 524093 bytes11:35:16 - THREAD: Thread with IP 192.168.100.48:54870 stopped! Time: 2019-10-31 11:35:16
+11:35:16 - STATUS: Server waiting for data...11:35:16 - THREAD: Thread with IP 192.168.100.48:54872 created! Time: 2019-10-31 11:35:16
+11:35:16 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=153747456-
+
+11:35:16 - REQUEST: Sent: 524093 bytes11:35:16 - THREAD: Thread with IP 192.168.100.48:54872 stopped! Time: 2019-10-31 11:35:16
+11:35:16 - STATUS: Server waiting for data...11:35:16 - THREAD: Thread with IP 192.168.100.48:54874 created! Time: 2019-10-31 11:35:16
+11:35:16 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=154271549-
+
+11:35:16 - REQUEST: Sent: 420287 bytes11:35:16 - THREAD: Thread with IP 192.168.100.48:54874 stopped! Time: 2019-10-31 11:35:16
+11:35:16 - STATUS: Server waiting for data...11:35:16 - THREAD: Thread with IP 192.168.100.48:54876 created! Time: 2019-10-31 11:35:16
+11:35:16 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=65536-
+
+11:35:16 - REQUEST: Sent: 524093 bytes11:35:16 - THREAD: Thread with IP 192.168.100.48:54876 stopped! Time: 2019-10-31 11:35:16
+11:35:16 - STATUS: Server waiting for data...11:35:16 - THREAD: Thread with IP 192.168.100.48:54878 created! Time: 2019-10-31 11:35:16
+11:35:16 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=131072-
+
+11:35:16 - REQUEST: Sent: 524093 bytes11:35:16 - THREAD: Thread with IP 192.168.100.48:54878 stopped! Time: 2019-10-31 11:35:16
+11:35:16 - STATUS: Server waiting for data...11:35:16 - THREAD: Thread with IP 192.168.100.48:54880 created! Time: 2019-10-31 11:35:16
+11:35:16 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=262144-
+
+11:35:16 - REQUEST: Sent: 524093 bytes11:35:16 - THREAD: Thread with IP 192.168.100.48:54880 stopped! Time: 2019-10-31 11:35:16
+11:35:16 - STATUS: Server waiting for data...11:35:16 - THREAD: Thread with IP 192.168.100.48:54882 created! Time: 2019-10-31 11:35:16
+11:35:16 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=393216-
+
+11:35:16 - REQUEST: Sent: 524093 bytes11:35:16 - THREAD: Thread with IP 192.168.100.48:54882 stopped! Time: 2019-10-31 11:35:16
+11:35:27 - STATUS: Server waiting for data...11:35:27 - THREAD: Thread with IP 192.168.100.48:54884 created! Time: 2019-10-31 11:35:27
+11:35:27 - STATUS: Server waiting for data...11:35:27 - THREAD: Thread with IP 192.168.100.48:54886 created! Time: 2019-10-31 11:35:27
+11:35:27 - REQUEST: GET /page/index.html HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:35:27 - REQUEST: Sent: 13975 bytes11:35:27 - THREAD: Thread with IP 192.168.100.48:54884 stopped! Time: 2019-10-31 11:35:27
+11:35:27 - REQUEST: GET /image/logo.png HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:35:27 - REQUEST: Sent: 48384 bytes11:35:27 - THREAD: Thread with IP 192.168.100.48:54886 stopped! Time: 2019-10-31 11:35:27
+11:35:27 - STATUS: Server waiting for data...11:35:27 - THREAD: Thread with IP 192.168.100.48:54888 created! Time: 2019-10-31 11:35:27
+11:35:27 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:35:27 - REQUEST: Sent: 777 bytes11:35:27 - THREAD: Thread with IP 192.168.100.48:54888 stopped! Time: 2019-10-31 11:35:27
+11:35:27 - STATUS: Server waiting for data...11:35:27 - THREAD: Thread with IP 192.168.100.48:54890 created! Time: 2019-10-31 11:35:27
+11:35:27 - STATUS: Server waiting for data...11:35:27 - STATUS: Server waiting for data...11:35:27 - REQUEST: GET /image/wos-aczino.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:35:27 - THREAD: Thread with IP 192.168.100.48:54894 created! Time: 2019-10-31 11:35:27
+11:35:27 - REQUEST: GET /image/trueno-wolf.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:35:27 - THREAD: Thread with IP 192.168.100.48:54892 created! Time: 2019-10-31 11:35:27
+11:35:27 - REQUEST: GET /image/god-level.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:35:27 - REQUEST: Sent: 23779 bytes11:35:27 - THREAD: Thread with IP 192.168.100.48:54894 stopped! Time: 2019-10-31 11:35:27
+11:35:27 - REQUEST: Sent: 124306 bytes11:35:27 - THREAD: Thread with IP 192.168.100.48:54892 stopped! Time: 2019-10-31 11:35:27
+11:35:27 - REQUEST: Sent: 163959 bytes11:35:27 - THREAD: Thread with IP 192.168.100.48:54890 stopped! Time: 2019-10-31 11:35:27
+11:35:27 - STATUS: Server waiting for data...11:35:27 - THREAD: Thread with IP 192.168.100.48:54896 created! Time: 2019-10-31 11:35:27
+11:35:27 - REQUEST: GET /image/horus.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:35:27 - REQUEST: Sent: 9343 bytes11:35:27 - THREAD: Thread with IP 192.168.100.48:54896 stopped! Time: 2019-10-31 11:35:27
+11:35:59 - STATUS: Server waiting for data...11:35:59 - STATUS: Server waiting for data...11:35:59 - THREAD: Thread with IP 192.168.100.48:54902 created! Time: 2019-10-31 11:35:59
+11:35:59 - THREAD: Thread with IP 192.168.100.48:54900 created! Time: 2019-10-31 11:35:59
+11:35:59 - REQUEST: GET /page/index.html HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:35:59 - REQUEST: Sent: 13975 bytes11:35:59 - THREAD: Thread with IP 192.168.100.48:54900 stopped! Time: 2019-10-31 11:35:59
+11:35:59 - REQUEST: GET /image/logo.png HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:35:59 - REQUEST: Sent: 48384 bytes11:35:59 - THREAD: Thread with IP 192.168.100.48:54902 stopped! Time: 2019-10-31 11:35:59
+11:35:59 - STATUS: Server waiting for data...11:35:59 - THREAD: Thread with IP 192.168.100.48:54908 created! Time: 2019-10-31 11:35:59
+11:35:59 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:35:59 - REQUEST: Sent: 777 bytes11:35:59 - THREAD: Thread with IP 192.168.100.48:54908 stopped! Time: 2019-10-31 11:35:59
+11:35:59 - STATUS: Server waiting for data...11:35:59 - THREAD: Thread with IP 192.168.100.48:54910 created! Time: 2019-10-31 11:35:59
+11:35:59 - STATUS: Server waiting for data...11:35:59 - THREAD: Thread with IP 192.168.100.48:54912 created! Time: 2019-10-31 11:35:59
+11:35:59 - STATUS: Server waiting for data...11:35:59 - THREAD: Thread with IP 192.168.100.48:54914 created! Time: 2019-10-31 11:35:59
+11:35:59 - STATUS: Server waiting for data...11:35:59 - THREAD: Thread with IP 192.168.100.48:54916 created! Time: 2019-10-31 11:35:59
+11:35:59 - REQUEST: GET /image/god-level.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:35:59 - REQUEST: GET /image/wos-aczino.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:35:59 - REQUEST: Sent: 124306 bytes11:35:59 - THREAD: Thread with IP 192.168.100.48:54912 stopped! Time: 2019-10-31 11:35:59
+11:35:59 - REQUEST: Sent: 163959 bytes11:35:59 - THREAD: Thread with IP 192.168.100.48:54910 stopped! Time: 2019-10-31 11:35:59
+11:35:59 - REQUEST: GET /image/trueno-wolf.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:35:59 - REQUEST: Sent: 23779 bytes11:35:59 - THREAD: Thread with IP 192.168.100.48:54914 stopped! Time: 2019-10-31 11:35:59
+11:35:59 - REQUEST: GET /image/horus.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:35:59 - REQUEST: Sent: 9343 bytes11:35:59 - THREAD: Thread with IP 192.168.100.48:54916 stopped! Time: 2019-10-31 11:35:59
+11:41:27 - STATUS: Server waiting for data...11:41:27 - STATUS: Server waiting for data...11:41:27 - THREAD: Thread with IP 192.168.100.48:54966 created! Time: 2019-10-31 11:41:27
+11:41:27 - THREAD: Thread with IP 192.168.100.48:54964 created! Time: 2019-10-31 11:41:27
+11:41:27 - REQUEST: GET /page/index.html HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:41:27 - REQUEST: Sent: 13982 bytes11:41:27 - THREAD: Thread with IP 192.168.100.48:54964 stopped! Time: 2019-10-31 11:41:27
+11:41:27 - REQUEST: GET /image/logo.png HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:41:27 - REQUEST: Sent: 48384 bytes11:41:27 - THREAD: Thread with IP 192.168.100.48:54966 stopped! Time: 2019-10-31 11:41:27
+11:41:27 - STATUS: Server waiting for data...11:41:27 - THREAD: Thread with IP 192.168.100.48:54968 created! Time: 2019-10-31 11:41:27
+11:41:27 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:41:27 - REQUEST: Sent: 777 bytes11:41:27 - THREAD: Thread with IP 192.168.100.48:54968 stopped! Time: 2019-10-31 11:41:27
+11:41:27 - STATUS: Server waiting for data...11:41:27 - THREAD: Thread with IP 192.168.100.48:54970 created! Time: 2019-10-31 11:41:27
+11:41:27 - REQUEST: GET /image/wos-aczino.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:41:27 - REQUEST: Sent: 163959 bytes11:41:27 - THREAD: Thread with IP 192.168.100.48:54970 stopped! Time: 2019-10-31 11:41:27
+11:41:27 - STATUS: Server waiting for data...11:41:27 - THREAD: Thread with IP 192.168.100.48:54972 created! Time: 2019-10-31 11:41:27
+11:41:27 - STATUS: Server waiting for data...11:41:27 - THREAD: Thread with IP 192.168.100.48:54974 created! Time: 2019-10-31 11:41:27
+11:41:27 - STATUS: Server waiting for data...11:41:27 - THREAD: Thread with IP 192.168.100.48:54976 created! Time: 2019-10-31 11:41:27
+11:41:27 - REQUEST: GET /image/god-level.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:41:27 - REQUEST: Sent: 124306 bytes11:41:27 - THREAD: Thread with IP 192.168.100.48:54972 stopped! Time: 2019-10-31 11:41:27
+11:41:27 - REQUEST: GET /image/trueno-wolf.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:41:27 - REQUEST: Sent: 23779 bytes11:41:27 - THREAD: Thread with IP 192.168.100.48:54974 stopped! Time: 2019-10-31 11:41:27
+11:41:27 - REQUEST: GET /image/horus.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:41:27 - REQUEST: Sent: 9343 bytes11:41:27 - THREAD: Thread with IP 192.168.100.48:54976 stopped! Time: 2019-10-31 11:41:27
+11:41:33 - STATUS: Server waiting for data...11:41:33 - THREAD: Thread with IP 192.168.100.48:54978 created! Time: 2019-10-31 11:41:33
+11:41:33 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=0-
+
+11:41:33 - REQUEST: Sent: 524093 bytes11:41:33 - THREAD: Thread with IP 192.168.100.48:54978 stopped! Time: 2019-10-31 11:41:33
+11:41:33 - STATUS: Server waiting for data...11:41:33 - THREAD: Thread with IP 192.168.100.48:54980 created! Time: 2019-10-31 11:41:33
+11:41:33 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=153747456-
+
+11:41:33 - REQUEST: Sent: 524093 bytes11:41:33 - THREAD: Thread with IP 192.168.100.48:54980 stopped! Time: 2019-10-31 11:41:33
+11:41:33 - STATUS: Server waiting for data...11:41:33 - THREAD: Thread with IP 192.168.100.48:54982 created! Time: 2019-10-31 11:41:33
+11:41:33 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=154271549-
+
+11:41:33 - REQUEST: Sent: 420287 bytes11:41:33 - THREAD: Thread with IP 192.168.100.48:54982 stopped! Time: 2019-10-31 11:41:33
+11:41:33 - STATUS: Server waiting for data...11:41:33 - THREAD: Thread with IP 192.168.100.48:54984 created! Time: 2019-10-31 11:41:33
+11:41:33 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=65536-
+
+11:41:33 - REQUEST: Sent: 524093 bytes11:41:33 - THREAD: Thread with IP 192.168.100.48:54984 stopped! Time: 2019-10-31 11:41:33
+11:41:35 - STATUS: Server waiting for data...11:41:35 - THREAD: Thread with IP 192.168.100.48:54986 created! Time: 2019-10-31 11:41:35
+11:41:35 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:41:35 - REQUEST: Sent: 777 bytes11:41:35 - THREAD: Thread with IP 192.168.100.48:54986 stopped! Time: 2019-10-31 11:41:35
+11:50:57 - STATUS: Server waiting for data...11:50:57 - STATUS: Server waiting for data...11:50:57 - THREAD: Thread with IP 192.168.100.48:55070 created! Time: 2019-10-31 11:50:57
+11:50:57 - THREAD: Thread with IP 192.168.100.48:55072 created! Time: 2019-10-31 11:50:57
+11:50:57 - REQUEST: GET /page/index.html HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:50:57 - REQUEST: Sent: 14006 bytes11:50:57 - THREAD: Thread with IP 192.168.100.48:55070 stopped! Time: 2019-10-31 11:50:57
+11:50:57 - REQUEST: GET /image/logo.png HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:50:57 - REQUEST: Sent: 48384 bytes11:50:57 - THREAD: Thread with IP 192.168.100.48:55072 stopped! Time: 2019-10-31 11:50:57
+11:52:11 - STATUS: Server waiting for data...11:52:11 - THREAD: Thread with IP 192.168.100.48:55084 created! Time: 2019-10-31 11:52:11
+11:52:11 - STATUS: Server waiting for data...11:52:11 - THREAD: Thread with IP 192.168.100.48:55086 created! Time: 2019-10-31 11:52:11
+11:52:11 - REQUEST: GET /page/index.html HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:52:11 - REQUEST: Sent: 14006 bytes11:52:11 - THREAD: Thread with IP 192.168.100.48:55084 stopped! Time: 2019-10-31 11:52:11
+11:52:11 - REQUEST: GET /image/logo.png HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:52:11 - REQUEST: Sent: 48384 bytes11:52:11 - THREAD: Thread with IP 192.168.100.48:55086 stopped! Time: 2019-10-31 11:52:11
+11:52:55 - STATUS: Server waiting for data...11:52:55 - THREAD: Thread with IP 192.168.100.48:55096 created! Time: 2019-10-31 11:52:55
+11:52:55 - STATUS: Server waiting for data...11:52:55 - THREAD: Thread with IP 192.168.100.48:55098 created! Time: 2019-10-31 11:52:55
+11:52:55 - REQUEST: GET /page/index.html HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:52:55 - REQUEST: Sent: 14006 bytes11:52:55 - THREAD: Thread with IP 192.168.100.48:55096 stopped! Time: 2019-10-31 11:52:55
+11:52:56 - REQUEST: GET /image/logo.png HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:52:56 - REQUEST: Sent: 48384 bytes11:52:56 - THREAD: Thread with IP 192.168.100.48:55098 stopped! Time: 2019-10-31 11:52:56
+11:55:23 - STATUS: Server waiting for data...11:55:23 - THREAD: Thread with IP 192.168.100.48:56166 created! Time: 2019-10-31 11:55:23
+11:55:23 - REQUEST: GET /page/index.html HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:55:23 - REQUEST: Sent: 14016 bytes11:55:23 - THREAD: Thread with IP 192.168.100.48:56166 stopped! Time: 2019-10-31 11:55:23
+11:55:23 - STATUS: Server waiting for data...11:55:23 - THREAD: Thread with IP 192.168.100.48:56168 created! Time: 2019-10-31 11:55:23
+11:55:23 - REQUEST: GET /image/logo.png HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:55:23 - REQUEST: Sent: 48384 bytes11:55:23 - THREAD: Thread with IP 192.168.100.48:56168 stopped! Time: 2019-10-31 11:55:23
+11:55:23 - STATUS: Server waiting for data...11:55:23 - THREAD: Thread with IP 192.168.100.48:56170 created! Time: 2019-10-31 11:55:23
+11:55:23 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:55:23 - REQUEST: Sent: 777 bytes11:55:23 - THREAD: Thread with IP 192.168.100.48:56170 stopped! Time: 2019-10-31 11:55:23
+11:55:23 - STATUS: Server waiting for data...11:55:23 - THREAD: Thread with IP 192.168.100.48:56180 created! Time: 2019-10-31 11:55:23
+11:55:23 - REQUEST: GET /image/wos-aczino.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:55:23 - REQUEST: Sent: 163959 bytes11:55:23 - THREAD: Thread with IP 192.168.100.48:56180 stopped! Time: 2019-10-31 11:55:23
+11:55:23 - STATUS: Server waiting for data...11:55:23 - STATUS: Server waiting for data...11:55:23 - THREAD: Thread with IP 192.168.100.48:56182 created! Time: 2019-10-31 11:55:23
+11:55:23 - REQUEST: GET /image/god-level.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:55:23 - THREAD: Thread with IP 192.168.100.48:56184 created! Time: 2019-10-31 11:55:23
+11:55:23 - REQUEST: Sent: 124306 bytes11:55:23 - THREAD: Thread with IP 192.168.100.48:56182 stopped! Time: 2019-10-31 11:55:23
+11:55:23 - REQUEST: GET /image/trueno-wolf.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:55:23 - REQUEST: Sent: 23779 bytes11:55:23 - THREAD: Thread with IP 192.168.100.48:56184 stopped! Time: 2019-10-31 11:55:23
+11:55:23 - STATUS: Server waiting for data...11:55:23 - THREAD: Thread with IP 192.168.100.48:56186 created! Time: 2019-10-31 11:55:23
+11:55:23 - REQUEST: GET /image/horus.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:55:23 - REQUEST: Sent: 9343 bytes11:55:23 - THREAD: Thread with IP 192.168.100.48:56186 stopped! Time: 2019-10-31 11:55:23
+11:55:28 - STATUS: Server waiting for data...11:55:28 - THREAD: Thread with IP 192.168.100.48:56220 created! Time: 2019-10-31 11:55:28
+11:55:28 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:55:28 - REQUEST: Sent: 777 bytes11:55:28 - THREAD: Thread with IP 192.168.100.48:56220 stopped! Time: 2019-10-31 11:55:28
+11:55:28 - STATUS: Server waiting for data...11:55:28 - THREAD: Thread with IP 192.168.100.48:56230 created! Time: 2019-10-31 11:55:28
+11:55:28 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=0-
+
+11:55:28 - ERROR: No such file or directory11:55:28 - REQUEST: Sent: 0 bytes11:55:28 - THREAD: Thread with IP 192.168.100.48:56230 stopped! Time: 2019-10-31 11:55:28
+11:55:37 - STATUS: Server waiting for data...11:55:37 - THREAD: Thread with IP 192.168.100.48:56296 created! Time: 2019-10-31 11:55:37
+11:55:37 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:55:37 - REQUEST: Sent: 777 bytes11:55:37 - THREAD: Thread with IP 192.168.100.48:56296 stopped! Time: 2019-10-31 11:55:37
+11:56:0 - STATUS: Server waiting for data...11:56:0 - THREAD: Thread with IP 192.168.100.48:56486 created! Time: 2019-10-31 11:56:0
+11:56:0 - STATUS: Server waiting for data...11:56:0 - THREAD: Thread with IP 192.168.100.48:56488 created! Time: 2019-10-31 11:56:0
+11:56:0 - REQUEST: GET /page/index.html HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:56:0 - REQUEST: Sent: 14016 bytes11:56:0 - THREAD: Thread with IP 192.168.100.48:56486 stopped! Time: 2019-10-31 11:56:0
+11:56:0 - REQUEST: GET /image/logo.png HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:56:0 - REQUEST: Sent: 48384 bytes11:56:0 - THREAD: Thread with IP 192.168.100.48:56488 stopped! Time: 2019-10-31 11:56:0
+11:56:0 - STATUS: Server waiting for data...11:56:0 - THREAD: Thread with IP 192.168.100.48:56494 created! Time: 2019-10-31 11:56:0
+11:56:0 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:56:0 - REQUEST: Sent: 777 bytes11:56:0 - THREAD: Thread with IP 192.168.100.48:56494 stopped! Time: 2019-10-31 11:56:0
+11:56:0 - STATUS: Server waiting for data...11:56:0 - THREAD: Thread with IP 192.168.100.48:56496 created! Time: 2019-10-31 11:56:0
+11:56:0 - REQUEST: GET /image/wos-aczino.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:56:0 - REQUEST: Sent: 163959 bytes11:56:0 - THREAD: Thread with IP 192.168.100.48:56496 stopped! Time: 2019-10-31 11:56:0
+11:56:0 - STATUS: Server waiting for data...11:56:0 - THREAD: Thread with IP 192.168.100.48:56498 created! Time: 2019-10-31 11:56:0
+11:56:0 - REQUEST: GET /image/god-level.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:56:0 - REQUEST: Sent: 124306 bytes11:56:0 - THREAD: Thread with IP 192.168.100.48:56498 stopped! Time: 2019-10-31 11:56:0
+11:56:0 - STATUS: Server waiting for data...11:56:0 - STATUS: Server waiting for data...11:56:0 - THREAD: Thread with IP 192.168.100.48:56500 created! Time: 2019-10-31 11:56:0
+11:56:0 - THREAD: Thread with IP 192.168.100.48:56502 created! Time: 2019-10-31 11:56:0
+11:56:0 - REQUEST: GET /image/trueno-wolf.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:56:0 - REQUEST: Sent: 23779 bytes11:56:0 - THREAD: Thread with IP 192.168.100.48:56500 stopped! Time: 2019-10-31 11:56:0
+11:56:0 - REQUEST: GET /image/horus.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:56:0 - REQUEST: Sent: 9343 bytes11:56:0 - THREAD: Thread with IP 192.168.100.48:56502 stopped! Time: 2019-10-31 11:56:0
+11:56:3 - STATUS: Server waiting for data...11:56:3 - THREAD: Thread with IP 192.168.100.48:56528 created! Time: 2019-10-31 11:56:3
+11:56:3 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:56:3 - REQUEST: Sent: 777 bytes11:56:3 - THREAD: Thread with IP 192.168.100.48:56528 stopped! Time: 2019-10-31 11:56:3
+11:56:3 - STATUS: Server waiting for data...11:56:3 - THREAD: Thread with IP 192.168.100.48:56530 created! Time: 2019-10-31 11:56:3
+11:56:3 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=0-
+
+11:56:3 - ERROR: No such file or directory11:56:3 - REQUEST: Sent: 0 bytes11:56:3 - THREAD: Thread with IP 192.168.100.48:56530 stopped! Time: 2019-10-31 11:56:3
+11:57:50 - STATUS: Server waiting for data...11:57:50 - THREAD: Thread with IP 192.168.100.48:57406 created! Time: 2019-10-31 11:57:50
+11:57:50 - STATUS: Server waiting for data...11:57:50 - THREAD: Thread with IP 192.168.100.48:57408 created! Time: 2019-10-31 11:57:50
+11:57:50 - REQUEST: GET /page/index.html HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:57:50 - REQUEST: Sent: 14016 bytes11:57:50 - THREAD: Thread with IP 192.168.100.48:57406 stopped! Time: 2019-10-31 11:57:50
+11:57:51 - REQUEST: GET /image/logo.png HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:57:51 - REQUEST: Sent: 48384 bytes11:57:51 - THREAD: Thread with IP 192.168.100.48:57408 stopped! Time: 2019-10-31 11:57:51
+11:57:51 - STATUS: Server waiting for data...11:57:51 - THREAD: Thread with IP 192.168.100.48:57410 created! Time: 2019-10-31 11:57:51
+11:57:51 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:57:51 - REQUEST: Sent: 777 bytes11:57:51 - THREAD: Thread with IP 192.168.100.48:57410 stopped! Time: 2019-10-31 11:57:51
+11:57:51 - STATUS: Server waiting for data...11:57:51 - THREAD: Thread with IP 192.168.100.48:57412 created! Time: 2019-10-31 11:57:51
+11:57:51 - REQUEST: GET /image/wos-aczino.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:57:51 - REQUEST: Sent: 163959 bytes11:57:51 - THREAD: Thread with IP 192.168.100.48:57412 stopped! Time: 2019-10-31 11:57:51
+11:57:51 - STATUS: Server waiting for data...11:57:51 - THREAD: Thread with IP 192.168.100.48:57414 created! Time: 2019-10-31 11:57:51
+11:57:51 - REQUEST: GET /image/god-level.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:57:51 - REQUEST: Sent: 124306 bytes11:57:51 - THREAD: Thread with IP 192.168.100.48:57414 stopped! Time: 2019-10-31 11:57:51
+11:57:51 - STATUS: Server waiting for data...11:57:51 - THREAD: Thread with IP 192.168.100.48:57416 created! Time: 2019-10-31 11:57:51
+11:57:51 - REQUEST: GET /image/trueno-wolf.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:57:51 - REQUEST: Sent: 23779 bytes11:57:51 - THREAD: Thread with IP 192.168.100.48:57416 stopped! Time: 2019-10-31 11:57:51
+11:57:51 - STATUS: Server waiting for data...11:57:51 - THREAD: Thread with IP 192.168.100.48:57418 created! Time: 2019-10-31 11:57:51
+11:57:51 - REQUEST: GET /image/horus.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:57:51 - REQUEST: Sent: 9343 bytes11:57:51 - THREAD: Thread with IP 192.168.100.48:57418 stopped! Time: 2019-10-31 11:57:51
+11:57:54 - STATUS: Server waiting for data...11:57:54 - THREAD: Thread with IP 192.168.100.48:57444 created! Time: 2019-10-31 11:57:54
+11:57:54 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:57:54 - REQUEST: Sent: 777 bytes11:57:54 - THREAD: Thread with IP 192.168.100.48:57444 stopped! Time: 2019-10-31 11:57:54
+11:57:54 - STATUS: Server waiting for data...11:57:54 - THREAD: Thread with IP 192.168.100.48:57446 created! Time: 2019-10-31 11:57:54
+11:57:54 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=0-
+
+11:57:54 - REQUEST: Sent: 524093 bytes11:57:54 - THREAD: Thread with IP 192.168.100.48:57446 stopped! Time: 2019-10-31 11:57:54
+11:57:54 - STATUS: Server waiting for data...11:57:54 - THREAD: Thread with IP 192.168.100.48:57448 created! Time: 2019-10-31 11:57:54
+11:57:54 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=153747456-
+
+11:57:54 - REQUEST: Sent: 524093 bytes11:57:54 - THREAD: Thread with IP 192.168.100.48:57448 stopped! Time: 2019-10-31 11:57:54
+11:57:54 - STATUS: Server waiting for data...11:57:54 - THREAD: Thread with IP 192.168.100.48:57450 created! Time: 2019-10-31 11:57:54
+11:57:54 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=154271549-
+
+11:57:54 - REQUEST: Sent: 420287 bytes11:57:54 - THREAD: Thread with IP 192.168.100.48:57450 stopped! Time: 2019-10-31 11:57:54
+11:57:54 - STATUS: Server waiting for data...11:57:54 - THREAD: Thread with IP 192.168.100.48:57452 created! Time: 2019-10-31 11:57:54
+11:57:54 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=65536-
+
+11:57:54 - REQUEST: Sent: 524093 bytes11:57:54 - THREAD: Thread with IP 192.168.100.48:57452 stopped! Time: 2019-10-31 11:57:54
+11:57:54 - STATUS: Server waiting for data...11:57:54 - THREAD: Thread with IP 192.168.100.48:57462 created! Time: 2019-10-31 11:57:54
+11:57:54 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=131072-
+
+11:57:54 - REQUEST: Sent: 524093 bytes11:57:54 - THREAD: Thread with IP 192.168.100.48:57462 stopped! Time: 2019-10-31 11:57:54
+11:57:57 - STATUS: Server waiting for data...11:57:57 - THREAD: Thread with IP 192.168.100.48:57488 created! Time: 2019-10-31 11:57:57
+11:57:57 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:57:57 - REQUEST: Sent: 777 bytes11:57:57 - THREAD: Thread with IP 192.168.100.48:57488 stopped! Time: 2019-10-31 11:57:57
+11:58:29 - STATUS: Server waiting for data...11:58:29 - THREAD: Thread with IP 192.168.100.48:57746 created! Time: 2019-10-31 11:58:29
+11:58:29 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:58:29 - REQUEST: Sent: 777 bytes11:58:29 - THREAD: Thread with IP 192.168.100.48:57746 stopped! Time: 2019-10-31 11:58:29
+11:58:39 - STATUS: Server waiting for data...11:58:39 - THREAD: Thread with IP 192.168.100.48:57828 created! Time: 2019-10-31 11:58:39
+11:58:39 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=0-
+
+11:58:39 - REQUEST: Sent: 524093 bytes11:58:39 - THREAD: Thread with IP 192.168.100.48:57828 stopped! Time: 2019-10-31 11:58:39
+11:58:39 - STATUS: Server waiting for data...11:58:39 - THREAD: Thread with IP 192.168.100.48:57830 created! Time: 2019-10-31 11:58:39
+11:58:39 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=153747456-
+
+11:58:39 - REQUEST: Sent: 524093 bytes11:58:39 - THREAD: Thread with IP 192.168.100.48:57830 stopped! Time: 2019-10-31 11:58:39
+11:58:39 - STATUS: Server waiting for data...11:58:39 - THREAD: Thread with IP 192.168.100.48:57832 created! Time: 2019-10-31 11:58:39
+11:58:39 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=154271549-
+
+11:58:39 - REQUEST: Sent: 420287 bytes11:58:39 - THREAD: Thread with IP 192.168.100.48:57832 stopped! Time: 2019-10-31 11:58:39
+11:58:39 - STATUS: Server waiting for data...11:58:39 - THREAD: Thread with IP 192.168.100.48:57834 created! Time: 2019-10-31 11:58:39
+11:58:39 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=65536-
+
+11:58:39 - REQUEST: Sent: 524093 bytes11:58:39 - THREAD: Thread with IP 192.168.100.48:57834 stopped! Time: 2019-10-31 11:58:39
+11:58:41 - STATUS: Server waiting for data...11:58:41 - THREAD: Thread with IP 192.168.100.48:57852 created! Time: 2019-10-31 11:58:41
+11:58:41 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=131072-
+
+11:58:41 - REQUEST: Sent: 524093 bytes11:58:41 - THREAD: Thread with IP 192.168.100.48:57852 stopped! Time: 2019-10-31 11:58:41
+11:58:41 - STATUS: Server waiting for data...11:58:41 - THREAD: Thread with IP 192.168.100.48:57854 created! Time: 2019-10-31 11:58:41
+11:58:41 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=262144-
+
+11:58:41 - REQUEST: Sent: 524093 bytes11:58:41 - THREAD: Thread with IP 192.168.100.48:57854 stopped! Time: 2019-10-31 11:58:41
+11:58:41 - STATUS: Server waiting for data...11:58:41 - THREAD: Thread with IP 192.168.100.48:57856 created! Time: 2019-10-31 11:58:41
+11:58:41 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=393216-
+
+11:58:41 - REQUEST: Sent: 524093 bytes11:58:41 - THREAD: Thread with IP 192.168.100.48:57856 stopped! Time: 2019-10-31 11:58:41
+11:58:48 - STATUS: Server waiting for data...11:58:48 - THREAD: Thread with IP 192.168.100.48:57916 created! Time: 2019-10-31 11:58:48
+11:58:48 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+11:58:48 - REQUEST: Sent: 777 bytes11:58:48 - THREAD: Thread with IP 192.168.100.48:57916 stopped! Time: 2019-10-31 11:58:48
+12:1:22 - STATUS: Server waiting for data...12:1:22 - THREAD: Thread with IP 192.168.100.48:59172 created! Time: 2019-10-31 12:1:22
+12:1:22 - STATUS: Server waiting for data...12:1:22 - THREAD: Thread with IP 192.168.100.48:59174 created! Time: 2019-10-31 12:1:22
+12:1:22 - REQUEST: GET /page/index.html HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:1:22 - REQUEST: Sent: 14011 bytes12:1:22 - THREAD: Thread with IP 192.168.100.48:59172 stopped! Time: 2019-10-31 12:1:22
+12:1:22 - REQUEST: GET /image/logo.png HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:1:22 - REQUEST: Sent: 48384 bytes12:1:22 - THREAD: Thread with IP 192.168.100.48:59174 stopped! Time: 2019-10-31 12:1:22
+12:1:22 - STATUS: Server waiting for data...12:1:22 - THREAD: Thread with IP 192.168.100.48:59176 created! Time: 2019-10-31 12:1:22
+12:1:22 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:1:22 - REQUEST: Sent: 777 bytes12:1:22 - THREAD: Thread with IP 192.168.100.48:59176 stopped! Time: 2019-10-31 12:1:22
+12:1:22 - STATUS: Server waiting for data...12:1:22 - THREAD: Thread with IP 192.168.100.48:59178 created! Time: 2019-10-31 12:1:22
+12:1:22 - REQUEST: GET /image/wos-aczino.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:1:22 - REQUEST: Sent: 163959 bytes12:1:22 - THREAD: Thread with IP 192.168.100.48:59178 stopped! Time: 2019-10-31 12:1:22
+12:1:22 - STATUS: Server waiting for data...12:1:22 - THREAD: Thread with IP 192.168.100.48:59180 created! Time: 2019-10-31 12:1:22
+12:1:22 - REQUEST: GET /image/god-level.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:1:22 - REQUEST: Sent: 124306 bytes12:1:22 - THREAD: Thread with IP 192.168.100.48:59180 stopped! Time: 2019-10-31 12:1:22
+12:1:22 - STATUS: Server waiting for data...12:1:22 - THREAD: Thread with IP 192.168.100.48:59182 created! Time: 2019-10-31 12:1:22
+12:1:22 - REQUEST: GET /image/trueno-wolf.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:1:22 - REQUEST: Sent: 23779 bytes12:1:22 - THREAD: Thread with IP 192.168.100.48:59182 stopped! Time: 2019-10-31 12:1:22
+12:1:22 - STATUS: Server waiting for data...12:1:22 - THREAD: Thread with IP 192.168.100.48:59184 created! Time: 2019-10-31 12:1:22
+12:1:22 - REQUEST: GET /image/horus.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:1:22 - REQUEST: Sent: 9343 bytes12:1:22 - THREAD: Thread with IP 192.168.100.48:59184 stopped! Time: 2019-10-31 12:1:22
+12:1:23 - STATUS: Server waiting for data...12:1:23 - THREAD: Thread with IP 192.168.100.48:59194 created! Time: 2019-10-31 12:1:23
+12:1:23 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:1:23 - REQUEST: Sent: 777 bytes12:1:23 - THREAD: Thread with IP 192.168.100.48:59194 stopped! Time: 2019-10-31 12:1:23
+12:1:23 - STATUS: Server waiting for data...12:1:23 - THREAD: Thread with IP 192.168.100.48:59196 created! Time: 2019-10-31 12:1:23
+12:1:23 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=0-
+
+12:1:23 - REQUEST: Sent: 524093 bytes12:1:23 - THREAD: Thread with IP 192.168.100.48:59196 stopped! Time: 2019-10-31 12:1:23
+12:1:23 - STATUS: Server waiting for data...12:1:23 - THREAD: Thread with IP 192.168.100.48:59198 created! Time: 2019-10-31 12:1:23
+12:1:23 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=153747456-
+
+12:1:23 - REQUEST: Sent: 524093 bytes12:1:23 - THREAD: Thread with IP 192.168.100.48:59198 stopped! Time: 2019-10-31 12:1:23
+12:1:23 - STATUS: Server waiting for data...12:1:23 - THREAD: Thread with IP 192.168.100.48:59200 created! Time: 2019-10-31 12:1:23
+12:1:23 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=154271549-
+
+12:1:23 - REQUEST: Sent: 420287 bytes12:1:23 - THREAD: Thread with IP 192.168.100.48:59200 stopped! Time: 2019-10-31 12:1:23
+12:1:23 - STATUS: Server waiting for data...12:1:23 - THREAD: Thread with IP 192.168.100.48:59202 created! Time: 2019-10-31 12:1:23
+12:1:23 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=65536-
+
+12:1:23 - REQUEST: Sent: 524093 bytes12:1:23 - THREAD: Thread with IP 192.168.100.48:59202 stopped! Time: 2019-10-31 12:1:23
+12:1:24 - STATUS: Server waiting for data...12:1:24 - THREAD: Thread with IP 192.168.100.48:59214 created! Time: 2019-10-31 12:1:24
+12:1:24 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=131072-
+
+12:1:24 - REQUEST: Sent: 524093 bytes12:1:24 - THREAD: Thread with IP 192.168.100.48:59214 stopped! Time: 2019-10-31 12:1:24
+12:1:24 - STATUS: Server waiting for data...12:1:24 - THREAD: Thread with IP 192.168.100.48:59216 created! Time: 2019-10-31 12:1:24
+12:1:24 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=327680-
+
+12:1:24 - REQUEST: Sent: 524093 bytes12:1:24 - THREAD: Thread with IP 192.168.100.48:59216 stopped! Time: 2019-10-31 12:1:24
+12:1:26 - STATUS: Server waiting for data...12:1:26 - THREAD: Thread with IP 192.168.100.48:59234 created! Time: 2019-10-31 12:1:26
+12:1:26 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:1:26 - REQUEST: Sent: 777 bytes12:1:26 - THREAD: Thread with IP 192.168.100.48:59234 stopped! Time: 2019-10-31 12:1:26
+12:4:58 - STATUS: Server waiting for data...12:4:58 - THREAD: Thread with IP 192.168.100.48:60950 created! Time: 2019-10-31 12:4:58
+12:4:58 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:4:58 - REQUEST: Sent: 777 bytes12:4:58 - THREAD: Thread with IP 192.168.100.48:60950 stopped! Time: 2019-10-31 12:4:58
+12:4:58 - STATUS: Server waiting for data...12:4:58 - THREAD: Thread with IP 192.168.100.48:60952 created! Time: 2019-10-31 12:4:58
+12:4:58 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=0-
+
+12:4:58 - REQUEST: Sent: 524093 bytes12:4:58 - THREAD: Thread with IP 192.168.100.48:60952 stopped! Time: 2019-10-31 12:4:58
+12:4:58 - THREAD: Thread with IP 192.168.100.48:60954 created! Time: 2019-10-31 12:4:58
+12:4:58 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=153747456-
+
+12:4:58 - REQUEST: Sent: 524093 bytes12:4:58 - THREAD: Thread with IP 192.168.100.48:60954 stopped! Time: 2019-10-31 12:4:58
+12:4:58 - STATUS: Server waiting for data...12:4:58 - STATUS: Server waiting for data...12:4:58 - THREAD: Thread with IP 192.168.100.48:60956 created! Time: 2019-10-31 12:4:58
+12:4:58 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=154271549-
+
+12:4:58 - REQUEST: Sent: 420287 bytes12:4:58 - THREAD: Thread with IP 192.168.100.48:60956 stopped! Time: 2019-10-31 12:4:58
+12:4:58 - STATUS: Server waiting for data...12:4:58 - THREAD: Thread with IP 192.168.100.48:60958 created! Time: 2019-10-31 12:4:58
+12:4:58 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=65536-
+
+12:4:58 - REQUEST: Sent: 524093 bytes12:4:58 - THREAD: Thread with IP 192.168.100.48:60958 stopped! Time: 2019-10-31 12:4:58
+12:5:0 - STATUS: Server waiting for data...12:5:0 - THREAD: Thread with IP 192.168.100.48:60976 created! Time: 2019-10-31 12:5:0
+12:5:0 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=131072-
+
+12:5:0 - REQUEST: Sent: 524093 bytes12:5:0 - THREAD: Thread with IP 192.168.100.48:60976 stopped! Time: 2019-10-31 12:5:0
+12:5:0 - STATUS: Server waiting for data...12:5:0 - THREAD: Thread with IP 192.168.100.48:60978 created! Time: 2019-10-31 12:5:0
+12:5:0 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=262144-
+
+12:5:0 - REQUEST: Sent: 524093 bytes12:5:0 - THREAD: Thread with IP 192.168.100.48:60978 stopped! Time: 2019-10-31 12:5:0
+12:5:0 - STATUS: Server waiting for data...12:5:0 - THREAD: Thread with IP 192.168.100.48:60980 created! Time: 2019-10-31 12:5:0
+12:5:0 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=393216-
+
+12:5:0 - REQUEST: Sent: 524093 bytes12:5:0 - THREAD: Thread with IP 192.168.100.48:60980 stopped! Time: 2019-10-31 12:5:0
+12:5:1 - STATUS: Server waiting for data...12:5:1 - THREAD: Thread with IP 192.168.100.48:60992 created! Time: 2019-10-31 12:5:1
+12:5:1 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:5:1 - REQUEST: Sent: 777 bytes12:5:1 - THREAD: Thread with IP 192.168.100.48:60992 stopped! Time: 2019-10-31 12:5:1
+12:5:4 - STATUS: Server waiting for data...12:5:4 - THREAD: Thread with IP 192.168.100.48:32794 created! Time: 2019-10-31 12:5:4
+12:5:4 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:5:4 - REQUEST: Sent: 777 bytes12:5:4 - THREAD: Thread with IP 192.168.100.48:32794 stopped! Time: 2019-10-31 12:5:4
+12:5:4 - STATUS: Server waiting for data...12:5:4 - THREAD: Thread with IP 192.168.100.48:32796 created! Time: 2019-10-31 12:5:4
+12:5:4 - REQUEST: GET /video/trueno-wolf.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=0-
+
+12:5:4 - REQUEST: Sent: 524093 bytes12:5:4 - THREAD: Thread with IP 192.168.100.48:32796 stopped! Time: 2019-10-31 12:5:4
+12:5:5 - STATUS: Server waiting for data...12:5:5 - THREAD: Thread with IP 192.168.100.48:32806 created! Time: 2019-10-31 12:5:5
+12:5:5 - REQUEST: GET /video/trueno-wolf.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=458752-
+
+12:5:5 - REQUEST: Sent: 524093 bytes12:5:5 - THREAD: Thread with IP 192.168.100.48:32806 stopped! Time: 2019-10-31 12:5:5
+12:5:7 - STATUS: Server waiting for data...12:5:7 - THREAD: Thread with IP 192.168.100.48:32816 created! Time: 2019-10-31 12:5:7
+12:5:7 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:5:7 - REQUEST: Sent: 777 bytes12:5:7 - THREAD: Thread with IP 192.168.100.48:32816 stopped! Time: 2019-10-31 12:5:7
+12:6:15 - STATUS: Server waiting for data...12:6:15 - THREAD: Thread with IP 192.168.100.48:33366 created! Time: 2019-10-31 12:6:15
+12:6:15 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:6:15 - REQUEST: Sent: 579 bytes12:6:15 - THREAD: Thread with IP 192.168.100.48:33366 stopped! Time: 2019-10-31 12:6:15
+12:6:21 - STATUS: Server waiting for data...12:6:21 - THREAD: Thread with IP 192.168.100.48:33416 created! Time: 2019-10-31 12:6:21
+12:6:21 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:6:21 - REQUEST: Sent: 579 bytes12:6:21 - THREAD: Thread with IP 192.168.100.48:33416 stopped! Time: 2019-10-31 12:6:21
+12:6:33 - STATUS: Server waiting for data...12:6:33 - THREAD: Thread with IP 192.168.100.48:33516 created! Time: 2019-10-31 12:6:33
+12:6:33 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:6:33 - REQUEST: Sent: 579 bytes12:6:33 - THREAD: Thread with IP 192.168.100.48:33516 stopped! Time: 2019-10-31 12:6:33
+12:6:40 - STATUS: Server waiting for data...12:6:40 - THREAD: Thread with IP 192.168.100.48:33566 created! Time: 2019-10-31 12:6:40
+12:6:40 - STATUS: Server waiting for data...12:6:40 - THREAD: Thread with IP 192.168.100.48:33568 created! Time: 2019-10-31 12:6:40
+12:6:40 - REQUEST: GET /page/index.html HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:6:40 - REQUEST: Sent: 14011 bytes12:6:40 - THREAD: Thread with IP 192.168.100.48:33566 stopped! Time: 2019-10-31 12:6:40
+12:6:40 - REQUEST: GET /image/logo.png HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:6:40 - REQUEST: Sent: 48384 bytes12:6:40 - THREAD: Thread with IP 192.168.100.48:33568 stopped! Time: 2019-10-31 12:6:40
+12:6:40 - STATUS: Server waiting for data...12:6:40 - THREAD: Thread with IP 192.168.100.48:33578 created! Time: 2019-10-31 12:6:40
+12:6:40 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:6:40 - REQUEST: Sent: 579 bytes12:6:40 - THREAD: Thread with IP 192.168.100.48:33578 stopped! Time: 2019-10-31 12:6:40
+12:6:40 - STATUS: Server waiting for data...12:6:40 - THREAD: Thread with IP 192.168.100.48:33580 created! Time: 2019-10-31 12:6:40
+12:6:40 - STATUS: Server waiting for data...12:6:40 - STATUS: Server waiting for data...12:6:40 - THREAD: Thread with IP 192.168.100.48:33582 created! Time: 2019-10-31 12:6:40
+12:6:40 - THREAD: Thread with IP 192.168.100.48:33584 created! Time: 2019-10-31 12:6:40
+12:6:40 - REQUEST: GET /image/god-level.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:6:40 - REQUEST: Sent: 124306 bytes12:6:40 - THREAD: Thread with IP 192.168.100.48:33580 stopped! Time: 2019-10-31 12:6:40
+12:6:40 - REQUEST: GET /image/trueno-wolf.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:6:40 - REQUEST: Sent: 23779 bytes12:6:40 - THREAD: Thread with IP 192.168.100.48:33582 stopped! Time: 2019-10-31 12:6:40
+12:6:40 - REQUEST: GET /image/horus.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:6:40 - REQUEST: Sent: 9343 bytes12:6:40 - THREAD: Thread with IP 192.168.100.48:33584 stopped! Time: 2019-10-31 12:6:40
+12:6:54 - STATUS: Server waiting for data...12:6:54 - THREAD: Thread with IP 192.168.100.48:33700 created! Time: 2019-10-31 12:6:54
+12:6:54 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:6:54 - REQUEST: Sent: 777 bytes12:6:54 - THREAD: Thread with IP 192.168.100.48:33700 stopped! Time: 2019-10-31 12:6:54
+12:7:0 - STATUS: Server waiting for data...12:7:0 - THREAD: Thread with IP 192.168.100.48:33750 created! Time: 2019-10-31 12:7:0
+12:7:0 - STATUS: Server waiting for data...12:7:0 - THREAD: Thread with IP 192.168.100.48:33752 created! Time: 2019-10-31 12:7:0
+12:7:0 - REQUEST: GET /page/index.html HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:7:0 - REQUEST: Sent: 14011 bytes12:7:0 - THREAD: Thread with IP 192.168.100.48:33750 stopped! Time: 2019-10-31 12:7:0
+12:7:0 - REQUEST: GET /image/logo.png HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:7:0 - REQUEST: Sent: 48384 bytes12:7:0 - THREAD: Thread with IP 192.168.100.48:33752 stopped! Time: 2019-10-31 12:7:0
+12:7:0 - STATUS: Server waiting for data...12:7:0 - THREAD: Thread with IP 192.168.100.48:33758 created! Time: 2019-10-31 12:7:0
+12:7:0 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:7:0 - REQUEST: Sent: 777 bytes12:7:0 - THREAD: Thread with IP 192.168.100.48:33758 stopped! Time: 2019-10-31 12:7:0
+12:7:0 - STATUS: Server waiting for data...12:7:0 - STATUS: Server waiting for data...12:7:0 - THREAD: Thread with IP 192.168.100.48:33760 created! Time: 2019-10-31 12:7:0
+12:7:0 - THREAD: Thread with IP 192.168.100.48:33762 created! Time: 2019-10-31 12:7:0
+12:7:0 - REQUEST: GET /image/trueno-wolf.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:7:0 - REQUEST: GET /image/god-level.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:7:0 - REQUEST: Sent: 23779 bytes12:7:0 - THREAD: Thread with IP 192.168.100.48:33762 stopped! Time: 2019-10-31 12:7:0
+12:7:0 - REQUEST: Sent: 124306 bytes12:7:0 - THREAD: Thread with IP 192.168.100.48:33760 stopped! Time: 2019-10-31 12:7:0
+12:7:0 - STATUS: Server waiting for data...12:7:0 - THREAD: Thread with IP 192.168.100.48:33764 created! Time: 2019-10-31 12:7:0
+12:7:0 - REQUEST: GET /image/horus.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:7:0 - REQUEST: Sent: 9343 bytes12:7:0 - THREAD: Thread with IP 192.168.100.48:33764 stopped! Time: 2019-10-31 12:7:0
+12:7:0 - STATUS: Server waiting for data...12:7:0 - THREAD: Thread with IP 192.168.100.48:33766 created! Time: 2019-10-31 12:7:0
+12:7:0 - REQUEST: GET /image/wos-aczino.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:7:0 - REQUEST: Sent: 163959 bytes12:7:0 - THREAD: Thread with IP 192.168.100.48:33766 stopped! Time: 2019-10-31 12:7:0
+12:7:3 - STATUS: Server waiting for data...12:7:3 - THREAD: Thread with IP 192.168.100.48:33784 created! Time: 2019-10-31 12:7:3
+12:7:3 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:7:3 - REQUEST: Sent: 777 bytes12:7:3 - THREAD: Thread with IP 192.168.100.48:33784 stopped! Time: 2019-10-31 12:7:3
+12:7:3 - STATUS: Server waiting for data...12:7:3 - THREAD: Thread with IP 192.168.100.48:33786 created! Time: 2019-10-31 12:7:3
+12:7:3 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=0-
+
+12:7:3 - REQUEST: Sent: 524093 bytes12:7:3 - THREAD: Thread with IP 192.168.100.48:33786 stopped! Time: 2019-10-31 12:7:3
+12:7:3 - STATUS: Server waiting for data...12:7:3 - THREAD: Thread with IP 192.168.100.48:33788 created! Time: 2019-10-31 12:7:3
+12:7:3 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=153747456-
+
+12:7:3 - REQUEST: Sent: 524093 bytes12:7:3 - THREAD: Thread with IP 192.168.100.48:33788 stopped! Time: 2019-10-31 12:7:3
+12:7:3 - STATUS: Server waiting for data...12:7:3 - THREAD: Thread with IP 192.168.100.48:33790 created! Time: 2019-10-31 12:7:3
+12:7:3 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=154271549-
+
+12:7:3 - REQUEST: Sent: 420287 bytes12:7:3 - THREAD: Thread with IP 192.168.100.48:33790 stopped! Time: 2019-10-31 12:7:3
+12:7:3 - STATUS: Server waiting for data...12:7:3 - THREAD: Thread with IP 192.168.100.48:33792 created! Time: 2019-10-31 12:7:3
+12:7:3 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=65536-
+
+12:7:3 - REQUEST: Sent: 524093 bytes12:7:3 - THREAD: Thread with IP 192.168.100.48:33792 stopped! Time: 2019-10-31 12:7:3
+12:7:3 - STATUS: Server waiting for data...12:7:3 - THREAD: Thread with IP 192.168.100.48:33802 created! Time: 2019-10-31 12:7:3
+12:7:3 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=131072-
+
+12:7:3 - REQUEST: Sent: 524093 bytes12:7:3 - THREAD: Thread with IP 192.168.100.48:33802 stopped! Time: 2019-10-31 12:7:3
+12:8:13 - STATUS: Server waiting for data...12:8:13 - THREAD: Thread with IP 192.168.100.48:34368 created! Time: 2019-10-31 12:8:13
+12:8:13 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:8:13 - REQUEST: Sent: 761 bytes12:8:13 - THREAD: Thread with IP 192.168.100.48:34368 stopped! Time: 2019-10-31 12:8:13
+12:8:18 - STATUS: Server waiting for data...12:8:18 - THREAD: Thread with IP 192.168.100.48:34410 created! Time: 2019-10-31 12:8:18
+12:8:18 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:8:18 - REQUEST: Sent: 761 bytes12:8:18 - THREAD: Thread with IP 192.168.100.48:34410 stopped! Time: 2019-10-31 12:8:18
+12:8:29 - STATUS: Server waiting for data...12:8:29 - THREAD: Thread with IP 192.168.100.48:34502 created! Time: 2019-10-31 12:8:29
+12:8:29 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:8:29 - REQUEST: Sent: 761 bytes12:8:29 - THREAD: Thread with IP 192.168.100.48:34502 stopped! Time: 2019-10-31 12:8:29
+12:8:29 - STATUS: Server waiting for data...12:8:29 - THREAD: Thread with IP 192.168.100.48:34504 created! Time: 2019-10-31 12:8:29
+12:8:29 - REQUEST: GET /video/horus.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=0-
+
+12:8:29 - REQUEST: Sent: 524093 bytes12:8:29 - THREAD: Thread with IP 192.168.100.48:34504 stopped! Time: 2019-10-31 12:8:29
+12:8:29 - STATUS: Server waiting for data...12:8:29 - THREAD: Thread with IP 192.168.100.48:34506 created! Time: 2019-10-31 12:8:29
+12:8:29 - REQUEST: GET /video/horus.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=20185088-
+
+12:8:29 - REQUEST: Sent: 471420 bytes12:8:29 - THREAD: Thread with IP 192.168.100.48:34506 stopped! Time: 2019-10-31 12:8:29
+12:8:29 - STATUS: Server waiting for data...12:8:29 - THREAD: Thread with IP 192.168.100.48:34508 created! Time: 2019-10-31 12:8:29
+12:8:29 - REQUEST: GET /video/horus.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=65536-
+
+12:8:29 - REQUEST: Sent: 524093 bytes12:8:29 - THREAD: Thread with IP 192.168.100.48:34508 stopped! Time: 2019-10-31 12:8:29
+12:8:31 - STATUS: Server waiting for data...12:8:31 - THREAD: Thread with IP 192.168.100.48:34534 created! Time: 2019-10-31 12:8:31
+12:8:31 - REQUEST: GET /video/horus.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=131072-
+
+12:8:31 - REQUEST: Sent: 524093 bytes12:8:31 - THREAD: Thread with IP 192.168.100.48:34534 stopped! Time: 2019-10-31 12:8:31
+12:8:31 - STATUS: Server waiting for data...12:8:31 - THREAD: Thread with IP 192.168.100.48:34536 created! Time: 2019-10-31 12:8:31
+12:8:31 - REQUEST: GET /video/horus.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=262144-
+
+12:8:31 - REQUEST: Sent: 524093 bytes12:8:31 - THREAD: Thread with IP 192.168.100.48:34536 stopped! Time: 2019-10-31 12:8:31
+12:10:19 - STATUS: Server waiting for data...12:10:19 - THREAD: Thread with IP 192.168.100.48:35408 created! Time: 2019-10-31 12:10:19
+12:10:19 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:10:19 - REQUEST: Sent: 792 bytes12:10:19 - THREAD: Thread with IP 192.168.100.48:35408 stopped! Time: 2019-10-31 12:10:19
+12:10:22 - STATUS: Server waiting for data...12:10:22 - STATUS: Server waiting for data...12:10:22 - THREAD: Thread with IP 192.168.100.48:35442 created! Time: 2019-10-31 12:10:22
+12:10:22 - THREAD: Thread with IP 192.168.100.48:35444 created! Time: 2019-10-31 12:10:22
+12:10:22 - REQUEST: GET /page/index.html HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:10:22 - REQUEST: Sent: 14011 bytes12:10:22 - THREAD: Thread with IP 192.168.100.48:35442 stopped! Time: 2019-10-31 12:10:22
+12:10:22 - REQUEST: GET /image/logo.png HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:10:22 - REQUEST: Sent: 48384 bytes12:10:22 - THREAD: Thread with IP 192.168.100.48:35444 stopped! Time: 2019-10-31 12:10:22
+12:10:22 - STATUS: Server waiting for data...12:10:22 - THREAD: Thread with IP 192.168.100.48:35446 created! Time: 2019-10-31 12:10:22
+12:10:22 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:10:22 - REQUEST: Sent: 792 bytes12:10:22 - THREAD: Thread with IP 192.168.100.48:35446 stopped! Time: 2019-10-31 12:10:22
+12:10:22 - STATUS: Server waiting for data...12:10:22 - THREAD: Thread with IP 192.168.100.48:35448 created! Time: 2019-10-31 12:10:22
+12:10:22 - REQUEST: GET /image/wos-aczino.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:10:22 - REQUEST: Sent: 163959 bytes12:10:22 - THREAD: Thread with IP 192.168.100.48:35448 stopped! Time: 2019-10-31 12:10:22
+12:10:22 - STATUS: Server waiting for data...12:10:22 - THREAD: Thread with IP 192.168.100.48:35450 created! Time: 2019-10-31 12:10:22
+12:10:22 - STATUS: Server waiting for data...12:10:22 - THREAD: Thread with IP 192.168.100.48:35452 created! Time: 2019-10-31 12:10:22
+12:10:22 - STATUS: Server waiting for data...12:10:22 - THREAD: Thread with IP 192.168.100.48:35454 created! Time: 2019-10-31 12:10:22
+12:10:22 - REQUEST: GET /image/god-level.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:10:22 - REQUEST: GET /image/trueno-wolf.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:10:22 - REQUEST: Sent: 124306 bytes12:10:22 - THREAD: Thread with IP 192.168.100.48:35450 stopped! Time: 2019-10-31 12:10:22
+12:10:22 - REQUEST: GET /image/horus.jpg HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:10:22 - REQUEST: Sent: 23779 bytes12:10:22 - THREAD: Thread with IP 192.168.100.48:35452 stopped! Time: 2019-10-31 12:10:22
+12:10:22 - REQUEST: Sent: 9343 bytes12:10:22 - THREAD: Thread with IP 192.168.100.48:35454 stopped! Time: 2019-10-31 12:10:22
+12:13:12 - STATUS: Server waiting for data...12:13:12 - THREAD: Thread with IP 192.168.100.48:35554 created! Time: 2019-10-31 12:13:12
+12:13:12 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+12:13:12 - REQUEST: Sent: 792 bytes12:13:12 - THREAD: Thread with IP 192.168.100.48:35554 stopped! Time: 2019-10-31 12:13:12
+12:13:12 - STATUS: Server waiting for data...12:13:12 - THREAD: Thread with IP 192.168.100.48:35556 created! Time: 2019-10-31 12:13:12
+12:13:12 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=0-
+
+12:13:12 - REQUEST: Sent: 524093 bytes12:13:12 - THREAD: Thread with IP 192.168.100.48:35556 stopped! Time: 2019-10-31 12:13:12
+12:13:12 - STATUS: Server waiting for data...12:13:12 - THREAD: Thread with IP 192.168.100.48:35558 created! Time: 2019-10-31 12:13:12
+12:13:12 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=153747456-
+
+12:13:12 - REQUEST: Sent: 524093 bytes12:13:12 - THREAD: Thread with IP 192.168.100.48:35558 stopped! Time: 2019-10-31 12:13:12
+12:13:12 - STATUS: Server waiting for data...12:13:12 - THREAD: Thread with IP 192.168.100.48:35560 created! Time: 2019-10-31 12:13:12
+12:13:12 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=154271549-
+
+12:13:12 - REQUEST: Sent: 420287 bytes12:13:12 - THREAD: Thread with IP 192.168.100.48:35560 stopped! Time: 2019-10-31 12:13:12
+12:13:12 - STATUS: Server waiting for data...12:13:12 - THREAD: Thread with IP 192.168.100.48:35562 created! Time: 2019-10-31 12:13:12
+12:13:12 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=65536-
+
+12:13:12 - REQUEST: Sent: 524093 bytes12:13:12 - THREAD: Thread with IP 192.168.100.48:35562 stopped! Time: 2019-10-31 12:13:12
+12:13:13 - STATUS: Server waiting for data...12:13:13 - THREAD: Thread with IP 192.168.100.48:35564 created! Time: 2019-10-31 12:13:13
+12:13:13 - REQUEST: GET /video/wos-aczino.mp4 HTTP/1.1
+Host: 192.168.100.48:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Referer: http://192.168.100.48:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=262144-
+
+12:13:13 - REQUEST: Sent: 524093 bytes12:13:13 - THREAD: Thread with IP 192.168.100.48:35564 stopped! Time: 2019-10-31 12:13:13

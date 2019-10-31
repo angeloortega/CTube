@@ -162,7 +162,7 @@
         myJson.forEach(element => {
             deploySlides += '<div class="mySlides">'+
             '<div class="numbertext">'+actualSlide+' / '+totalSlides+'</div>'+
-            '<img  onclick="mostrarVideoSlide(\''+element.title+'\')" src="/image/'+element.poster+'" style="width:100%; height: 60%;">'+
+            '<img  onclick="mostrarVideo(\''+element.title+'\')" src="/image/'+element.poster+'" style="width:100%; height: 60%;">'+
             '<div class="text">'+element.title+'</div>'+
             '<div class="text">'+element.description+'</div>'+
             '</div>';
@@ -233,20 +233,33 @@
 	  }
       
       function mostrarVideo(title){
-        var myJson = JSON.parse(localStorage.getItem("jsonActual"));
-        //console.log(myJson);
-        var deployVideos = "";
-        myJson.forEach(element => {
-          if (element.title == title){
-            deployVideos += '<li class="list-group-item" style="font-size: 3vw"> Titulo del Video: '+ element.title +'</li><li class="list-group-item" style="font-size: 3vw"> Descripcion del video: '+ element.description+'</li>'+
-            '<li class="list-group-item" style="font-size: 3vw"> Bytes del video: '+element.size+'KB </li> '+'<li class="list-group-item" style="font-size: 3vw"> Fecha del video: '+element.creationDate+'</li> '+
-            '<li class="list-group-item" style="font-size: 4vw"> <h4> Poster: </h4><video width=50% height=50% controls> <source src="/video/'+element.url +'" type="video/mp4"></source></video> </li>';
+        fetch('/json/videos.json')
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(updatedJson) {
+          var stringedJson = JSON.stringify(updatedJson);
+          var myJson = JSON.parse(localStorage.getItem("jsonActual"));
+          var htmlJson = JSON.stringify(myJson);
+          //console.log(myJson);
+          var deployVideos = "";
+          if (stringedJson.localeCompare(htmlJson)==0 && htmlJson.localeCompare(stringedJson)==0){
+            myJson.forEach(element => {
+              if (element.title == title){
+              deployVideos += '<li class="list-group-item" style="font-size: 3vw"> Titulo del Video: '+ element.title +'</li><li class="list-group-item" style="font-size: 3vw"> Descripcion del video: '+ element.description+'</li>'+
+              '<li class="list-group-item" style="font-size: 3vw"> Bytes del video: '+element.size+'KB </li> '+'<li class="list-group-item" style="font-size: 3vw"> Fecha del video: '+element.creationDate+'</li> '+
+              '<li class="list-group-item" style="font-size: 4vw"> <h4> Video: </h4><video width=50% height=50% controls> <source src="/video/'+element.url +'" type="video/mp4"></source></video> </li>';
+              }
+            });
+            document.getElementById('jsonVideos').innerHTML = deployVideos;
           }
-          //<video width=50% height=50% controls> <source src="'+element.url +'" type="video/mp4">
-          //<img style="margin-left: -50vw;" width=20% height=60% src="logo.png" type="png">
+          else {
+            alert("Debe recargar la pagina ya que han sucedido cambios");
+          }
+          
         });
-        document.getElementById('jsonVideos').innerHTML = deployVideos;
       }
+
 
       function mostrarVideoSlide(title){
         var myJson = JSON.parse(localStorage.getItem("jsonActual"));
@@ -258,8 +271,7 @@
             '<li class="list-group-item" style="font-size: 3vw"> Bytes del video: '+element.size+'KB </li> '+'<li class="list-group-item" style="font-size: 3vw"> Fecha del video: '+element.creationDate+'</li> '+
             '<li class="list-group-item" style="font-size: 4vw"> <h4> Poster: </h4><video width=50% height=50% controls> <source src="/video/'+element.url +'" type="video/mp4"></source></video> </li>';
           }
-          //<video width=50% height=50% controls> <source src="'+element.url +'" type="video/mp4">
-          //<img style="margin-left: -50vw;" width=20% height=60% src="logo.png" type="png">
+          
         });
         document.getElementById('jsonVideos').innerHTML = deployVideos;
       }
@@ -279,10 +291,8 @@
             '<li class="list-group-item" style="font-size: 3vw"> Bytes del video: '+element.size+'KB </li> '+'<li class="list-group-item" style="font-size: 3vw"> Fecha del video: '+element.creationDate+'</li> '+
             '<li onclick="mostrarVideo(\''+element.title+'\')" class="list-group-item" style="font-size: 4vw"> <h4> Poster: </h4><img src="/image/'+element.poster+'" width=50% height=50%>'+'</li>';
           }
-          //<video width=50% height=50% controls> <source src="'+element.url +'" type="video/mp4">
-          //<img style="margin-left: -50vw;" width=20% height=60% src="logo.png" type="png">
-        });
-        document.getElementById('jsonVideos').innerHTML = deployVideos;
+          });
+          document.getElementById('jsonVideos').innerHTML = deployVideos;
       }
 
       function goHome(){
@@ -301,8 +311,6 @@
           '<li class="list-group-item" style="font-size: 3vw"> Bytes del video: '+element.size+'KB </li> '+'<li class="list-group-item" style="font-size: 3vw"> Fecha del video: '+element.creationDate+'</li> '+
           '<li onclick="mostrarVideo(\''+element.title+'\')" class="list-group-item" style="font-size: 4vw"> <h4> Poster: </h4><img src="/image/'+element.poster+'" width=50% height=50%>'+'</li>';
         });
-            //<video width=50% height=50% controls> <source src="'+element.url +'" type="video/mp4">
-
         document.getElementById('jsonVideos').innerHTML = deployVideos;
         //console.log(deployVideos)
         loadButtons();
@@ -327,7 +335,6 @@
           '<li class="list-group-item" style="font-size: 3vw"> Bytes del video: '+element.size+'KB </li> '+'<li class="list-group-item" style="font-size: 3vw"> Fecha del video: '+element.creationDate+'</li> '+
           '<li onclick="mostrarVideo(\''+element.title+'\')" class="list-group-item" style="font-size: 4vw"> <h4> Poster: </h4><img src="/image/'+element.poster+'" width=50% height=50%>'+'</li>';
         });
-          //<video width=50% height=50% controls> <source src="'+element.url +'" type="video/mp4">
 
         document.getElementById('jsonVideos').innerHTML = deployVideos;
         //console.log(deployVideos)
