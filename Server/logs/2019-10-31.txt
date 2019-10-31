@@ -415,4 +415,977 @@ Referer: http://10.0.2.15:8080/page/index.html
 Cache-Control: max-age=0
 
 5:50:5 - REQUEST: Sent: 9343 bytes5:50:5 - THREAD: Thread with IP 10.0.2.15:59826 stopped! Time: 2019-10-31 5:50:5
-5:51:50 - STATUS: server shutting down
+5:51:50 - STATUS: server shutting down0:22:13 - STATUS: Semaphores have been initiallized...0:22:13 - STATUS: Server waiting for data...0:22:40 - STATUS: Server waiting for data...0:22:40 - THREAD: Thread with IP 127.0.0.1:39780 created! Time: 2019-10-31 0:22:40
+0:22:40 - STATUS: Server waiting for data...0:22:40 - THREAD: Thread with IP 127.0.0.1:39782 created! Time: 2019-10-31 0:22:40
+0:22:40 - REQUEST: GET /page/index.html HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Sec-Fetch-User: ?1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+0:22:40 - REQUEST: Sent: 14241 bytes0:22:40 - THREAD: Thread with IP 127.0.0.1:39780 stopped! Time: 2019-10-31 0:22:40
+0:22:41 - REQUEST: GET /image/logo.png HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+0:22:41 - REQUEST: Sent: 48384 bytes0:22:41 - THREAD: Thread with IP 127.0.0.1:39782 stopped! Time: 2019-10-31 0:22:41
+0:22:41 - THREAD: Thread with IP 127.0.0.1:39784 created! Time: 2019-10-31 0:22:41
+0:22:41 - STATUS: Server waiting for data...0:22:41 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+0:22:41 - REQUEST: Sent: 777 bytes0:22:41 - THREAD: Thread with IP 127.0.0.1:39784 stopped! Time: 2019-10-31 0:22:41
+0:22:42 - STATUS: Server waiting for data...0:22:42 - THREAD: Thread with IP 127.0.0.1:39786 created! Time: 2019-10-31 0:22:42
+0:22:42 - REQUEST: GET /image/wos-aczino.jpg HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+0:22:42 - REQUEST: Sent: 163959 bytes0:22:42 - THREAD: Thread with IP 127.0.0.1:39786 stopped! Time: 2019-10-31 0:22:42
+0:22:42 - STATUS: Server waiting for data...0:22:42 - THREAD: Thread with IP 127.0.0.1:39788 created! Time: 2019-10-31 0:22:42
+0:22:42 - REQUEST: GET /image/god-level.jpg HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+0:22:42 - REQUEST: Sent: 124306 bytes0:22:42 - THREAD: Thread with IP 127.0.0.1:39788 stopped! Time: 2019-10-31 0:22:42
+0:22:42 - STATUS: Server waiting for data...0:22:42 - THREAD: Thread with IP 127.0.0.1:39790 created! Time: 2019-10-31 0:22:42
+0:22:42 - REQUEST: GET /image/trueno-wolf.jpg HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+0:22:42 - REQUEST: Sent: 23779 bytes0:22:42 - THREAD: Thread with IP 127.0.0.1:39790 stopped! Time: 2019-10-31 0:22:42
+0:22:42 - STATUS: Server waiting for data...0:22:42 - THREAD: Thread with IP 127.0.0.1:39792 created! Time: 2019-10-31 0:22:42
+0:22:42 - REQUEST: GET /image/horus.jpg HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+0:22:42 - REQUEST: Sent: 9343 bytes0:22:42 - THREAD: Thread with IP 127.0.0.1:39792 stopped! Time: 2019-10-31 0:22:42
+0:22:42 - STATUS: Server waiting for data...0:22:42 - THREAD: Thread with IP 127.0.0.1:39794 created! Time: 2019-10-31 0:22:42
+0:22:42 - REQUEST: GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+0:22:42 - ERROR: No such file or directory0:22:42 - REQUEST: Sent: 0 bytes0:22:42 - THREAD: Thread with IP 127.0.0.1:39794 stopped! Time: 2019-10-31 0:22:42
+0:22:47 - STATUS: Server waiting for data...0:22:47 - THREAD: Thread with IP 127.0.0.1:39798 created! Time: 2019-10-31 0:22:47
+0:22:47 - REQUEST: GET /video/horus.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=0-
+
+0:22:47 - REQUEST: Sent: 524093 bytes0:22:47 - THREAD: Thread with IP 127.0.0.1:39798 stopped! Time: 2019-10-31 0:22:47
+0:22:47 - STATUS: Server waiting for data...0:22:47 - THREAD: Thread with IP 127.0.0.1:39800 created! Time: 2019-10-31 0:22:47
+0:22:47 - REQUEST: GET /video/horus.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=20185088-
+
+0:22:47 - REQUEST: Sent: 471420 bytes0:22:47 - THREAD: Thread with IP 127.0.0.1:39800 stopped! Time: 2019-10-31 0:22:47
+0:22:47 - THREAD: Thread with IP 127.0.0.1:39802 created! Time: 2019-10-31 0:22:47
+0:22:47 - REQUEST: GET /video/horus.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=65536-
+
+0:22:47 - STATUS: Server waiting for data...0:22:47 - REQUEST: Sent: 524093 bytes0:22:47 - THREAD: Thread with IP 127.0.0.1:39802 stopped! Time: 2019-10-31 0:22:47
+0:22:51 - STATUS: Server waiting for data...0:22:51 - THREAD: Thread with IP 127.0.0.1:39804 created! Time: 2019-10-31 0:22:51
+0:22:51 - REQUEST: GET /video/horus.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=327680-
+
+0:22:51 - REQUEST: Sent: 524093 bytes0:22:51 - THREAD: Thread with IP 127.0.0.1:39804 stopped! Time: 2019-10-31 0:22:51
+0:22:51 - STATUS: Server waiting for data...0:22:51 - THREAD: Thread with IP 127.0.0.1:39806 created! Time: 2019-10-31 0:22:51
+0:22:51 - REQUEST: GET /video/horus.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=851773-
+
+0:22:51 - REQUEST: Sent: 524093 bytes0:22:51 - THREAD: Thread with IP 127.0.0.1:39806 stopped! Time: 2019-10-31 0:22:51
+0:22:51 - STATUS: Server waiting for data...0:22:51 - THREAD: Thread with IP 127.0.0.1:39808 created! Time: 2019-10-31 0:22:51
+0:22:51 - REQUEST: GET /video/horus.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=1375866-
+
+0:22:51 - REQUEST: Sent: 524093 bytes0:22:51 - THREAD: Thread with IP 127.0.0.1:39808 stopped! Time: 2019-10-31 0:22:51
+0:22:51 - THREAD: Thread with IP 127.0.0.1:39810 created! Time: 2019-10-31 0:22:51
+0:22:51 - REQUEST: GET /video/horus.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=1899959-
+
+0:22:51 - STATUS: Server waiting for data...0:22:51 - REQUEST: Sent: 524093 bytes0:22:51 - THREAD: Thread with IP 127.0.0.1:39810 stopped! Time: 2019-10-31 0:22:51
+0:22:51 - STATUS: Server waiting for data...0:22:51 - THREAD: Thread with IP 127.0.0.1:39812 created! Time: 2019-10-31 0:22:51
+0:22:51 - REQUEST: GET /video/horus.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=2424052-
+
+0:22:51 - REQUEST: Sent: 524093 bytes0:22:51 - THREAD: Thread with IP 127.0.0.1:39812 stopped! Time: 2019-10-31 0:22:51
+0:22:51 - STATUS: Server waiting for data...0:22:51 - THREAD: Thread with IP 127.0.0.1:39814 created! Time: 2019-10-31 0:22:51
+0:22:51 - REQUEST: GET /video/horus.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=2948145-
+
+0:22:51 - REQUEST: Sent: 524093 bytes0:22:51 - THREAD: Thread with IP 127.0.0.1:39814 stopped! Time: 2019-10-31 0:22:51
+0:22:51 - STATUS: Server waiting for data...0:22:51 - THREAD: Thread with IP 127.0.0.1:39816 created! Time: 2019-10-31 0:22:51
+0:22:51 - REQUEST: GET /video/horus.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=3472238-
+
+0:22:51 - REQUEST: Sent: 524093 bytes0:22:51 - THREAD: Thread with IP 127.0.0.1:39816 stopped! Time: 2019-10-31 0:22:51
+0:23:2 - STATUS: Server waiting for data...0:23:2 - THREAD: Thread with IP 127.0.0.1:39838 created! Time: 2019-10-31 0:23:2
+0:23:2 - REQUEST: GET /video/horus.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=3996331-
+
+0:23:2 - REQUEST: Sent: 524093 bytes0:23:2 - THREAD: Thread with IP 127.0.0.1:39838 stopped! Time: 2019-10-31 0:23:2
+0:23:2 - STATUS: Server waiting for data...0:23:2 - THREAD: Thread with IP 127.0.0.1:39840 created! Time: 2019-10-31 0:23:2
+0:23:2 - REQUEST: GET /video/horus.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=4520424-
+
+0:23:2 - REQUEST: Sent: 524093 bytes0:23:2 - THREAD: Thread with IP 127.0.0.1:39840 stopped! Time: 2019-10-31 0:23:2
+0:23:16 - STATUS: Server waiting for data...0:23:16 - THREAD: Thread with IP 127.0.0.1:39856 created! Time: 2019-10-31 0:23:16
+0:23:16 - REQUEST: GET /video/horus.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=5044517-
+
+0:23:16 - REQUEST: Sent: 524093 bytes0:23:16 - THREAD: Thread with IP 127.0.0.1:39856 stopped! Time: 2019-10-31 0:23:16
+0:23:16 - STATUS: Server waiting for data...0:23:16 - THREAD: Thread with IP 127.0.0.1:39858 created! Time: 2019-10-31 0:23:16
+0:23:16 - REQUEST: GET /video/horus.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=5568610-
+
+0:23:16 - REQUEST: Sent: 524093 bytes0:23:16 - THREAD: Thread with IP 127.0.0.1:39858 stopped! Time: 2019-10-31 0:23:16
+0:23:32 - STATUS: Server waiting for data...0:23:32 - THREAD: Thread with IP 127.0.0.1:39868 created! Time: 2019-10-31 0:23:32
+0:23:32 - REQUEST: GET /video/horus.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=6092703-
+
+0:23:32 - REQUEST: Sent: 524093 bytes0:23:32 - THREAD: Thread with IP 127.0.0.1:39868 stopped! Time: 2019-10-31 0:23:32
+0:23:32 - STATUS: Server waiting for data...0:23:32 - THREAD: Thread with IP 127.0.0.1:39870 created! Time: 2019-10-31 0:23:32
+0:23:32 - REQUEST: GET /video/horus.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=6616796-
+
+0:23:32 - REQUEST: Sent: 524093 bytes0:23:32 - THREAD: Thread with IP 127.0.0.1:39870 stopped! Time: 2019-10-31 0:23:32
+0:23:32 - STATUS: Server waiting for data...0:23:32 - THREAD: Thread with IP 127.0.0.1:39872 created! Time: 2019-10-31 0:23:32
+0:23:32 - REQUEST: GET /video/horus.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=7140889-
+
+0:23:32 - REQUEST: Sent: 524093 bytes0:23:32 - THREAD: Thread with IP 127.0.0.1:39872 stopped! Time: 2019-10-31 0:23:32
+0:23:47 - STATUS: Server waiting for data...0:23:47 - THREAD: Thread with IP 127.0.0.1:39894 created! Time: 2019-10-31 0:23:47
+0:23:47 - REQUEST: GET /video/horus.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=7664982-
+
+0:23:47 - REQUEST: Sent: 524093 bytes0:23:47 - THREAD: Thread with IP 127.0.0.1:39894 stopped! Time: 2019-10-31 0:23:47
+0:23:47 - STATUS: Server waiting for data...0:23:47 - THREAD: Thread with IP 127.0.0.1:39896 created! Time: 2019-10-31 0:23:47
+0:23:47 - REQUEST: GET /video/horus.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=8189075-
+
+0:23:47 - REQUEST: Sent: 524093 bytes0:23:47 - THREAD: Thread with IP 127.0.0.1:39896 stopped! Time: 2019-10-31 0:23:47
+0:24:19 - STATUS: Server waiting for data...0:24:19 - THREAD: Thread with IP 127.0.0.1:39922 created! Time: 2019-10-31 0:24:19
+0:24:19 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=0-
+
+0:24:20 - REQUEST: Sent: 524093 bytes0:24:20 - THREAD: Thread with IP 127.0.0.1:39922 stopped! Time: 2019-10-31 0:24:20
+0:24:20 - STATUS: Server waiting for data...0:24:20 - THREAD: Thread with IP 127.0.0.1:39924 created! Time: 2019-10-31 0:24:20
+0:24:20 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=458752-
+
+0:24:20 - REQUEST: Sent: 524093 bytes0:24:20 - THREAD: Thread with IP 127.0.0.1:39924 stopped! Time: 2019-10-31 0:24:20
+0:24:20 - STATUS: Server waiting for data...0:24:20 - THREAD: Thread with IP 127.0.0.1:39926 created! Time: 2019-10-31 0:24:20
+0:24:20 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=589824-
+
+0:24:20 - REQUEST: Sent: 524093 bytes0:24:20 - THREAD: Thread with IP 127.0.0.1:39926 stopped! Time: 2019-10-31 0:24:20
+0:24:51 - STATUS: Server waiting for data...0:24:51 - THREAD: Thread with IP 127.0.0.1:39930 created! Time: 2019-10-31 0:24:51
+0:24:51 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=294912-
+
+0:24:51 - REQUEST: Sent: 524093 bytes0:24:51 - THREAD: Thread with IP 127.0.0.1:39930 stopped! Time: 2019-10-31 0:24:51
+0:24:51 - STATUS: Server waiting for data...0:24:51 - THREAD: Thread with IP 127.0.0.1:39932 created! Time: 2019-10-31 0:24:51
+0:24:51 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=819005-
+
+0:24:51 - REQUEST: Sent: 524093 bytes0:24:51 - THREAD: Thread with IP 127.0.0.1:39932 stopped! Time: 2019-10-31 0:24:51
+0:24:51 - STATUS: Server waiting for data...0:24:51 - THREAD: Thread with IP 127.0.0.1:39934 created! Time: 2019-10-31 0:24:51
+0:24:51 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=1343098-
+
+0:24:51 - REQUEST: Sent: 524093 bytes0:24:51 - THREAD: Thread with IP 127.0.0.1:39934 stopped! Time: 2019-10-31 0:24:51
+0:24:51 - STATUS: Server waiting for data...0:24:51 - THREAD: Thread with IP 127.0.0.1:39936 created! Time: 2019-10-31 0:24:51
+0:24:51 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=1867191-
+
+0:24:51 - REQUEST: Sent: 524093 bytes0:24:51 - THREAD: Thread with IP 127.0.0.1:39936 stopped! Time: 2019-10-31 0:24:51
+0:24:51 - STATUS: Server waiting for data...0:24:51 - THREAD: Thread with IP 127.0.0.1:39938 created! Time: 2019-10-31 0:24:51
+0:24:51 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=2391284-
+
+0:24:51 - REQUEST: Sent: 524093 bytes0:24:51 - THREAD: Thread with IP 127.0.0.1:39938 stopped! Time: 2019-10-31 0:24:51
+0:24:51 - STATUS: Server waiting for data...0:24:51 - THREAD: Thread with IP 127.0.0.1:39940 created! Time: 2019-10-31 0:24:51
+0:24:51 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=2915377-
+
+0:24:51 - REQUEST: Sent: 524093 bytes0:24:51 - THREAD: Thread with IP 127.0.0.1:39940 stopped! Time: 2019-10-31 0:24:51
+0:24:51 - STATUS: Server waiting for data...0:24:51 - THREAD: Thread with IP 127.0.0.1:39942 created! Time: 2019-10-31 0:24:51
+0:24:51 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=3439470-
+
+0:24:51 - REQUEST: Sent: 524093 bytes0:24:51 - THREAD: Thread with IP 127.0.0.1:39942 stopped! Time: 2019-10-31 0:24:51
+0:25:27 - STATUS: Server waiting for data...0:25:27 - THREAD: Thread with IP 127.0.0.1:39948 created! Time: 2019-10-31 0:25:27
+0:25:27 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=42893312-
+
+0:25:27 - REQUEST: Sent: 524093 bytes0:25:27 - THREAD: Thread with IP 127.0.0.1:39948 stopped! Time: 2019-10-31 0:25:27
+0:25:28 - STATUS: Server waiting for data...0:25:28 - THREAD: Thread with IP 127.0.0.1:39950 created! Time: 2019-10-31 0:25:28
+0:25:28 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=43417405-
+
+0:25:28 - REQUEST: Sent: 524093 bytes0:25:28 - THREAD: Thread with IP 127.0.0.1:39950 stopped! Time: 2019-10-31 0:25:28
+0:25:29 - STATUS: Server waiting for data...0:25:29 - THREAD: Thread with IP 127.0.0.1:39952 created! Time: 2019-10-31 0:25:29
+0:25:29 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=11894784-
+
+0:25:29 - REQUEST: Sent: 524093 bytes0:25:29 - THREAD: Thread with IP 127.0.0.1:39952 stopped! Time: 2019-10-31 0:25:29
+0:25:30 - STATUS: Server waiting for data...0:25:30 - THREAD: Thread with IP 127.0.0.1:39954 created! Time: 2019-10-31 0:25:30
+0:25:30 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=12418877-
+
+0:25:30 - REQUEST: Sent: 524093 bytes0:25:30 - THREAD: Thread with IP 127.0.0.1:39954 stopped! Time: 2019-10-31 0:25:30
+0:25:46 - STATUS: Server waiting for data...0:25:46 - THREAD: Thread with IP 127.0.0.1:40022 created! Time: 2019-10-31 0:25:46
+0:25:46 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=12942970-
+
+0:25:46 - REQUEST: Sent: 524093 bytes0:25:46 - THREAD: Thread with IP 127.0.0.1:40022 stopped! Time: 2019-10-31 0:25:46
+0:25:52 - STATUS: Server waiting for data...0:25:52 - THREAD: Thread with IP 127.0.0.1:40072 created! Time: 2019-10-31 0:25:52
+0:25:52 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=13467063-
+
+0:25:52 - REQUEST: Sent: 524093 bytes0:25:52 - THREAD: Thread with IP 127.0.0.1:40072 stopped! Time: 2019-10-31 0:25:52
+0:25:57 - STATUS: Server waiting for data...0:25:57 - THREAD: Thread with IP 127.0.0.1:40122 created! Time: 2019-10-31 0:25:57
+0:25:57 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=13991156-
+
+0:25:57 - REQUEST: Sent: 524093 bytes0:25:57 - THREAD: Thread with IP 127.0.0.1:40122 stopped! Time: 2019-10-31 0:25:57
+0:26:1 - STATUS: Server waiting for data...0:26:1 - THREAD: Thread with IP 127.0.0.1:40156 created! Time: 2019-10-31 0:26:1
+0:26:1 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=55410688-
+
+0:26:1 - REQUEST: Sent: 524093 bytes0:26:1 - THREAD: Thread with IP 127.0.0.1:40156 stopped! Time: 2019-10-31 0:26:1
+0:26:2 - STATUS: Server waiting for data...0:26:2 - THREAD: Thread with IP 127.0.0.1:40166 created! Time: 2019-10-31 0:26:2
+0:26:2 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=55934781-
+
+0:26:2 - REQUEST: Sent: 524093 bytes0:26:2 - THREAD: Thread with IP 127.0.0.1:40166 stopped! Time: 2019-10-31 0:26:2
+0:26:4 - STATUS: Server waiting for data...0:26:4 - THREAD: Thread with IP 127.0.0.1:40184 created! Time: 2019-10-31 0:26:4
+0:26:4 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=75005952-
+
+0:26:4 - REQUEST: Sent: 524093 bytes0:26:4 - THREAD: Thread with IP 127.0.0.1:40184 stopped! Time: 2019-10-31 0:26:4
+0:26:5 - STATUS: Server waiting for data...0:26:5 - THREAD: Thread with IP 127.0.0.1:40194 created! Time: 2019-10-31 0:26:5
+0:26:5 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=75530045-
+
+0:26:5 - REQUEST: Sent: 524093 bytes0:26:5 - THREAD: Thread with IP 127.0.0.1:40194 stopped! Time: 2019-10-31 0:26:5
+0:26:10 - STATUS: Server waiting for data...0:26:10 - THREAD: Thread with IP 127.0.0.1:40238 created! Time: 2019-10-31 0:26:10
+0:26:10 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=76054138-
+
+0:26:10 - REQUEST: Sent: 524093 bytes0:26:10 - THREAD: Thread with IP 127.0.0.1:40238 stopped! Time: 2019-10-31 0:26:10
+0:26:17 - STATUS: Server waiting for data...0:26:17 - THREAD: Thread with IP 127.0.0.1:40296 created! Time: 2019-10-31 0:26:17
+0:26:17 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=76578231-
+
+0:26:17 - REQUEST: Sent: 524093 bytes0:26:17 - THREAD: Thread with IP 127.0.0.1:40296 stopped! Time: 2019-10-31 0:26:17
+0:26:22 - STATUS: Server waiting for data...0:26:22 - THREAD: Thread with IP 127.0.0.1:40338 created! Time: 2019-10-31 0:26:22
+0:26:22 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=77102324-
+
+0:26:22 - REQUEST: Sent: 524093 bytes0:26:22 - THREAD: Thread with IP 127.0.0.1:40338 stopped! Time: 2019-10-31 0:26:22
+0:26:28 - STATUS: Server waiting for data...0:26:28 - THREAD: Thread with IP 127.0.0.1:40390 created! Time: 2019-10-31 0:26:28
+0:26:28 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=77626417-
+
+0:26:28 - REQUEST: Sent: 524093 bytes0:26:28 - THREAD: Thread with IP 127.0.0.1:40390 stopped! Time: 2019-10-31 0:26:28
+0:26:34 - STATUS: Server waiting for data...0:26:34 - THREAD: Thread with IP 127.0.0.1:40432 created! Time: 2019-10-31 0:26:34
+0:26:34 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=78150510-
+
+0:26:34 - REQUEST: Sent: 524093 bytes0:26:34 - THREAD: Thread with IP 127.0.0.1:40432 stopped! Time: 2019-10-31 0:26:34
+0:26:40 - STATUS: Server waiting for data...0:26:40 - THREAD: Thread with IP 127.0.0.1:40484 created! Time: 2019-10-31 0:26:40
+0:26:40 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=78674603-
+
+0:26:40 - REQUEST: Sent: 524093 bytes0:26:40 - THREAD: Thread with IP 127.0.0.1:40484 stopped! Time: 2019-10-31 0:26:40
+0:26:46 - STATUS: Server waiting for data...0:26:46 - THREAD: Thread with IP 127.0.0.1:40534 created! Time: 2019-10-31 0:26:46
+0:26:46 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=79198696-
+
+0:26:46 - REQUEST: Sent: 524093 bytes0:26:46 - THREAD: Thread with IP 127.0.0.1:40534 stopped! Time: 2019-10-31 0:26:46
+0:26:52 - STATUS: Server waiting for data...0:26:52 - THREAD: Thread with IP 127.0.0.1:40584 created! Time: 2019-10-31 0:26:52
+0:26:52 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=79722789-
+
+0:26:52 - REQUEST: Sent: 524093 bytes0:26:52 - THREAD: Thread with IP 127.0.0.1:40584 stopped! Time: 2019-10-31 0:26:52
+0:26:56 - STATUS: Server waiting for data...0:26:56 - THREAD: Thread with IP 127.0.0.1:40626 created! Time: 2019-10-31 0:26:56
+0:26:56 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=80246882-
+
+0:26:56 - REQUEST: Sent: 524093 bytes0:26:56 - THREAD: Thread with IP 127.0.0.1:40626 stopped! Time: 2019-10-31 0:26:56
+0:27:2 - STATUS: Server waiting for data...0:27:2 - THREAD: Thread with IP 127.0.0.1:40676 created! Time: 2019-10-31 0:27:2
+0:27:2 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=80770975-
+
+0:27:2 - REQUEST: Sent: 524093 bytes0:27:2 - THREAD: Thread with IP 127.0.0.1:40676 stopped! Time: 2019-10-31 0:27:2
+0:27:7 - STATUS: Server waiting for data...0:27:7 - THREAD: Thread with IP 127.0.0.1:40718 created! Time: 2019-10-31 0:27:7
+0:27:7 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=81295068-
+
+0:27:7 - REQUEST: Sent: 524093 bytes0:27:7 - THREAD: Thread with IP 127.0.0.1:40718 stopped! Time: 2019-10-31 0:27:7
+0:27:13 - STATUS: Server waiting for data...0:27:13 - THREAD: Thread with IP 127.0.0.1:40762 created! Time: 2019-10-31 0:27:13
+0:27:13 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=81819161-
+
+0:27:13 - REQUEST: Sent: 524093 bytes0:27:13 - THREAD: Thread with IP 127.0.0.1:40762 stopped! Time: 2019-10-31 0:27:13
+0:27:18 - STATUS: Server waiting for data...0:27:18 - THREAD: Thread with IP 127.0.0.1:40804 created! Time: 2019-10-31 0:27:18
+0:27:18 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=82343254-
+
+0:27:18 - REQUEST: Sent: 524093 bytes0:27:18 - THREAD: Thread with IP 127.0.0.1:40804 stopped! Time: 2019-10-31 0:27:18
+0:27:25 - STATUS: Server waiting for data...0:27:25 - THREAD: Thread with IP 127.0.0.1:40862 created! Time: 2019-10-31 0:27:25
+0:27:25 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=82867347-
+
+0:27:25 - REQUEST: Sent: 524093 bytes0:27:25 - THREAD: Thread with IP 127.0.0.1:40862 stopped! Time: 2019-10-31 0:27:25
+0:27:31 - STATUS: Server waiting for data...0:27:31 - THREAD: Thread with IP 127.0.0.1:40920 created! Time: 2019-10-31 0:27:31
+0:27:31 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=83391440-
+
+0:27:31 - REQUEST: Sent: 524093 bytes0:27:31 - THREAD: Thread with IP 127.0.0.1:40920 stopped! Time: 2019-10-31 0:27:31
+0:27:36 - STATUS: Server waiting for data...0:27:36 - THREAD: Thread with IP 127.0.0.1:40962 created! Time: 2019-10-31 0:27:36
+0:27:36 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=83915533-
+
+0:27:36 - REQUEST: Sent: 524093 bytes0:27:36 - THREAD: Thread with IP 127.0.0.1:40962 stopped! Time: 2019-10-31 0:27:36
+0:27:41 - STATUS: Server waiting for data...0:27:41 - THREAD: Thread with IP 127.0.0.1:41006 created! Time: 2019-10-31 0:27:41
+0:27:41 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=84439626-
+
+0:27:42 - REQUEST: Sent: 524093 bytes0:27:42 - THREAD: Thread with IP 127.0.0.1:41006 stopped! Time: 2019-10-31 0:27:42
+0:27:47 - STATUS: Server waiting for data...0:27:47 - THREAD: Thread with IP 127.0.0.1:41048 created! Time: 2019-10-31 0:27:47
+0:27:47 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=84963719-
+
+0:27:47 - REQUEST: Sent: 524093 bytes0:27:47 - THREAD: Thread with IP 127.0.0.1:41048 stopped! Time: 2019-10-31 0:27:47
+0:27:54 - STATUS: Server waiting for data...0:27:54 - THREAD: Thread with IP 127.0.0.1:41108 created! Time: 2019-10-31 0:27:54
+0:27:54 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=85487812-
+
+0:27:54 - REQUEST: Sent: 524093 bytes0:27:54 - THREAD: Thread with IP 127.0.0.1:41108 stopped! Time: 2019-10-31 0:27:54
+0:28:0 - STATUS: Server waiting for data...0:28:0 - THREAD: Thread with IP 127.0.0.1:41158 created! Time: 2019-10-31 0:28:0
+0:28:0 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=86011905-
+
+0:28:0 - REQUEST: Sent: 524093 bytes0:28:0 - THREAD: Thread with IP 127.0.0.1:41158 stopped! Time: 2019-10-31 0:28:0
+0:28:6 - STATUS: Server waiting for data...0:28:6 - THREAD: Thread with IP 127.0.0.1:41208 created! Time: 2019-10-31 0:28:6
+0:28:6 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=86535998-
+
+0:28:6 - REQUEST: Sent: 524093 bytes0:28:6 - THREAD: Thread with IP 127.0.0.1:41208 stopped! Time: 2019-10-31 0:28:6
+0:28:10 - STATUS: Server waiting for data...0:28:10 - THREAD: Thread with IP 127.0.0.1:41252 created! Time: 2019-10-31 0:28:10
+0:28:10 - REQUEST: GET /video/god-level.mp4 HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: keep-alive
+Accept-Encoding: identity;q=1, *;q=0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Referer: http://127.0.0.1:8080/page/index.html
+Accept-Language: en-US,en;q=0.9
+Range: bytes=87060091-
+
+0:28:10 - REQUEST: Sent: 524093 bytes0:28:10 - THREAD: Thread with IP 127.0.0.1:41252 stopped! Time: 2019-10-31 0:28:10
+0:28:24 - STATUS: server shutting down

@@ -220,14 +220,16 @@ void regenerate(){
 	char content[BUFFER_SIZE] = "[";
 	char intermediate[4096];
 	char fileName[128] = "resources/json/videos.json";
+	char fileName2[128] = "resources/page/json/videos.json";
 	char filePath[128];
 	char categories [3][25] = {"FMS Argentina", "FMS Espanha", "FMS Internacional"};
 	char imageName[25];
 	long fileSize;
 	int i = 0;
 	remove(fileName);
+	remove(fileName2);
 	FILE* f = fopen(fileName,"a");
-	FILE* f2;
+	FILE* f2 = fopen(fileName2,"a");
 	DIR *d;
 	char date[10];
 	time_t t = time(NULL);
@@ -271,6 +273,8 @@ void regenerate(){
 	else{
 		fprintf(f, "%s",  content);
 		fclose(f);
+		fprintf(f2, "%s",  content);
+		fclose(f2);
 	}
 }
 
