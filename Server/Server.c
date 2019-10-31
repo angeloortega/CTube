@@ -229,7 +229,8 @@ void regenerate(){
 	remove(fileName);
 	remove(fileName2);
 	FILE* f = fopen(fileName,"a");
-	FILE* f2 = fopen(fileName2,"a");
+	FILE* f3 = fopen(fileName2,"a");
+	FILE* f2;
 	DIR *d;
 	char date[10];
 	time_t t = time(NULL);
@@ -273,8 +274,8 @@ void regenerate(){
 	else{
 		fprintf(f, "%s",  content);
 		fclose(f);
-		fprintf(f2, "%s",  content);
-		fclose(f2);
+		fprintf(f3, "%s",  content);
+		fclose(f3);
 	}
 }
 
@@ -337,9 +338,11 @@ void parseRange(long result[],char *request){
 				strcpy(endC, *(parts+1));
 			}
 			strcpy(beginningC, *parts);
+			free(parts);
 			parts = strSplit(beginningC, '=');
 			if(parts){
 				strcpy(beginningC, *(parts+1));
+				free(parts);
 			}
 			
 		}
@@ -357,7 +360,7 @@ void parseRange(long result[],char *request){
 	else{
 		end = -1;
 	}
-	free(parts);
+
 	result[0] = beginning;
 	result[1] = end;
 } 
