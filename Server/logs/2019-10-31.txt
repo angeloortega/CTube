@@ -1,0 +1,418 @@
+4:20:0 - STATUS: Semaphores have been initiallized...4:20:0 - STATUS: Server waiting for data...4:21:13 - STATUS: Server waiting for data...4:21:13 - THREAD: Thread with IP 10.0.2.15:59232 created! Time: 2019-10-31 4:21:13
+4:21:13 - REQUEST: GET /page/index.html HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+4:21:13 - REQUEST: Sent: 14083 bytes4:21:13 - THREAD: Thread with IP 10.0.2.15:59232 stopped! Time: 2019-10-31 4:21:13
+4:21:13 - STATUS: Server waiting for data...4:21:13 - THREAD: Thread with IP 10.0.2.15:59242 created! Time: 2019-10-31 4:21:13
+4:21:13 - REQUEST: GET /image/logo.png HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://10.0.2.15:8080/page/index.html
+
+4:21:13 - REQUEST: Sent: 48384 bytes4:21:13 - THREAD: Thread with IP 10.0.2.15:59242 stopped! Time: 2019-10-31 4:21:13
+4:21:13 - STATUS: Server waiting for data...4:21:13 - THREAD: Thread with IP 10.0.2.15:59244 created! Time: 2019-10-31 4:21:13
+4:21:13 - REQUEST: GET /favicon.ico HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+4:21:13 - ERROR: No such file or directory4:21:13 - REQUEST: Sent: 0 bytes4:21:13 - THREAD: Thread with IP 10.0.2.15:59244 stopped! Time: 2019-10-31 4:21:13
+4:25:16 - STATUS: Server waiting for data...4:25:16 - THREAD: Thread with IP 10.0.2.15:59258 created! Time: 2019-10-31 4:25:16
+4:25:16 - REQUEST: GET /page/index.html HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Pragma: no-cache
+Cache-Control: no-cache
+
+4:25:16 - REQUEST: Sent: 14083 bytes4:25:16 - THREAD: Thread with IP 10.0.2.15:59258 stopped! Time: 2019-10-31 4:25:16
+4:25:16 - STATUS: Server waiting for data...4:25:16 - THREAD: Thread with IP 10.0.2.15:59268 created! Time: 2019-10-31 4:25:16
+4:25:16 - REQUEST: GET /image/logo.png HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Referer: http://10.0.2.15:8080/page/index.html
+Pragma: no-cache
+Cache-Control: no-cache
+
+4:25:16 - REQUEST: Sent: 48384 bytes4:25:16 - THREAD: Thread with IP 10.0.2.15:59268 stopped! Time: 2019-10-31 4:25:16
+4:25:16 - STATUS: Server waiting for data...4:25:16 - THREAD: Thread with IP 10.0.2.15:59270 created! Time: 2019-10-31 4:25:16
+4:25:16 - REQUEST: GET /favicon.ico HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+
+4:25:16 - ERROR: No such file or directory4:25:16 - REQUEST: Sent: 0 bytes4:25:16 - THREAD: Thread with IP 10.0.2.15:59270 stopped! Time: 2019-10-31 4:25:16
+4:26:10 - STATUS: Server waiting for data...4:26:10 - THREAD: Thread with IP 10.0.2.15:59276 created! Time: 2019-10-31 4:26:10
+4:26:10 - REQUEST: GET /page/index.html HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+4:26:10 - REQUEST: Sent: 14083 bytes4:26:10 - THREAD: Thread with IP 10.0.2.15:59276 stopped! Time: 2019-10-31 4:26:10
+4:32:38 - STATUS: server shutting down4:32:40 - STATUS: Semaphores have been initiallized...4:32:40 - STATUS: Server waiting for data...4:33:19 - STATUS: Server waiting for data...4:33:19 - THREAD: Thread with IP 10.0.2.15:59310 created! Time: 2019-10-31 4:33:19
+4:33:19 - REQUEST: GET /page/index.html HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+4:33:19 - REQUEST: Sent: 14083 bytes4:33:19 - THREAD: Thread with IP 10.0.2.15:59310 stopped! Time: 2019-10-31 4:33:19
+4:33:23 - STATUS: Server waiting for data...4:33:23 - THREAD: Thread with IP 10.0.2.15:59314 created! Time: 2019-10-31 4:33:23
+4:33:23 - REQUEST: GET /image/logo.png HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://10.0.2.15:8080/page/index.html
+
+4:33:23 - REQUEST: Sent: 48384 bytes4:33:23 - THREAD: Thread with IP 10.0.2.15:59314 stopped! Time: 2019-10-31 4:33:23
+4:33:23 - STATUS: Server waiting for data...4:33:23 - THREAD: Thread with IP 10.0.2.15:59316 created! Time: 2019-10-31 4:33:23
+4:33:23 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://10.0.2.15:8080/page/index.html
+Connection: keep-alive
+
+4:33:23 - REQUEST: Sent: 777 bytes4:33:23 - THREAD: Thread with IP 10.0.2.15:59316 stopped! Time: 2019-10-31 4:33:23
+4:33:28 - STATUS: Server waiting for data...4:33:28 - THREAD: Thread with IP 10.0.2.15:59318 created! Time: 2019-10-31 4:33:28
+4:33:28 - REQUEST: GET /image/wos-aczino.jpg HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://10.0.2.15:8080/page/index.html
+
+4:33:28 - REQUEST: Sent: 163959 bytes4:33:28 - THREAD: Thread with IP 10.0.2.15:59318 stopped! Time: 2019-10-31 4:33:28
+4:33:28 - STATUS: Server waiting for data...4:33:28 - THREAD: Thread with IP 10.0.2.15:59320 created! Time: 2019-10-31 4:33:28
+4:33:28 - REQUEST: GET /image/god-level.jpg HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://10.0.2.15:8080/page/index.html
+
+4:33:28 - REQUEST: Sent: 124306 bytes4:33:28 - THREAD: Thread with IP 10.0.2.15:59320 stopped! Time: 2019-10-31 4:33:28
+4:33:29 - STATUS: Server waiting for data...4:33:29 - THREAD: Thread with IP 10.0.2.15:59322 created! Time: 2019-10-31 4:33:29
+4:33:29 - REQUEST: GET /image/trueno-wolf.jpg HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://10.0.2.15:8080/page/index.html
+
+4:33:29 - REQUEST: Sent: 23779 bytes4:33:29 - THREAD: Thread with IP 10.0.2.15:59322 stopped! Time: 2019-10-31 4:33:29
+4:33:29 - STATUS: Server waiting for data...4:33:29 - THREAD: Thread with IP 10.0.2.15:59324 created! Time: 2019-10-31 4:33:29
+4:33:29 - REQUEST: GET /image/horus.jpg HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://10.0.2.15:8080/page/index.html
+
+4:33:29 - REQUEST: Sent: 9343 bytes4:33:29 - THREAD: Thread with IP 10.0.2.15:59324 stopped! Time: 2019-10-31 4:33:29
+4:35:30 - STATUS: Server waiting for data...4:35:30 - THREAD: Thread with IP 10.0.2.15:59328 created! Time: 2019-10-31 4:35:30
+4:35:30 - REQUEST: GET /page/index.html HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+4:35:30 - REQUEST: Sent: 14112 bytes4:35:30 - THREAD: Thread with IP 10.0.2.15:59328 stopped! Time: 2019-10-31 4:35:30
+4:35:31 - STATUS: Server waiting for data...4:35:31 - THREAD: Thread with IP 10.0.2.15:59330 created! Time: 2019-10-31 4:35:31
+4:35:31 - REQUEST: GET /image/logo.png HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://10.0.2.15:8080/page/index.html
+
+4:35:31 - REQUEST: Sent: 48384 bytes4:35:31 - THREAD: Thread with IP 10.0.2.15:59330 stopped! Time: 2019-10-31 4:35:31
+4:35:31 - STATUS: Server waiting for data...4:35:31 - THREAD: Thread with IP 10.0.2.15:59332 created! Time: 2019-10-31 4:35:31
+4:35:31 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://10.0.2.15:8080/page/index.html
+Connection: keep-alive
+
+4:35:31 - REQUEST: Sent: 777 bytes4:35:31 - THREAD: Thread with IP 10.0.2.15:59332 stopped! Time: 2019-10-31 4:35:31
+4:35:31 - STATUS: Server waiting for data...4:35:31 - THREAD: Thread with IP 10.0.2.15:59334 created! Time: 2019-10-31 4:35:31
+4:35:31 - REQUEST: GET /image/wos-aczino.jpg HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://10.0.2.15:8080/page/index.html
+
+4:35:31 - REQUEST: Sent: 163959 bytes4:35:31 - THREAD: Thread with IP 10.0.2.15:59334 stopped! Time: 2019-10-31 4:35:31
+4:35:31 - STATUS: Server waiting for data...4:35:31 - THREAD: Thread with IP 10.0.2.15:59336 created! Time: 2019-10-31 4:35:31
+4:35:31 - REQUEST: GET /image/god-level.jpg HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://10.0.2.15:8080/page/index.html
+
+4:35:31 - REQUEST: Sent: 124306 bytes4:35:31 - THREAD: Thread with IP 10.0.2.15:59336 stopped! Time: 2019-10-31 4:35:31
+4:35:31 - STATUS: Server waiting for data...4:35:31 - THREAD: Thread with IP 10.0.2.15:59338 created! Time: 2019-10-31 4:35:31
+4:35:31 - REQUEST: GET /image/trueno-wolf.jpg HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://10.0.2.15:8080/page/index.html
+
+4:35:31 - REQUEST: Sent: 23779 bytes4:35:31 - THREAD: Thread with IP 10.0.2.15:59338 stopped! Time: 2019-10-31 4:35:31
+4:35:31 - STATUS: Server waiting for data...4:35:31 - THREAD: Thread with IP 10.0.2.15:59340 created! Time: 2019-10-31 4:35:31
+4:35:31 - REQUEST: GET /image/horus.jpg HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://10.0.2.15:8080/page/index.html
+
+4:35:31 - REQUEST: Sent: 9343 bytes4:35:31 - THREAD: Thread with IP 10.0.2.15:59340 stopped! Time: 2019-10-31 4:35:31
+5:47:59 - STATUS: Server waiting for data...5:47:59 - THREAD: Thread with IP 10.0.2.15:59570 created! Time: 2019-10-31 5:47:59
+5:47:59 - REQUEST: GET /page/index.html HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+5:47:59 - REQUEST: Sent: 14241 bytes5:47:59 - THREAD: Thread with IP 10.0.2.15:59570 stopped! Time: 2019-10-31 5:47:59
+5:48:0 - STATUS: Server waiting for data...5:48:0 - THREAD: Thread with IP 10.0.2.15:59574 created! Time: 2019-10-31 5:48:0
+5:48:0 - REQUEST: GET /image/logo.png HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://10.0.2.15:8080/page/index.html
+Cache-Control: max-age=0
+
+5:48:0 - REQUEST: Sent: 48384 bytes5:48:0 - THREAD: Thread with IP 10.0.2.15:59574 stopped! Time: 2019-10-31 5:48:0
+5:48:0 - STATUS: Server waiting for data...5:48:0 - THREAD: Thread with IP 10.0.2.15:59576 created! Time: 2019-10-31 5:48:0
+5:48:0 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://10.0.2.15:8080/page/index.html
+Connection: keep-alive
+Cache-Control: max-age=0
+
+5:48:0 - REQUEST: Sent: 777 bytes5:48:0 - THREAD: Thread with IP 10.0.2.15:59576 stopped! Time: 2019-10-31 5:48:0
+5:48:0 - STATUS: Server waiting for data...5:48:0 - THREAD: Thread with IP 10.0.2.15:59578 created! Time: 2019-10-31 5:48:0
+5:48:0 - REQUEST: GET /image/wos-aczino.jpg HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://10.0.2.15:8080/page/index.html
+Cache-Control: max-age=0
+
+5:48:0 - REQUEST: Sent: 163959 bytes5:48:0 - THREAD: Thread with IP 10.0.2.15:59578 stopped! Time: 2019-10-31 5:48:0
+5:48:0 - STATUS: Server waiting for data...5:48:0 - THREAD: Thread with IP 10.0.2.15:59580 created! Time: 2019-10-31 5:48:0
+5:48:0 - REQUEST: GET /image/god-level.jpg HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://10.0.2.15:8080/page/index.html
+Cache-Control: max-age=0
+
+5:48:0 - REQUEST: Sent: 124306 bytes5:48:0 - THREAD: Thread with IP 10.0.2.15:59580 stopped! Time: 2019-10-31 5:48:0
+5:48:0 - STATUS: Server waiting for data...5:48:0 - THREAD: Thread with IP 10.0.2.15:59582 created! Time: 2019-10-31 5:48:0
+5:48:0 - REQUEST: GET /image/trueno-wolf.jpg HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://10.0.2.15:8080/page/index.html
+Cache-Control: max-age=0
+
+5:48:0 - REQUEST: Sent: 23779 bytes5:48:0 - THREAD: Thread with IP 10.0.2.15:59582 stopped! Time: 2019-10-31 5:48:0
+5:48:0 - STATUS: Server waiting for data...5:48:0 - THREAD: Thread with IP 10.0.2.15:59584 created! Time: 2019-10-31 5:48:0
+5:48:0 - REQUEST: GET /image/horus.jpg HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://10.0.2.15:8080/page/index.html
+Cache-Control: max-age=0
+
+5:48:0 - REQUEST: Sent: 9343 bytes5:48:0 - THREAD: Thread with IP 10.0.2.15:59584 stopped! Time: 2019-10-31 5:48:0
+5:50:2 - STATUS: Server waiting for data...5:50:2 - THREAD: Thread with IP 10.0.2.15:59812 created! Time: 2019-10-31 5:50:2
+5:50:2 - REQUEST: GET /page/index.html HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+5:50:2 - REQUEST: Sent: 14241 bytes5:50:2 - THREAD: Thread with IP 10.0.2.15:59812 stopped! Time: 2019-10-31 5:50:2
+5:50:4 - STATUS: Server waiting for data...5:50:4 - THREAD: Thread with IP 10.0.2.15:59814 created! Time: 2019-10-31 5:50:4
+5:50:4 - REQUEST: GET /image/logo.png HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://10.0.2.15:8080/page/index.html
+Cache-Control: max-age=0
+
+5:50:4 - REQUEST: Sent: 48384 bytes5:50:4 - THREAD: Thread with IP 10.0.2.15:59814 stopped! Time: 2019-10-31 5:50:4
+5:50:4 - STATUS: Server waiting for data...5:50:4 - THREAD: Thread with IP 10.0.2.15:59816 created! Time: 2019-10-31 5:50:4
+5:50:4 - REQUEST: GET /json/videos.json HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://10.0.2.15:8080/page/index.html
+Connection: keep-alive
+Cache-Control: max-age=0
+
+5:50:4 - REQUEST: Sent: 777 bytes5:50:4 - THREAD: Thread with IP 10.0.2.15:59816 stopped! Time: 2019-10-31 5:50:4
+5:50:4 - STATUS: Server waiting for data...5:50:4 - THREAD: Thread with IP 10.0.2.15:59818 created! Time: 2019-10-31 5:50:4
+5:50:4 - REQUEST: GET /favicon.ico HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: max-age=0
+
+5:50:4 - ERROR: No such file or directory5:50:4 - REQUEST: Sent: 0 bytes5:50:4 - THREAD: Thread with IP 10.0.2.15:59818 stopped! Time: 2019-10-31 5:50:4
+5:50:5 - STATUS: Server waiting for data...5:50:5 - THREAD: Thread with IP 10.0.2.15:59820 created! Time: 2019-10-31 5:50:5
+5:50:5 - REQUEST: GET /image/wos-aczino.jpg HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://10.0.2.15:8080/page/index.html
+Cache-Control: max-age=0
+
+5:50:5 - REQUEST: Sent: 163959 bytes5:50:5 - THREAD: Thread with IP 10.0.2.15:59820 stopped! Time: 2019-10-31 5:50:5
+5:50:5 - STATUS: Server waiting for data...5:50:5 - THREAD: Thread with IP 10.0.2.15:59822 created! Time: 2019-10-31 5:50:5
+5:50:5 - REQUEST: GET /image/god-level.jpg HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://10.0.2.15:8080/page/index.html
+Cache-Control: max-age=0
+
+5:50:5 - REQUEST: Sent: 124306 bytes5:50:5 - THREAD: Thread with IP 10.0.2.15:59822 stopped! Time: 2019-10-31 5:50:5
+5:50:5 - STATUS: Server waiting for data...5:50:5 - THREAD: Thread with IP 10.0.2.15:59824 created! Time: 2019-10-31 5:50:5
+5:50:5 - REQUEST: GET /image/trueno-wolf.jpg HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://10.0.2.15:8080/page/index.html
+Cache-Control: max-age=0
+
+5:50:5 - REQUEST: Sent: 23779 bytes5:50:5 - THREAD: Thread with IP 10.0.2.15:59824 stopped! Time: 2019-10-31 5:50:5
+5:50:5 - STATUS: Server waiting for data...5:50:5 - THREAD: Thread with IP 10.0.2.15:59826 created! Time: 2019-10-31 5:50:5
+5:50:5 - REQUEST: GET /image/horus.jpg HTTP/1.1
+Host: 10.0.2.15:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://10.0.2.15:8080/page/index.html
+Cache-Control: max-age=0
+
+5:50:5 - REQUEST: Sent: 9343 bytes5:50:5 - THREAD: Thread with IP 10.0.2.15:59826 stopped! Time: 2019-10-31 5:50:5
+5:51:50 - STATUS: server shutting down
